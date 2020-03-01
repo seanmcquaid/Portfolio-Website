@@ -1,24 +1,48 @@
 import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
+import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
 
 const Navbar = () => {
     return(
         <NavbarContainer>
             <LinkContainer to="/">
-                Image of Logo
+                <IoMdMusicalNotes/>
+                <span>Sean</span>
             </LinkContainer>
             <NavContainer>
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/skills">Skills</NavLink>
-                <NavLink to="/projects">Projects</NavLink>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/">
+                    <IoMdHome/>
+                </NavLink>
+                <NavLink to="/about">
+                    <IoMdPerson/>
+                </NavLink>
+                <NavLink to="/skills">
+                    <IoMdSettings/>
+                </NavLink>
+                <NavLink to="/projects">
+                    <IoMdFiling/>
+                </NavLink>
+                <NavLink to="/contact">
+                    <IoMdMail/>
+                </NavLink>
             </NavContainer>
             <ContactList>
-                <ContactListItem>LinkedIn</ContactListItem>
-                <ContactListItem>Email</ContactListItem>
-                <ContactListItem>Resume</ContactListItem>
+                <ContactListItem>
+                    <ContactListItemLink>
+                        <IoLogoLinkedin/>
+                    </ContactListItemLink>
+                </ContactListItem>
+                <ContactListItem>
+                    <ContactListItemLink>
+                        <IoLogoGithub/>
+                    </ContactListItemLink>
+                </ContactListItem>
+                <ContactListItem>
+                    <ContactListItemLink>
+                        <IoIosPaper/>
+                    </ContactListItemLink>
+                </ContactListItem>
             </ContactList>
         </NavbarContainer>
     )
@@ -30,7 +54,7 @@ const NavbarContainer = styled.div`
     display : flex;
     flex-direction : column;
     justify-content : space-between;
-    width : 120px;
+    width : 80px;
     height : 100%;
     min-height: 100%;
     top : 0;
@@ -38,9 +62,12 @@ const NavbarContainer = styled.div`
 
 const LinkContainer = styled(Link)`
     text-align : center;
-    background-color : #3D5652;
     margin : 0.5rem;
-    
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    font-size : 1.25rem;
 `;
 
 const NavContainer = styled.nav`
@@ -52,6 +79,7 @@ const NavContainer = styled.nav`
 const NavLink = styled(Link)`
     margin : 0.5rem;
     text-decoration : none;
+    font-size : 1.5rem;
 `;
 
 const ContactList = styled.ul`
@@ -65,6 +93,11 @@ const ContactList = styled.ul`
 
 const ContactListItem = styled.li`
     margin : 0.5rem
+`;
+
+const ContactListItemLink = styled(Link)`
+    text-decoration : none;
+    font-size : 1.5rem;
 `;
 
 export default Navbar;
