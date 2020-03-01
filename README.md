@@ -10,6 +10,7 @@ General Things to Implement :
 3) Home - smaller screen - hello on top, logo on bottom
 4) Projects - List of Projects with name, image of project, on click for a modal explanation
 6) Add in JSON Loader for grabbing info from JSON files
+8) add default props
 
 Skills
 1) Skills explanation on the left
