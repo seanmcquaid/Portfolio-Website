@@ -1,7 +1,7 @@
 import React from "react";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Layout from "components/Layout/Layout";
-import {Home, About} from "pages/pages";
+import {Home, About, Contact, Skills, Projects} from "pages/pages";
 
 const App = () => {
   return (
@@ -10,9 +10,9 @@ const App = () => {
         <Switch>
             <Route to="/" component={Home}/>
             <Route to="/about" component={About}/>
-            <Route to=""/>
-            <Route to=""/>
-            <Route to=""/>
+            <Route to="/contact" component={Contact}/>
+            <Route to="/skills" component={Skills}/>
+            <Route to="/projects" component={Projects}/>
         </Switch>
       </Layout>
     </Router>
