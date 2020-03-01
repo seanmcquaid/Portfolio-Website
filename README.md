@@ -12,6 +12,4 @@ General Things to Implement :
 6) Add in JSON Loader for grabbing info from JSON files
 8) add default props
 
-Skills
-1) Skills explanation on the left
-2) Skills icons on the right with on hover
+https://www.npmjs.com/package/react-spinners

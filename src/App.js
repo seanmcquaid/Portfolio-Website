@@ -8,11 +8,12 @@ const App = () => {
     <Router>
       <Layout>
         <Switch>
-            <Route to="/" component={Home}/>
-            <Route to="/about" component={About}/>
-            <Route to="/contact" component={Contact}/>
-            <Route to="/skills" component={Skills}/>
-            <Route to="/projects" component={Projects}/>
+            <Route exact path="/" component={Home}/>
+            <Route exact path="/about" component={About}/>
+            <Route exact path="/contact" component={Contact}/>
+            <Route exact path="/skills" component={Skills}/>
+            <Route exact path="/projects" component={Projects}/>
+            <Route component={Home}/>
         </Switch>
       </Layout>
     </Router>

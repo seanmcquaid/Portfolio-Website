@@ -1,16 +1,17 @@
 import React from "react";
+import {PageContainer, ParagraphText, HeaderText, LeftContainer, RightContainer} from "components/components";
 
 const About = () => {
     return(
-        <div>
-            <div>
-                <h1>About</h1>
-                <p>Text about me</p>
-            </div>
-            <div>
+        <PageContainer>
+            <LeftContainer>
+                <HeaderText>About</HeaderText>
+                <ParagraphText>Text about me</ParagraphText>
+            </LeftContainer>
+            <RightContainer>
                 Picture here
-            </div>
-        </div>
+            </RightContainer>
+        </PageContainer>
     )
 };
 

@@ -9,16 +9,23 @@ const Navbar = () => {
                 Image of Logo
             </LinkContainer>
             <NavContainer>
-                NavContainer info
+                <NavLink to="/">Home</NavLink>
+                <NavLink to="/about">About</NavLink>
+                <NavLink to="/skills">Skills</NavLink>
+                <NavLink to="/projects">Projects</NavLink>
+                <NavLink to="/contact">Contact</NavLink>
             </NavContainer>
             <ContactList>
-                contact methods
+                <ContactListItem>LinkedIn</ContactListItem>
+                <ContactListItem>Email</ContactListItem>
+                <ContactListItem>Resume</ContactListItem>
             </ContactList>
         </NavbarContainer>
     )
 };
 
 const NavbarContainer = styled.div`
+    background-color : #4E6E58;
     position : absolute;
     display : flex;
     flex-direction : column;
@@ -31,10 +38,20 @@ const NavbarContainer = styled.div`
 
 const LinkContainer = styled(Link)`
     text-align : center;
+    background-color : #3D5652;
+    margin : 0.5rem;
+    
 `;
 
 const NavContainer = styled.nav`
     text-align : center;
+    display : flex;
+    flex-direction : column;
+`;
+
+const NavLink = styled(Link)`
+    margin : 0.5rem;
+    text-decoration : none;
 `;
 
 const ContactList = styled.ul`
@@ -44,7 +61,10 @@ const ContactList = styled.ul`
     width: 100%;
     padding: 0;
     list-style: none;
-    margin: 0;
+`;
+
+const ContactListItem = styled.li`
+    margin : 0.5rem
 `;
 
 export default Navbar;

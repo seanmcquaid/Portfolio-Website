@@ -6,6 +6,9 @@ import HeaderText from "./HeaderText/HeaderText";
 import SubHeaderText from "./SubHeaderText/SubHeaderText";
 import LinkButton from "./LinkButton/LinkButton";
 import ParagraphText from "./ParagraphText/ParagraphText";
+import PageContainer from "./PageContainer/PageContainer";
+import LeftContainer from "./LeftContainer/LeftContainer";
+import RightContainer from "./RightContainer/RightContainer";
 
 export {
     Layout,
@@ -15,5 +18,8 @@ export {
     HeaderText,
     SubHeaderText,
     LinkButton,
-    ParagraphText
+    ParagraphText,
+    PageContainer,
+    LeftContainer,
+    RightContainer
 };

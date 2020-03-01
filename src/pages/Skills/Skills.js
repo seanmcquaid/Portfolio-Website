@@ -1,16 +1,17 @@
 import React from "react";
+import { HeaderText, PageContainer, LeftContainer, RightContainer, ParagraphText } from "components/components";
 
 const Skills = () => {
     return(
-        <div>
-            <div>
-                <h1>Projects</h1>
-                <p></p>
-            </div>
-            <div>
+        <PageContainer>
+            <LeftContainer>
+                <HeaderText>Skills</HeaderText>
+                <ParagraphText>Text about Skills here</ParagraphText>
+            </LeftContainer>
+            <RightContainer>
                 Skills here
-            </div>
-        </div>
+            </RightContainer>
+        </PageContainer>
     )
 };
 
