@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, {useState, useEffect} from "react";
 import {PageContainer, ParagraphText, HeaderText, LeftContainer, RightContainer, Headshot, LoadingSpinner} from "components/components";
 import trumpetHeadshot from "images/trumpetHeadshot.jpg";
 import Aux from "hoc/Aux/Aux";
@@ -6,9 +6,14 @@ import Aux from "hoc/Aux/Aux";
 const About = () => {
     const [isLoading, setIsLoading] = useState(true);
 
+    useEffect(() => {
+        setTimeout(() => setIsLoading(false), 1500);
+    },[]);
+
     return(
         <PageContainer>
-            {isLoading ? <LoadingSpinner isLoading={isLoading}/>: 
+            {isLoading ? 
+            <LoadingSpinner isLoading={isLoading}/> : 
             <Aux>
                 <LeftContainer>
                     <HeaderText>About</HeaderText>
@@ -17,8 +22,7 @@ const About = () => {
                 <RightContainer>
                     <Headshot src={trumpetHeadshot} alt="trumpetHeadshot"/>
                 </RightContainer>
-            </Aux>
-            }
+            </Aux>}
         </PageContainer>
     )
 };

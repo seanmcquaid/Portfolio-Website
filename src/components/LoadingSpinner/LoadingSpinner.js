@@ -1,10 +1,8 @@
 import React from "react";
 import {ScaleLoader} from "react-spinners";
-import styled from "styled-components";
 import { css } from "@emotion/core";
 
 const override = css`
-    width : 300px;
     display : flex;
     justify-content : center;
     align-items : center;
