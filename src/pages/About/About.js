@@ -1,16 +1,24 @@
-import React from "react";
-import {PageContainer, ParagraphText, HeaderText, LeftContainer, RightContainer} from "components/components";
+import React, { useState, useEffect, useCallback } from "react";
+import {PageContainer, ParagraphText, HeaderText, LeftContainer, RightContainer, Headshot, LoadingSpinner} from "components/components";
+import trumpetHeadshot from "images/trumpetHeadshot.jpg";
+import Aux from "hoc/Aux/Aux";
 
 const About = () => {
+    const [isLoading, setIsLoading] = useState(true);
+
     return(
         <PageContainer>
-            <LeftContainer>
-                <HeaderText>About</HeaderText>
-                <ParagraphText>Text about me</ParagraphText>
-            </LeftContainer>
-            <RightContainer>
-                Picture here
-            </RightContainer>
+            {isLoading ? <LoadingSpinner isLoading={isLoading}/>: 
+            <Aux>
+                <LeftContainer>
+                    <HeaderText>About</HeaderText>
+                    <ParagraphText>Text about me</ParagraphText>
+                </LeftContainer>
+                <RightContainer>
+                    <Headshot src={trumpetHeadshot} alt="trumpetHeadshot"/>
+                </RightContainer>
+            </Aux>
+            }
         </PageContainer>
     )
 };

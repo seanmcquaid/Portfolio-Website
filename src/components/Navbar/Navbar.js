@@ -8,7 +8,6 @@ const Navbar = () => {
         <NavbarContainer>
             <LinkContainer to="/">
                 <IoMdMusicalNotes/>
-                <span>Sean</span>
             </LinkContainer>
             <NavContainer>
                 <NavLink to="/">
@@ -67,7 +66,8 @@ const LinkContainer = styled(Link)`
     flex-direction : column;
     justify-content : center;
     align-items : center;
-    font-size : 1.25rem;
+    font-size : 1.5rem;
+    color : #544B3D;
 `;
 
 const NavContainer = styled.nav`
@@ -80,6 +80,7 @@ const NavLink = styled(Link)`
     margin : 0.5rem;
     text-decoration : none;
     font-size : 1.5rem;
+    color : #544B3D;
 `;
 
 const ContactList = styled.ul`
@@ -98,6 +99,7 @@ const ContactListItem = styled.li`
 const ContactListItemLink = styled(Link)`
     text-decoration : none;
     font-size : 1.5rem;
+    color : #544B3D;
 `;
 
 export default Navbar;

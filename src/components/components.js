@@ -9,6 +9,8 @@ import ParagraphText from "./ParagraphText/ParagraphText";
 import PageContainer from "./PageContainer/PageContainer";
 import LeftContainer from "./LeftContainer/LeftContainer";
 import RightContainer from "./RightContainer/RightContainer";
+import Headshot from "./Headshot/Headshot";
+import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
 
 export {
     Layout,
@@ -21,5 +23,7 @@ export {
     ParagraphText,
     PageContainer,
     LeftContainer,
-    RightContainer
+    RightContainer,
+    Headshot,
+    LoadingSpinner
 };
