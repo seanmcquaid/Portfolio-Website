@@ -16,7 +16,7 @@ const Contact = () => {
             <Aux>
                 <LeftContainer>
                     <HeaderText>Contact Me</HeaderText>
-                    <ParagraphText>Contact info here</ParagraphText>
+                    <ParagraphText>If you would like to contact me, I would love to hear from you! Feel free to contact me through my email, check out my LinkedIn or GitHub, or even look at my Resume!</ParagraphText>
                 </LeftContainer>
                 <RightContainer>
                     Icons here
