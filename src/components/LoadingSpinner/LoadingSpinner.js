@@ -12,7 +12,7 @@ const LoadingSpinner = props => {
     const {isLoading} = props;
 
     return (
-        <ScaleLoader css={override} size={1000} color={"#544B3D"} loading={isLoading}/>
+        <ScaleLoader css={override} size={1000} color={"#00000096"} loading={isLoading}/>
     )
 };
 

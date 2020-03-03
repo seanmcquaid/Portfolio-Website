@@ -12,14 +12,14 @@ const LinkButton = ({title, route}) => {
 
 const LinkButtonContainer = styled(Link)`
     text-decoration : none;
-    color : #544B3D;
-    border : 2px solid #544B3D;
+    color : #00000096;
+    border : 2px solid #00000096;
     padding : 1rem;
     margin : 1rem;
     font-size : 1rem;
     &:hover {
         transition : 0.5s;
-        background-color : #544B3D;
+        background-color : #00000096;
         color: #4C8577;
       }
 `;

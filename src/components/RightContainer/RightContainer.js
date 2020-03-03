@@ -1,4 +1,13 @@
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
+
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
 
 export default styled.div`
     width : 20%;
@@ -8,4 +17,7 @@ export default styled.div`
     align-items : flex-start;
     max-width: 300px;
     margin : 1rem;
+    animation: ${fadeInAnimation} ease 2s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 `;

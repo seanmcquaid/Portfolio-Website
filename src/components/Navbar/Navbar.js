@@ -67,7 +67,7 @@ const LinkContainer = styled(Link)`
     justify-content : center;
     align-items : center;
     font-size : 1.5rem;
-    color : #544B3D;
+    color : #00000096;
 `;
 
 const NavContainer = styled.nav`
@@ -80,7 +80,7 @@ const NavLink = styled(Link)`
     margin : 0.5rem;
     text-decoration : none;
     font-size : 1.5rem;
-    color : #544B3D;
+    color : #00000096;
 `;
 
 const ContactList = styled.ul`
@@ -99,7 +99,7 @@ const ContactListItem = styled.li`
 const ContactListItemLink = styled(Link)`
     text-decoration : none;
     font-size : 1.5rem;
-    color : #544B3D;
+    color : #00000096;
 `;
 
 export default Navbar;
