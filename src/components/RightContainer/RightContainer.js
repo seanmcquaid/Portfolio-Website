@@ -10,7 +10,7 @@ const fadeInAnimation = keyframes`
 `;
 
 export default styled.div`
-    width : 20%;
+    width : 40%;
     display : flex;
     flex-direction : column;
     justify-content : center;
@@ -20,4 +20,5 @@ export default styled.div`
     animation: ${fadeInAnimation} ease 2s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
+    
 `;

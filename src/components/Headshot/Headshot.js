@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export default styled.img`
-width : 300px;
-border-radius : 30%;
+    width : 100%;
+    border-radius : 30%;
 `;

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import { HeaderText, PageContainer, LeftContainer, RightContainer, ParagraphText, LoadingSpinner } from "components/components";
 import Aux from "hoc/Aux/Aux";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import skillsList from "./skillsList";
 
 const Skills = () => {
@@ -27,7 +27,7 @@ const Skills = () => {
                                 return (
                                     <IconContainer>
                                         <Component/>
-                                        <ParagraphText>{name}</ParagraphText>
+                                        <IconName>{name}</IconName>
                                     </IconContainer>
                                 )
                             })}
@@ -41,11 +41,27 @@ const Skills = () => {
 
 const IconsContainer = styled.div`
     display : flex;
-    flex-direction : flex-wrap;
+    flex-direction : row;
+    flex-wrap : wrap;
+    flex : 1;
     justify-content : center;
     align-items : center;
     width : 100%;
-    padding : 1rem;
+`;
+
+const IconName = styled.p`
+    margin : 0.25rem;
+    font-size : 1rem;
+    visibility : hidden;
+`;
+
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
 `;
 
 const IconContainer = styled.div`
@@ -53,7 +69,16 @@ const IconContainer = styled.div`
     flex-direction : column;
     justify-content : center;
     align-items : center;
-    font-size : 1rem;
+    font-size : 2rem;
+    width : 25%;
+    margin : 0.75rem;
+    &:hover ${IconName} {
+        visibility : visible;
+        transition : 0.25s;
+        animation: ${fadeInAnimation} ease 1s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;
+      }
 `;
 
 export default Skills;
