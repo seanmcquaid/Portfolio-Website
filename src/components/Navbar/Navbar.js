@@ -11,19 +11,24 @@ const Navbar = () => {
             </LinkContainer>
             <NavContainer>
                 <NavLink to="/">
-                    <IoMdHome/>
+                    <NavLinkIconContainer><IoMdHome/></NavLinkIconContainer>
+                    <NavLinkLabel>Home</NavLinkLabel>
                 </NavLink>
                 <NavLink to="/about">
-                    <IoMdPerson/>
+                    <NavLinkIconContainer><IoMdPerson/></NavLinkIconContainer>
+                    <NavLinkLabel>About</NavLinkLabel>
                 </NavLink>
                 <NavLink to="/skills">
-                    <IoMdSettings/>
+                    <NavLinkIconContainer><IoMdSettings/></NavLinkIconContainer>
+                    <NavLinkLabel>Skills</NavLinkLabel>
                 </NavLink>
                 <NavLink to="/projects">
-                    <IoMdFiling/>
+                    <NavLinkIconContainer><IoMdFiling/></NavLinkIconContainer>
+                    <NavLinkLabel>Projects</NavLinkLabel>
                 </NavLink>
                 <NavLink to="/contact">
-                    <IoMdMail/>
+                    <NavLinkIconContainer><IoMdMail/></NavLinkIconContainer>
+                    <NavLinkLabel>Contact</NavLinkLabel>
                 </NavLink>
             </NavContainer>
             <ContactList>
@@ -77,10 +82,26 @@ const NavContainer = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-    margin : 0.5rem;
+    margin : 0.75rem;
     text-decoration : none;
     font-size : 1.5rem;
     color : #00000096;
+`;
+
+const NavLinkLabel = styled.span`
+    font-size : 1rem;
+    display : none;
+`;
+
+const NavLinkIconContainer = styled.div`
+    display : block;
+    font-size : 1.5rem;
+    &:hover + ${NavLinkLabel}{
+        display : block;
+    }
+    &:hover {
+        display : none;
+    }
 `;
 
 const ContactList = styled.ul`

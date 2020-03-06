@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
-import { PageContainer, HeaderText, LeftContainer, RightContainer, ParagraphText, LoadingSpinner } from "components/components";
+import { HeaderText, LoadingSpinner, Project } from "components/components";
+import styled from "styled-components";
 import Aux from "hoc/Aux/Aux";
+import projectsList from "./projectsList";
 
 const Projects = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -10,21 +12,35 @@ const Projects = () => {
     },[]);
 
     return(
-        <PageContainer>
+        <ProjectPageContainer>
             {isLoading ?
                 <LoadingSpinner isLoading={isLoading}/> :
                 <Aux>
-                    <LeftContainer>
-                        <HeaderText>Projects</HeaderText>
-                        <ParagraphText>Info here</ParagraphText>
-                    </LeftContainer>
-                    <RightContainer>
-                        Projects here
-                    </RightContainer>
+                    <HeaderText>Projects</HeaderText>
+                    <ProjectsContainer>
+                        {projectsList.map(project => <Project title={project.title} image={project.image} description={project.description}/>)}
+                    </ProjectsContainer>
                 </Aux>
             }
-        </PageContainer>
+        </ProjectPageContainer>
     )
 };
+
+const ProjectPageContainer = styled.div`
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    margin : 0 auto;
+    width : 100%;
+    height : 100%;
+`;
+
+const ProjectsContainer = styled.div`
+    display : flex;
+    flex-direction : row;
+    align-items : center;
+    justify-content : center;
+`;
 
 export default Projects;
