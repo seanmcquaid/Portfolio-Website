@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
+import {} from "react-icons";
 import resume from "images/Sean McQuaid - Resume.pdf";
 
 const Navbar = () => (
@@ -53,14 +54,17 @@ const Navbar = () => (
 
 const NavbarContainer = styled.div`
     background-color : #4E6E58;
-    position : absolute;
     display : flex;
     flex-direction : column;
     justify-content : space-between;
     width : 80px;
-    height : 100%;
-    min-height: 100%;
     top : 0;
+    @media (max-width : 915px){
+        position : absolute;
+        width : 100%;
+        min-width : 100%;
+        flex-direction : row;
+    }
 `;
 
 const LinkContainer = styled(Link)`
@@ -78,6 +82,9 @@ const NavContainer = styled.nav`
     text-align : center;
     display : flex;
     flex-direction : column;
+    @media (max-width : 915px){
+        flex-direction : row;
+    }
 `;
 
 const NavLink = styled(Link)`
@@ -117,6 +124,9 @@ const ContactList = styled.ul`
     width: 100%;
     padding: 0;
     list-style: none;
+    @media (max-width : 915px){
+        display : none;
+    }
 `;
 
 const ContactListItem = styled.li`

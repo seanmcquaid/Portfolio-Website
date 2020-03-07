@@ -7,6 +7,8 @@ export default styled.div`
     justify-content : center;
     align-items : center;
     align-self : center;
-    width : 100%;
-    height : 100%;
+    @media (max-width : 915px){
+        flex-direction : column-reverse;
+        margin-top : 10rem;
+    }
 `;

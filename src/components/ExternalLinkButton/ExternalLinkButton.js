@@ -12,4 +12,4 @@ export default styled.a`
         background-color : #00000096;
         color: #4C8577;
     }
-`
+`;

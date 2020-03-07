@@ -10,24 +10,29 @@ import {
     DiGit,
     DiPython,
     DiAws,
+    DiJava,
 } from "react-icons/di";
 
-const skillsList = [
+export default [
     {
         name : "JavaScript",
-        IconComponent : DiJavascript
+        IconComponent : DiJavascript,
     },
     {
         name : "React",
-        IconComponent : DiReact
+        IconComponent : DiReact,
     },
     {
         name : "Node.js",
-        IconComponent : DiNodejs
+        IconComponent : DiNodejs,
+    },
+    {
+        name : "Java",
+        IconComponent : DiJava,
     },
     {
         name : "HTML",
-        IconComponent : DiHtml5
+        IconComponent : DiHtml5,
     },
     {
         name : "CSS",
@@ -35,28 +40,26 @@ const skillsList = [
     },
     {
         name : "mySQL",
-        IconComponent : DiMysql
+        IconComponent : DiMysql,
     },
     {
         name : "PostgreSQL",
-        IconComponent : DiPostgresql
+        IconComponent : DiPostgresql,
     },
     {
         name : "MongoDB",
-        IconComponent : DiMongodb
+        IconComponent : DiMongodb,
     },
     {
         name : "AWS",
-        IconComponent : DiAws
+        IconComponent : DiAws,
     },
     {
         name : "Python",
-        IconComponent : DiPython
+        IconComponent : DiPython,
     },
     {
         name : "Git",
-        IconComponent : DiGit
-    }
-]
-
-export default skillsList;
+        IconComponent : DiGit,
+    },
+];
