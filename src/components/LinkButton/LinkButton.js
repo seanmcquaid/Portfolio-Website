@@ -1,14 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
-const LinkButton = ({title, route}) => {
-    return(
-        <LinkButtonContainer to={route}>
-            {title}
-        </LinkButtonContainer>
-    )
-};
+const LinkButton = ({title, route}) => (
+    <LinkButtonContainer to={route}>
+        {title}
+    </LinkButtonContainer>
+);
 
 const LinkButtonContainer = styled(Link)`
     text-decoration : none;
@@ -23,5 +22,15 @@ const LinkButtonContainer = styled(Link)`
         color: #4C8577;
       }
 `;
+
+LinkButton.propTypes = {
+    route : PropTypes.string.isRequired,
+    title : PropTypes.string.isRequired,
+};
+
+LinkButton.defaultProps = {
+    route : "/",
+    title : "Home"
+};
 
 export default LinkButton;

@@ -1,19 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import { ParagraphText, ExternalLinkButton } from "components/components";
+import PropTypes from "prop-types";
 
-const Project = ({title, image, description, repoLink}) => {
-    return (
-        <ProjectContainer>
-            <ProjectTitle>{title}</ProjectTitle>
-            <ProjectImage src={image} alt={title}/>
-            <ParagraphText>{description}</ParagraphText>
-            <ButtonsContainer>
-                <ExternalLinkButton href={repoLink} target="blank">Github</ExternalLinkButton>
-            </ButtonsContainer>
-        </ProjectContainer>
-    )
-};
+const Project = ({title, image, description, repoLink}) => (
+    <ProjectContainer>
+        <ProjectTitle>{title}</ProjectTitle>
+        <ProjectImage src={image} alt={title}/>
+        <ParagraphText>{description}</ParagraphText>
+        <ButtonsContainer>
+            <ExternalLinkButton href={repoLink} target="blank">Github</ExternalLinkButton>
+        </ButtonsContainer>
+    </ProjectContainer>
+);
 
 const ProjectContainer = styled.div`
     border : 2px solid #00000096;
@@ -48,5 +47,20 @@ const ButtonsContainer = styled.div`
     width : 100%;
     max-width : 100px;
 `;
+
+Project.propTypes = {
+    title : PropTypes.string.isRequired, 
+    image : PropTypes.string.isRequired, 
+    description : PropTypes.string.isRequired, 
+    repoLink : PropTypes.string.isRequired,
+};
+
+Project.defaultProps = {
+    title : "Project Here", 
+    image : "Placeholder Image", 
+    description : "Placeholder description", 
+    repoLink : "www.google.com",
+};
+
 
 export default Project;

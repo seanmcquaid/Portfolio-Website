@@ -4,54 +4,52 @@ import {Link} from "react-router-dom";
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
 import resume from "images/Sean McQuaid - Resume.pdf";
 
-const Navbar = () => {
-    return(
-        <NavbarContainer>
-            <LinkContainer to="/">
-                <IoMdMusicalNotes/>
-            </LinkContainer>
-            <NavContainer>
-                <NavLink to="/">
-                    <NavLinkIconContainer><IoMdHome/></NavLinkIconContainer>
-                    <NavLinkLabel>Home</NavLinkLabel>
-                </NavLink>
-                <NavLink to="/about">
-                    <NavLinkIconContainer><IoMdPerson/></NavLinkIconContainer>
-                    <NavLinkLabel>About</NavLinkLabel>
-                </NavLink>
-                <NavLink to="/skills">
-                    <NavLinkIconContainer><IoMdSettings/></NavLinkIconContainer>
-                    <NavLinkLabel>Skills</NavLinkLabel>
-                </NavLink>
-                <NavLink to="/projects">
-                    <NavLinkIconContainer><IoMdFiling/></NavLinkIconContainer>
-                    <NavLinkLabel>Projects</NavLinkLabel>
-                </NavLink>
-                <NavLink to="/contact">
-                    <NavLinkIconContainer><IoMdMail/></NavLinkIconContainer>
-                    <NavLinkLabel>Contact</NavLinkLabel>
-                </NavLink>
-            </NavContainer>
-            <ContactList>
-                <ContactListItem>
-                    <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank">
-                        <IoLogoLinkedin/>
-                    </ContactListItemLink>
-                </ContactListItem>
-                <ContactListItem>
-                    <ContactListItemLink href="https://github.com/seanmcquaid" target="blank">
-                        <IoLogoGithub/>
-                    </ContactListItemLink>
-                </ContactListItem>
-                <ContactListItem>
-                    <ContactListItemLink href={resume} target="blank">
-                        <IoIosPaper/>
-                    </ContactListItemLink>
-                </ContactListItem>
-            </ContactList>
-        </NavbarContainer>
-    )
-};
+const Navbar = () => (
+    <NavbarContainer>
+        <LinkContainer to="/">
+            <IoMdMusicalNotes/>
+        </LinkContainer>
+        <NavContainer>
+            <NavLink to="/">
+                <NavLinkIconContainer><IoMdHome/></NavLinkIconContainer>
+                <NavLinkLabel>Home</NavLinkLabel>
+            </NavLink>
+            <NavLink to="/about">
+                <NavLinkIconContainer><IoMdPerson/></NavLinkIconContainer>
+                <NavLinkLabel>About</NavLinkLabel>
+            </NavLink>
+            <NavLink to="/skills">
+                <NavLinkIconContainer><IoMdSettings/></NavLinkIconContainer>
+                <NavLinkLabel>Skills</NavLinkLabel>
+            </NavLink>
+            <NavLink to="/projects">
+                <NavLinkIconContainer><IoMdFiling/></NavLinkIconContainer>
+                <NavLinkLabel>Projects</NavLinkLabel>
+            </NavLink>
+            <NavLink to="/contact">
+                <NavLinkIconContainer><IoMdMail/></NavLinkIconContainer>
+                <NavLinkLabel>Contact</NavLinkLabel>
+            </NavLink>
+        </NavContainer>
+        <ContactList>
+            <ContactListItem>
+                <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank">
+                    <IoLogoLinkedin/>
+                </ContactListItemLink>
+            </ContactListItem>
+            <ContactListItem>
+                <ContactListItemLink href="https://github.com/seanmcquaid" target="blank">
+                    <IoLogoGithub/>
+                </ContactListItemLink>
+            </ContactListItem>
+            <ContactListItem>
+                <ContactListItemLink href={resume} target="blank">
+                    <IoIosPaper/>
+                </ContactListItemLink>
+            </ContactListItem>
+        </ContactList>
+    </NavbarContainer>
+);
 
 const NavbarContainer = styled.div`
     background-color : #4E6E58;

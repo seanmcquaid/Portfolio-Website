@@ -27,7 +27,7 @@ const About = () => {
                 </RightContainer>
             </Aux>}
         </PageContainer>
-    )
+    );
 };
 
 export default About;

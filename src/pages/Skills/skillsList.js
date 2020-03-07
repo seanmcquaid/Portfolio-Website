@@ -15,47 +15,47 @@ import {
 const skillsList = [
     {
         name : "JavaScript",
-        Component : DiJavascript
+        IconComponent : DiJavascript
     },
     {
         name : "React",
-        Component : DiReact
+        IconComponent : DiReact
     },
     {
         name : "Node.js",
-        Component : DiNodejs
+        IconComponent : DiNodejs
     },
     {
         name : "HTML",
-        Component : DiHtml5
+        IconComponent : DiHtml5
     },
     {
         name : "CSS",
-        Component : DiCss3,
+        IconComponent : DiCss3,
     },
     {
         name : "mySQL",
-        Component : DiMysql
+        IconComponent : DiMysql
     },
     {
         name : "PostgreSQL",
-        Component : DiPostgresql
+        IconComponent : DiPostgresql
     },
     {
         name : "MongoDB",
-        Component : DiMongodb
+        IconComponent : DiMongodb
     },
     {
         name : "AWS",
-        Component : DiAws
+        IconComponent : DiAws
     },
     {
         name : "Python",
-        Component : DiPython
+        IconComponent : DiPython
     },
     {
         name : "Git",
-        Component : DiGit
+        IconComponent : DiGit
     }
 ]
 

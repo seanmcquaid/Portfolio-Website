@@ -1,15 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "components/Navbar/Navbar";
+import {Navbar} from "components/components";
 
-const Layout = props => {
-    return (
-        <Container>
-            <Navbar/>
-            {props.children}
-        </Container>
-    )
-};
+const Layout = ({children}) => (
+    <Container>
+        <Navbar/>
+        {children}
+    </Container>
+);
 
 const Container = styled.div`
     display : flex;

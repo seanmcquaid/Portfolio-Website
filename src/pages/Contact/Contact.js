@@ -44,10 +44,9 @@ const Contact = () => {
                         </ContactListItem>
                     </ContactList>
                 </RightContainer>
-            </Aux>
-            }
+            </Aux>}
         </PageContainer>
-    )
+    );
 };
 
 const ContactList = styled.ul`

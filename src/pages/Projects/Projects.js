@@ -20,18 +20,17 @@ const Projects = () => {
                     <HeaderText>Projects</HeaderText>
                     <ProjectsContainer>
                         {projectsList.map((project, i) =>
-                        <Project 
-                            key={i} 
-                            title={project.title} 
-                            image={project.image} 
-                            description={project.description} 
-                            repoLink={project.repoLink}
-                        />)}
+                            <Project 
+                                key={i} 
+                                title={project.title} 
+                                image={project.image} 
+                                description={project.description} 
+                                repoLink={project.repoLink}
+                            />)}
                     </ProjectsContainer>
-                </Aux>
-            }
+                </Aux>}
         </ProjectPageContainer>
-    )
+    );
 };
 
 const ProjectPageContainer = styled.div`
