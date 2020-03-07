@@ -11,6 +11,7 @@ import LeftContainer from "./LeftContainer/LeftContainer";
 import RightContainer from "./RightContainer/RightContainer";
 import Headshot from "./Headshot/Headshot";
 import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
+import ExternalLinkButton from "./ExternalLinkButton/ExternalLinkButton";
 
 export {
     Layout,
@@ -25,5 +26,6 @@ export {
     LeftContainer,
     RightContainer,
     Headshot,
-    LoadingSpinner
+    LoadingSpinner,
+    ExternalLinkButton
 };

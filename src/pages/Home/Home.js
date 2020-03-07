@@ -8,7 +8,7 @@ import {
     RightContainer,
     Headshot
 } from "components/components";
-import headshot from "images/headshot.png"
+import headshot from "images/headshot.jpg"
 
 const Home = () => {
     return(
