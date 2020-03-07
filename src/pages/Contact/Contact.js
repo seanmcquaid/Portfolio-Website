@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from "react";
 import { PageContainer, LeftContainer, HeaderText, ParagraphText, RightContainer, LoadingSpinner } from "components/components";
 import Aux from "hoc/Aux/Aux";
-import styled from "styled-components";
-import {Link} from "react-router-dom";
+import styled, {keyframes} from "styled-components";
 import {IoLogoLinkedin, IoLogoGithub, IoIosPaper} from "react-icons/io";
+import resume from "images/Sean McQuaid - Resume.pdf";
 
 const Contact = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        setTimeout(() => setIsLoading(false), 1500);
+        const timer = setTimeout(() => setIsLoading(false), 1500);
+        return () => clearTimeout(timer);
     },[]);
 
     return(
@@ -24,18 +25,21 @@ const Contact = () => {
                 <RightContainer>
                     <ContactList>
                         <ContactListItem>
-                            <ContactListItemLink>
+                            <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank">
                                 <IoLogoLinkedin/>
+                                <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
                             </ContactListItemLink>
                         </ContactListItem>
                         <ContactListItem>
-                            <ContactListItemLink>
+                            <ContactListItemLink href="https://github.com/seanmcquaid" target="blank">
                                 <IoLogoGithub/>
+                                <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
                             </ContactListItemLink>
                         </ContactListItem>
                         <ContactListItem>
-                            <ContactListItemLink>
+                            <ContactListItemLink href={resume} target="blank">
                                 <IoIosPaper/>
+                                <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
                             </ContactListItemLink>
                         </ContactListItem>
                     </ContactList>
@@ -60,10 +64,37 @@ const ContactListItem = styled.li`
     margin : 1.5rem
 `;
 
-const ContactListItemLink = styled(Link)`
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
+
+const ContactListItemLinkLabel = styled.span`
+    font-size : 1rem;
+    margin : 0.25rem;
+    visibility : hidden;
+`;
+
+const ContactListItemLink = styled.a`
     text-decoration : none;
     font-size : 2.5rem;
     color : #00000096;
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    &:hover ${ContactListItemLinkLabel} {
+        visibility : visible;
+        transition : 0.25s;
+        animation: ${fadeInAnimation} ease 1s; 
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards;
+      }
 `;
 
 export default Contact;

@@ -8,7 +8,8 @@ const Projects = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        setTimeout(() => setIsLoading(false), 1500);
+        const timer = setTimeout(() => setIsLoading(false), 1500);
+        return () => clearTimeout(timer);
     },[]);
 
     return(
@@ -18,7 +19,14 @@ const Projects = () => {
                 <Aux>
                     <HeaderText>Projects</HeaderText>
                     <ProjectsContainer>
-                        {projectsList.map(project => <Project title={project.title} image={project.image} description={project.description} repoLink={project.repoLink}/>)}
+                        {projectsList.map((project, i) =>
+                        <Project 
+                            key={i} 
+                            title={project.title} 
+                            image={project.image} 
+                            description={project.description} 
+                            repoLink={project.repoLink}
+                        />)}
                     </ProjectsContainer>
                 </Aux>
             }

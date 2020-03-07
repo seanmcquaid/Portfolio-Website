@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
+import resume from "images/Sean McQuaid - Resume.pdf";
 
 const Navbar = () => {
     return(
@@ -33,17 +34,17 @@ const Navbar = () => {
             </NavContainer>
             <ContactList>
                 <ContactListItem>
-                    <ContactListItemLink>
+                    <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank">
                         <IoLogoLinkedin/>
                     </ContactListItemLink>
                 </ContactListItem>
                 <ContactListItem>
-                    <ContactListItemLink>
+                    <ContactListItemLink href="https://github.com/seanmcquaid" target="blank">
                         <IoLogoGithub/>
                     </ContactListItemLink>
                 </ContactListItem>
                 <ContactListItem>
-                    <ContactListItemLink>
+                    <ContactListItemLink href={resume} target="blank">
                         <IoIosPaper/>
                     </ContactListItemLink>
                 </ContactListItem>
@@ -66,7 +67,7 @@ const NavbarContainer = styled.div`
 
 const LinkContainer = styled(Link)`
     text-align : center;
-    margin : 0.5rem;
+    padding: 1rem;
     display : flex;
     flex-direction : column;
     justify-content : center;
@@ -82,10 +83,15 @@ const NavContainer = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-    margin : 0.75rem;
+    padding : 1rem;
     text-decoration : none;
     font-size : 1.5rem;
     color : #00000096;
+    height : 30px;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
 `;
 
 const NavLinkLabel = styled.span`
@@ -96,6 +102,8 @@ const NavLinkLabel = styled.span`
 const NavLinkIconContainer = styled.div`
     display : block;
     font-size : 1.5rem;
+    width : 100%;
+    height: 100%;
     &:hover + ${NavLinkLabel}{
         display : block;
     }
@@ -114,10 +122,10 @@ const ContactList = styled.ul`
 `;
 
 const ContactListItem = styled.li`
-    margin : 0.5rem
+    margin : 0.75rem
 `;
 
-const ContactListItemLink = styled(Link)`
+const ContactListItemLink = styled.a`
     text-decoration : none;
     font-size : 1.5rem;
     color : #00000096;

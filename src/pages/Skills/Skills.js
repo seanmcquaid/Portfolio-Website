@@ -8,7 +8,8 @@ const Skills = () => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        setTimeout(() => setIsLoading(false), 1500);
+        const timer = setTimeout(() => setIsLoading(false), 1500);
+        return () => clearTimeout(timer);
     },[]);
 
     return(
@@ -22,10 +23,10 @@ const Skills = () => {
                     </LeftContainer>
                     <RightContainer>
                         <IconsContainer>
-                            {skillsList.map(skill => {
+                            {skillsList.map((skill, i) => {
                                 const {name, Component} = skill;
                                 return (
-                                    <IconContainer>
+                                    <IconContainer key={i}>
                                         <Component/>
                                         <IconName>{name}</IconName>
                                     </IconContainer>
