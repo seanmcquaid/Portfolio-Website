@@ -18,6 +18,6 @@ const App = () => {
       </Layout>
     </Router>
   );
-}
+};
 
 export default App;

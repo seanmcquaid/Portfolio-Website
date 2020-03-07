@@ -1,13 +1,21 @@
 const projectsList = [
     {
-        title : "HI THERE",
+        title : "DekTech",
         image : "hello",
-        description : "this project here"
+        description : "this project here",
+        repoLink : ""
     },
     {
-        title : "HI THERE",
+        title : "DekTech",
         image : "hello",
-        description : "this project here"
+        description : "this project here",
+        repoLink : ""
+    },
+    {
+        title : "DekTech",
+        image : "hello",
+        description : "this project here",
+        repoLink : ""
     }
 ];
 

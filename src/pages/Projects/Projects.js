@@ -18,7 +18,7 @@ const Projects = () => {
                 <Aux>
                     <HeaderText>Projects</HeaderText>
                     <ProjectsContainer>
-                        {projectsList.map(project => <Project title={project.title} image={project.image} description={project.description}/>)}
+                        {projectsList.map(project => <Project title={project.title} image={project.image} description={project.description} repoLink={project.repoLink}/>)}
                     </ProjectsContainer>
                 </Aux>
             }
@@ -41,6 +41,8 @@ const ProjectsContainer = styled.div`
     flex-direction : row;
     align-items : center;
     justify-content : center;
+    width : 100%;
+    max-width : 800px;
 `;
 
 export default Projects;
