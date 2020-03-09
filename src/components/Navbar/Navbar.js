@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import {Link} from "react-router-dom";
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
-import {} from "react-icons";
+import {GiHamburgerMenu} from "react-icons/gi";
 import resume from "images/Sean McQuaid - Resume.pdf";
 
-const Navbar = () => (
+const Navbar = props => {
+    const [isMenuDisplayed, setMenuDisplayed] = useState(false);
+
+    return (
     <NavbarContainer>
         <LinkContainer to="/">
             <IoMdMusicalNotes/>
@@ -32,6 +35,9 @@ const Navbar = () => (
                 <NavLinkLabel>Contact</NavLinkLabel>
             </NavLink>
         </NavContainer>
+        <HamburgerMenu>
+            <HamburgerIcon/>
+        </HamburgerMenu>
         <ContactList>
             <ContactListItem>
                 <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank">
@@ -49,8 +55,8 @@ const Navbar = () => (
                 </ContactListItemLink>
             </ContactListItem>
         </ContactList>
-    </NavbarContainer>
-);
+    </NavbarContainer>)
+};
 
 const NavbarContainer = styled.div`
     background-color : #4E6E58;
@@ -59,10 +65,14 @@ const NavbarContainer = styled.div`
     justify-content : space-between;
     width : 80px;
     top : 0;
+    height : 100%;
+    min-height : 100%;
     @media (max-width : 915px){
-        position : absolute;
+        position : fixed;
         width : 100%;
         min-width : 100%;
+        height : auto;
+        min-height : auto;
         flex-direction : row;
     }
 `;
@@ -85,6 +95,9 @@ const NavContainer = styled.nav`
     @media (max-width : 915px){
         flex-direction : row;
     }
+    @media (max-width : 520px){
+        display : none;
+    }
 `;
 
 const NavLink = styled(Link)`
@@ -97,6 +110,9 @@ const NavLink = styled(Link)`
     flex-direction : column;
     align-items : center;
     justify-content : center;
+    @media(max-width : 915px){
+        width : 30px;
+    }
 `;
 
 const NavLinkLabel = styled.span`
@@ -137,6 +153,21 @@ const ContactListItemLink = styled.a`
     text-decoration : none;
     font-size : 1.5rem;
     color : #00000096;
+`;
+
+const HamburgerMenu = styled.div`
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    padding : 1rem;
+    font-size: 1.5rem;
+    @media (min-width : 520px){
+        display : none;
+    }
+`;
+
+const HamburgerIcon = styled(GiHamburgerMenu)`
 `;
 
 export default Navbar;

@@ -9,6 +9,5 @@ export default styled.div`
     align-self : center;
     @media (max-width : 915px){
         flex-direction : column-reverse;
-        margin-top : 10rem;
     }
 `;

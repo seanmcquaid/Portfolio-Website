@@ -12,12 +12,17 @@ const Layout = ({children}) => (
 const Container = styled.div`
     display : flex;
     flex-direction : row;
-    height : 100%;
+    justify-content : center;
+    align-items : center;
     width : 100%;
-    min-height: 100%;
     min-width : 100%;
-    position : absolute;
+    height : 100%;
+    min-height : 100%;
     background-color : #4C8577;
+    position : fixed;
+    @media(max-width : 520px){
+        flex-direction : column;
+    }
 `;
 
 export default Layout;

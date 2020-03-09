@@ -18,9 +18,19 @@ const About = () => {
             <Aux>
                 <LeftContainer>
                     <HeaderText>About</HeaderText>
-                    <ParagraphText>After completing a Bachelor's Degree in Music Business and a Master's Degree in Jazz Studies, I started my career at Atlanta's largest retail music store in order to get a first-hand look at the music industry. Once I realized that I wanted to work a job that would allow me more time to perform, I decided to start working at Georgia State University as an Academic Advisor within the College of the Arts. I felt that this position would allow me the opportunity to really help students and directly impact their success. I loved helping the students but found that I was unable to exercise my creative problem-solving skills. This is when I discovered computer programming!</ParagraphText>
-                    <ParagraphText>After deciding to research this field further, I discovered freeCodeCamp, a free resource designed to help people learn computer programming. I decided to pursue this further and registered for the website. I found myself studying for hours on end during all of my free time and after self-studying for nearly five months, I decided to enroll in DigitalCrafts, a coding bootcamp where I studied Full Stack Development.</ParagraphText>
-                    <ParagraphText>My passion for development has only grown since starting DigitalCrafts and I am thrilled to be able to put my skills into the field, where they belong. Working at a corporation like Chick-fil-A has allowed me to dive into a massive microservice based architecture and really understand the context of how being a Software Engineer impacts the business daily. I am still continuing to learn since the bootcamp and have picked up Java, SpringBoot, MongoDB, Cypress.io, and many other new tools!</ParagraphText>
+                    <ParagraphText>
+                        - Initial Background music - wanted to find a day job that allowed me to utilize my creative problem solving skill
+                        - Discovered development on my own - saw that friend who was a musician became a dev at google
+                        - Found FCC - started self teaching
+                        - Decided to enroll in DigitalCrafts
+                        - Landed my role at Chick fil a where I am over the moon! 
+                    </ParagraphText>
+                    <ParagraphText>
+                        - I continue to self teach and study, some of the most recent things I have picked up skill wise have been AWS, React Native, learning nuances of react and learning how to write better and more easily testable code
+                        - Tie in current role in goal of experiencing different areas of the org to become a more informed architect
+                        - Aim to utilize my creative problem skills from being a professional jazz musician into my programming
+                        - Ultimately want to be a Software Architect where I can make decisions that can affect an entire organization
+                    </ParagraphText>
                 </LeftContainer>
                 <RightContainer>
                     <Headshot src={trumpetHeadshot} alt="trumpetHeadshot"/>
