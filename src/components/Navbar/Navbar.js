@@ -67,6 +67,7 @@ const NavbarContainer = styled.div`
     top : 0;
     height : 100%;
     min-height : 100%;
+    z-index : 1;
     @media (max-width : 915px){
         position : fixed;
         width : 100%;

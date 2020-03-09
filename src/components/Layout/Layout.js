@@ -19,7 +19,6 @@ const Container = styled.div`
     height : 100%;
     min-height : 100%;
     background-color : #4C8577;
-    position : fixed;
     @media(max-width : 520px){
         flex-direction : column;
     }

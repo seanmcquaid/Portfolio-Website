@@ -1,6 +1,21 @@
+html {
+    height : 100%;
+    width : 100%;
+}
+
 body {
     margin : 0;
+    padding : 0;
     font-family: "Karla";
     font-family: 'Rubik', ;
     color : #00000096;
+    height : 100%;
+    width : 100%;
+    min-width : 100%;
+    min-height : 100%;
+}
+
+#root {
+    height : 100%;
+    width : 100%;
 }
