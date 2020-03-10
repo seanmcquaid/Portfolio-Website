@@ -50,6 +50,9 @@ const ProjectsContainer = styled.div`
     justify-content : center;
     width : 100%;
     max-width : 800px;
+    @media(max-width : 850px){
+        flex-direction : column;
+    }
 `;
 
 export default Projects;

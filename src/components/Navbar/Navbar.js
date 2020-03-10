@@ -41,8 +41,20 @@ const Navbar = props => {
         </NavContainer>
         <HamburgerMenu>
             <HamburgerIcon onClick={hamburgerMenuOnClick}/>
-            <HamburgerNavLinksList>
-
+            <HamburgerNavLinksList toggleMenuDisplayed={toggleMenuDisplayed}>
+                
+                <HamburgerNavLink to="/about">
+                    <HamburgerNavLinkLabel>About</HamburgerNavLinkLabel>
+                </HamburgerNavLink>
+                <HamburgerNavLink to="/skills">
+                    <HamburgerNavLinkLabel>Skills</HamburgerNavLinkLabel>
+                </HamburgerNavLink>
+                <HamburgerNavLink to="/projects">
+                    <HamburgerNavLinkLabel>Projects</HamburgerNavLinkLabel>
+                </HamburgerNavLink>
+                <HamburgerNavLink to="/contact">
+                    <HamburgerNavLinkLabel>Contact</HamburgerNavLinkLabel>
+                </HamburgerNavLink>
             </HamburgerNavLinksList>
         </HamburgerMenu>
         <ContactList>
@@ -175,13 +187,36 @@ const HamburgerMenu = styled.div`
 `;
 
 const HamburgerIcon = styled(GiHamburgerMenu)`
+    &:hover {
+        cursor : pointer;
+    }
 `;
 
-const HamburgerNavLinksList = styled.div`
+const HamburgerNavLinksList = styled.nav`
+    display : ${props => props.toggleMenuDisplayed ? "flex" : "none"};
+    width : 80%;
+    position : fixed;
+    flex-direction : row;
+    border : 2px solid #00000096;
+    margin-top : 4.5rem;
+    width : 600px;
+    background-color : #4E6E58;
 `;
 
 const HamburgerNavLink = styled(Link)`
+    padding : 0.5rem;
+    text-decoration : none;
+    font-size : 1.5rem;
+    color : #00000096;
+    height : 30px;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+`;
 
+const HamburgerNavLinkLabel = styled.span`
+    font-size : 1rem;
 `;
 
 export default Navbar;
