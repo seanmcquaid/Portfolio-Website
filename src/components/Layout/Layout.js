@@ -22,6 +22,9 @@ const Container = styled.div`
     @media(max-width : 520px){
         flex-direction : column;
     }
+    @media(max-width : 915px){
+        margin-top : 3.5rem;
+    }
 `;
 
 export default Layout;

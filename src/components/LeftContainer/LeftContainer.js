@@ -16,7 +16,6 @@ export default styled.div`
     flex-direction : column;
     justify-content : center;
     align-items : center;
-    margin : 1rem;
     animation: ${fadeInAnimation} ease 3s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;

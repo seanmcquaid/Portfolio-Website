@@ -6,7 +6,11 @@ import {GiHamburgerMenu} from "react-icons/gi";
 import resume from "images/Sean McQuaid - Resume.pdf";
 
 const Navbar = props => {
-    const [isMenuDisplayed, setMenuDisplayed] = useState(false);
+    const [toggleMenuDisplayed, setToggleMenuDisplayed] = useState(false);
+
+    const hamburgerMenuOnClick = event => {
+        setToggleMenuDisplayed(!toggleMenuDisplayed);
+    };
 
     return (
     <NavbarContainer>
@@ -36,7 +40,10 @@ const Navbar = props => {
             </NavLink>
         </NavContainer>
         <HamburgerMenu>
-            <HamburgerIcon/>
+            <HamburgerIcon onClick={hamburgerMenuOnClick}/>
+            <HamburgerNavLinksList>
+
+            </HamburgerNavLinksList>
         </HamburgerMenu>
         <ContactList>
             <ContactListItem>
@@ -66,7 +73,6 @@ const NavbarContainer = styled.div`
     width : 80px;
     top : 0;
     height : 100%;
-    min-height : 100%;
     z-index : 1;
     @media (max-width : 915px){
         position : fixed;
@@ -169,6 +175,13 @@ const HamburgerMenu = styled.div`
 `;
 
 const HamburgerIcon = styled(GiHamburgerMenu)`
+`;
+
+const HamburgerNavLinksList = styled.div`
+`;
+
+const HamburgerNavLink = styled(Link)`
+
 `;
 
 export default Navbar;
