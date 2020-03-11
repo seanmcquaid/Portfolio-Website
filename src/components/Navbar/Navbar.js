@@ -39,10 +39,9 @@ const Navbar = props => {
                 <NavLinkLabel>Contact</NavLinkLabel>
             </NavLink>
         </NavContainer>
+        <HamburgerIcon onClick={hamburgerMenuOnClick}/>
         <HamburgerMenu>
-            <HamburgerIcon onClick={hamburgerMenuOnClick}/>
             <HamburgerNavLinksList toggleMenuDisplayed={toggleMenuDisplayed}>
-                
                 <HamburgerNavLink to="/about">
                     <HamburgerNavLinkLabel>About</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
@@ -82,6 +81,7 @@ const NavbarContainer = styled.div`
     display : flex;
     flex-direction : column;
     justify-content : space-between;
+    align-items : center;
     width : 80px;
     top : 0;
     height : 100%;
@@ -90,11 +90,12 @@ const NavbarContainer = styled.div`
         position : fixed;
         width : 100%;
         min-width : 100%;
-        height : auto;
-        min-height : auto;
         flex-direction : row;
+        height : auto;
     }
 `;
+
+// work on flex spacing for media query
 
 const LinkContainer = styled(Link)`
     text-align : center;
@@ -179,28 +180,38 @@ const HamburgerMenu = styled.div`
     flex-direction : column;
     justify-content : center;
     align-items : center;
-    padding : 1rem;
+    width : 100%;
+    min-width : 100%;
     font-size: 1.5rem;
+    position : fixed;
+    top : 0;
+    left : 0;
     @media (min-width : 520px){
         display : none;
     }
 `;
 
 const HamburgerIcon = styled(GiHamburgerMenu)`
+    font-size : 1.5rem;
+    padding : 1rem;
     &:hover {
         cursor : pointer;
+    }
+    @media (min-width : 520px){
+        display : none;
     }
 `;
 
 const HamburgerNavLinksList = styled.nav`
     display : ${props => props.toggleMenuDisplayed ? "flex" : "none"};
-    width : 80%;
-    position : fixed;
     flex-direction : row;
-    border : 2px solid #00000096;
+    justify-content : center;
+    align-items : center;
     margin-top : 4.5rem;
-    width : 600px;
+    position : fixed;
     background-color : #4E6E58;
+    width : 100%;
+    min-width : 100%;
 `;
 
 const HamburgerNavLink = styled(Link)`
