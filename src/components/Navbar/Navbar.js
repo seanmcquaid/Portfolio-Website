@@ -63,17 +63,20 @@ const Navbar = () => {
         <ContactList>
             <ContactListItem>
                 <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank">
-                    <IoLogoLinkedin/>
+                    <ContactListIconContainer><IoLogoLinkedin/></ContactListIconContainer>
+                    <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
                 </ContactListItemLink>
             </ContactListItem>
             <ContactListItem>
                 <ContactListItemLink href="https://github.com/seanmcquaid" target="blank">
-                    <IoLogoGithub/>
+                    <ContactListIconContainer><IoLogoGithub/></ContactListIconContainer>
+                    <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
                 </ContactListItemLink>
             </ContactListItem>
             <ContactListItem>
                 <ContactListItemLink href={resume} target="blank">
-                    <IoIosPaper/>
+                    <ContactListIconContainer><IoIosPaper/></ContactListIconContainer>
+                    <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
                 </ContactListItemLink>
             </ContactListItem>
         </ContactList>
@@ -162,6 +165,8 @@ const ContactList = styled.ul`
     width: 100%;
     padding: 0;
     list-style: none;
+    justify-content : center;
+    align-items : center;
     @media (max-width : 915px){
         display : none;
     }
@@ -169,11 +174,18 @@ const ContactList = styled.ul`
 
 const ContactListItemLinkLabel = styled.span`
     font-size : 1rem;
+    display : none;
 `;
 
 const ContactListItem = styled.li`
-    display : block;
     margin : 0.75rem;
+`;
+
+const ContactListIconContainer = styled.div`
+    display : block;
+    font-size : 1.5rem;
+    width : 100%;
+    height: 100%;
     &:hover + ${ContactListItemLinkLabel}{
         display : block;
     }

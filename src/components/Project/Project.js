@@ -22,12 +22,13 @@ const ProjectContainer = styled.div`
     justify-content : center;
     align-items : center;
     width : 100%;
-    max-width : 400px;
-    height : 600px;
+    max-width : 380px;
+    height : 550px;
 `;
 
 const ProjectTitle = styled.h4`
     font-size : 1.25rem;
+    color : white;
 `;
 
 const ProjectImage = styled.img`
