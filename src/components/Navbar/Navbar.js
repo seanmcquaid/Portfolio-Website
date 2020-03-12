@@ -89,7 +89,7 @@ const NavbarContainer = styled.div`
     flex-direction : column;
     justify-content : space-between;
     align-items : center;
-    width : 80px;
+    width : 100px;
     top : 0;
     height : 100%;
     z-index : 1;
@@ -117,6 +117,8 @@ const NavContainer = styled.nav`
     text-align : center;
     display : flex;
     flex-direction : column;
+    justify-content : center;
+    align-items : center;
     @media (max-width : 915px){
         flex-direction : row;
     }
@@ -141,7 +143,7 @@ const NavLink = styled(Link)`
 `;
 
 const NavLinkLabel = styled.span`
-    font-size : 1rem;
+    font-size : 0.75rem;
     display : none;
 `;
 
@@ -173,12 +175,13 @@ const ContactList = styled.ul`
 `;
 
 const ContactListItemLinkLabel = styled.span`
-    font-size : 1rem;
+    font-size : 0.75rem;
     display : none;
 `;
 
 const ContactListItem = styled.li`
-    margin : 0.75rem;
+    padding : 1rem;
+    height : 30px;
 `;
 
 const ContactListIconContainer = styled.div`
@@ -198,6 +201,7 @@ const ContactListItemLink = styled.a`
     text-decoration : none;
     font-size : 1.5rem;
     color : #ffffffb6;
+    
 `;
 
 const HamburgerMenu = styled.div`
