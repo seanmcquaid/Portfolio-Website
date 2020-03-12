@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import {Link} from "react-router-dom";
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
@@ -77,7 +77,7 @@ const Navbar = props => {
 };
 
 const NavbarContainer = styled.div`
-    background-color : #4E6E58;
+    background-color : rgba(0,0,0,.3);
     display : flex;
     flex-direction : column;
     justify-content : space-between;
@@ -105,7 +105,7 @@ const LinkContainer = styled(Link)`
     justify-content : center;
     align-items : center;
     font-size : 1.5rem;
-    color : #00000096;
+    color : #ffffffb6;
 `;
 
 const NavContainer = styled.nav`
@@ -124,7 +124,7 @@ const NavLink = styled(Link)`
     padding : 1rem;
     text-decoration : none;
     font-size : 1.5rem;
-    color : #00000096;
+    color : #ffffffb6;
     height : 30px;
     display : flex;
     flex-direction : column;
@@ -172,7 +172,7 @@ const ContactListItem = styled.li`
 const ContactListItemLink = styled.a`
     text-decoration : none;
     font-size : 1.5rem;
-    color : #00000096;
+    color : #ffffffb6;
 `;
 
 const HamburgerMenu = styled.div`
@@ -202,23 +202,35 @@ const HamburgerIcon = styled(GiHamburgerMenu)`
     }
 `;
 
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
 const HamburgerNavLinksList = styled.nav`
     display : ${props => props.toggleMenuDisplayed ? "flex" : "none"};
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    margin-top : 4.5rem;
+    margin-top : 4.95rem;
     position : fixed;
-    background-color : #4E6E58;
     width : 100%;
     min-width : 100%;
+    background-color : rgba(0,0,0,.3);
+    animation: ${fadeInAnimation} ease 0.5s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
 `;
 
 const HamburgerNavLink = styled(Link)`
     padding : 0.5rem;
     text-decoration : none;
     font-size : 1.5rem;
-    color : #00000096;
+    color : #ffffffb6;
     height : 30px;
     display : flex;
     flex-direction : column;

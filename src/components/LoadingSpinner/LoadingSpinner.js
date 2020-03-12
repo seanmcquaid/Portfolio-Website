@@ -13,7 +13,7 @@ const LoadingSpinner = ({isLoading}) => (
     <ScaleLoader 
         css={override} 
         size={1000} 
-        color={"#00000096"} 
+        color={"#ffffffb6"} 
         loading={isLoading}
     />
 );

@@ -17,7 +17,7 @@ export default styled.div`
     align-items : center;
     max-width: 300px;
     margin : 1rem;
-    animation: ${fadeInAnimation} ease 2s; 
+    animation: ${fadeInAnimation} ease 1s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
 `;

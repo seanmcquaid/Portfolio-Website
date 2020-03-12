@@ -14,9 +14,13 @@ export default styled.div`
     max-width: 550px;
     display : flex;
     flex-direction : column;
-    justify-content : center;
-    align-items : center;
-    animation: ${fadeInAnimation} ease 3s; 
+    justify-content : flex-start;
+    align-items : flex-start;
+    animation: ${fadeInAnimation} ease 2s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;
+    @media(max-width : 915px){
+        justify-content : center;
+        align-items : center
+    }
 `;
