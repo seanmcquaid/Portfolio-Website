@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export default styled.p`
-    margin : 0.5rem;
+    margin : 1rem;
     font-size : 1rem;
 `;

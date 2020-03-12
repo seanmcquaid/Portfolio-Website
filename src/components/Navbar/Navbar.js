@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled, {keyframes} from "styled-components";
 import {Link} from "react-router-dom";
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
@@ -7,10 +7,22 @@ import resume from "images/Sean McQuaid - Resume.pdf";
 
 const Navbar = props => {
     const [toggleMenuDisplayed, setToggleMenuDisplayed] = useState(false);
+    const [windowWidth, setWindowWidth] = useState(520);
+    const [isLoading, setIsLoading] = useState(true);
 
     const hamburgerMenuOnClick = event => {
         setToggleMenuDisplayed(!toggleMenuDisplayed);
     };
+
+    useEffect(() => {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        window.addEventListener("resize", handleResize);
+       if(windowWidth <= 520 && !toggleMenuDisplayed){
+           setToggleMenuDisplayed(true);
+       }
+    },[windowWidth, toggleMenuDisplayed]);
+
+    console.log(windowWidth, toggleMenuDisplayed)
 
     return (
     <NavbarContainer>

@@ -14,8 +14,7 @@ export default styled.div`
     max-width: 550px;
     display : flex;
     flex-direction : column;
-    justify-content : flex-start;
-    align-items : flex-start;
+    margin : 1rem;
     animation: ${fadeInAnimation} ease 2s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;

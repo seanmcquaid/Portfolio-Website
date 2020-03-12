@@ -31,7 +31,8 @@ const ProjectTitle = styled.h4`
 `;
 
 const ProjectImage = styled.img`
-    border : 2px solid #00000096;
+    border-radius : 5px;
+    box-shadow : 0px 0px 20px rgba(0,0,0,.4);
     margin : 1rem;
     width : 100%;
     max-width : 300px;
