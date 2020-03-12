@@ -11,7 +11,7 @@ export default [
     {
         title : "DekTech",
         image : dekTech,
-        description : "Built with the MERN Stack, this project is meant to provide MTG players with a new way to search for cards and create commander decks quickly and effectively with a more modern UI!",
+        description : "Built with the MERN Stack, this project is meant to provide MTG players with a new way to search for cards and create commander decks quickly and effectively with a more modern UI than other similar applications!",
         repoLink : "https://github.com/seanmcquaid/Dek-Tech",
     },
 ];

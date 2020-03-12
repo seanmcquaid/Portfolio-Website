@@ -4,7 +4,7 @@ import trumpetHeadshot from "images/trumpetHeadshot.jpg";
 import Aux from "hoc/Aux/Aux";
 import styled from "styled-components";
 
-const About = () => {
+const About = props => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
@@ -20,17 +20,13 @@ const About = () => {
                 <LeftContainer>
                     <HeaderText>About</HeaderText>
                     <ParagraphText>
-                        - Initial Background music - wanted to find a day job that allowed me to utilize my creative problem solving skill
-                        - Discovered development on my own - saw that friend who was a musician became a dev at google
-                        - Found FCC - started self teaching
-                        - Decided to enroll in DigitalCrafts
-                        - Landed my role at Chick fil a where I am over the moon! 
+                        Originally from New York, I moved to Atlanta roughly three years ago. My professional background is in music and now, software engineering. I have been playing the trumpet for over 20 years and have a Bachelor’s and Master’s degree in Music. After I moved to Atlanta, I quickly realized that I wanted a day job that would allow me to utilize my creative problem solving skills from music.
                     </ParagraphText>
                     <ParagraphText>
-                        - I continue to self teach and study, some of the most recent things I have picked up skill wise have been AWS, React Native, learning nuances of react and learning how to write better and more easily testable code
-                        - Tie in current role in goal of experiencing different areas of the org to become a more informed architect
-                        - Aim to utilize my creative problem skills from being a professional jazz musician into my programming
-                        - Ultimately want to be a Software Architect where I can make decisions that can affect an entire organization
+                        I accidentally discovered programming one night while scrolling on Facebook and seeing that a musician friend of mine from high school recently landed a job at Google. Upon investigating more and seeing that his job title was a Software Engineer, I quickly came to understand why he decided to pursue programming. That night was when I wrote my first lines of HTML/CSS and I have loved it ever since! After six months of self studying, I decided to enroll in DigitalCrafts, a coding bootcamp based in Atlanta. Shortly after graduating, I was lucky enough to land my current role at Chick-fil-A and I am LOVING IT! 
+                    </ParagraphText>
+                    <ParagraphText>
+                        My ultimate career goal is to be a Software Architect and make enterprise wide technical decisions that will help everyone in the company. However, I would like to transition to different areas of development along the way to become a more well versed and informed software engineer. I truly believe that having a wider perspective will inevitably lead to me making better and more beneficial decisions for the organization that I serve.
                     </ParagraphText>
                 </LeftContainer>
                 <RightContainer>

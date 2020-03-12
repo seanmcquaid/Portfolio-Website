@@ -143,7 +143,7 @@ const NavLink = styled(Link)`
 `;
 
 const NavLinkLabel = styled.span`
-    font-size : 0.75rem;
+    font-size : 1rem;
     display : none;
 `;
 
@@ -175,7 +175,7 @@ const ContactList = styled.ul`
 `;
 
 const ContactListItemLinkLabel = styled.span`
-    font-size : 0.75rem;
+    font-size : 1rem;
     display : none;
 `;
 

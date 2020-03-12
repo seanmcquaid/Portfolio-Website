@@ -19,7 +19,7 @@ const Skills = () => {
                 <Aux>
                     <LeftContainer>
                         <HeaderText>Skills</HeaderText>
-                        <ParagraphText>I currently utilize in Java/Springboot at work, however, my speciality is in full-stack JavaScript development. I specifically have a passion for creating visually appealing, responsive applications. I currently spend most of my time outside of work learning new concepts and creating creative solutions in React and React Native.</ParagraphText>
+                        <ParagraphText>I currently work with Java/Springboot at work, however, my speciality is in Full-Stack JavaScript development. I specifically have a passion for creating visually appealing applications that solve a specific business problem. I currently spend most of my time outside of work attempting to come up with creative solutions in React and React Native.</ParagraphText>
                     </LeftContainer>
                     <RightContainer>
                         <IconsContainer>
