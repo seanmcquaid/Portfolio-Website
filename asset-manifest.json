@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/portfolio-website/static/css/main.178ccadc.chunk.css",
+    "main.js": "/portfolio-website/static/js/main.e9f2210f.chunk.js",
+    "main.js.map": "/portfolio-website/static/js/main.e9f2210f.chunk.js.map",
+    "runtime-main.js": "/portfolio-website/static/js/runtime-main.ab58094c.js",
+    "runtime-main.js.map": "/portfolio-website/static/js/runtime-main.ab58094c.js.map",
+    "static/js/2.22f2093b.chunk.js": "/portfolio-website/static/js/2.22f2093b.chunk.js",
+    "static/js/2.22f2093b.chunk.js.map": "/portfolio-website/static/js/2.22f2093b.chunk.js.map",
+    "index.html": "/portfolio-website/index.html",
+    "precache-manifest.dd68293752b80d882a0fecbb825c4267.js": "/portfolio-website/precache-manifest.dd68293752b80d882a0fecbb825c4267.js",
+    "service-worker.js": "/portfolio-website/service-worker.js",
+    "static/css/main.178ccadc.chunk.css.map": "/portfolio-website/static/css/main.178ccadc.chunk.css.map",
+    "static/js/2.22f2093b.chunk.js.LICENSE.txt": "/portfolio-website/static/js/2.22f2093b.chunk.js.LICENSE.txt",
+    "static/media/Sean McQuaid - Resume.pdf": "/portfolio-website/static/media/Sean McQuaid - Resume.332609d0.pdf",
+    "static/media/dekTech.jpg": "/portfolio-website/static/media/dekTech.83594d41.jpg",
+    "static/media/headshot.jpg": "/portfolio-website/static/media/headshot.0d3f9a3e.jpg",
+    "static/media/trumpetHeadshot.jpg": "/portfolio-website/static/media/trumpetHeadshot.1d04a8b8.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab58094c.js",
+    "static/js/2.22f2093b.chunk.js",
+    "static/css/main.178ccadc.chunk.css",
+    "static/js/main.e9f2210f.chunk.js"
+  ]
+}
