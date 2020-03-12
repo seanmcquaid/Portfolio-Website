@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { PageContainer, LeftContainer, HeaderText, ParagraphText, RightContainer, LoadingSpinner } from "components/components";
+import {LeftContainer, HeaderText, ParagraphText, RightContainer, LoadingSpinner } from "components/components";
 import Aux from "hoc/Aux/Aux";
 import styled, {keyframes} from "styled-components";
 import {IoLogoLinkedin, IoLogoGithub, IoIosPaper} from "react-icons/io";
@@ -14,7 +14,7 @@ const Contact = () => {
     },[]);
 
     return(
-        <PageContainer>
+        <ContactPageContainer>
             {isLoading ? 
             <LoadingSpinner isLoading={isLoading}/> : 
             <Aux>
@@ -45,9 +45,22 @@ const Contact = () => {
                     </ContactList>
                 </RightContainer>
             </Aux>}
-        </PageContainer>
+        </ContactPageContainer>
     );
 };
+
+const ContactPageContainer = styled.div`
+    margin : 0 auto;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+    align-self : center;
+    @media (max-width : 915px){
+        flex-direction : column;
+        margin : auto;
+    }
+`;
 
 const ContactList = styled.ul`
     display : flex;
@@ -82,7 +95,7 @@ const ContactListItemLinkLabel = styled.span`
 const ContactListItemLink = styled.a`
     text-decoration : none;
     font-size : 2.5rem;
-    color : #00000096;
+    color : #ffffffb6;
     display : flex;
     flex-direction : column;
     justify-content : center;

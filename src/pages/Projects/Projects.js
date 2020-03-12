@@ -34,11 +34,15 @@ const Projects = () => {
 };
 
 const ProjectPageContainer = styled.div`
+    margin : 0 auto;
     display : flex;
     flex-direction : column;
-    align-items : center;
     justify-content : center;
-    margin : 0 auto;
+    align-items : center;
+    align-self : center;
+    @media (max-width : 915px){
+        margin : auto;
+    }
 `;
 
 const ProjectsContainer = styled.div`

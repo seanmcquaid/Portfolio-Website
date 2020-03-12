@@ -1,32 +1,24 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import styled, {keyframes} from "styled-components";
 import {Link} from "react-router-dom";
 import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
 import resume from "images/Sean McQuaid - Resume.pdf";
 
-const Navbar = props => {
+const Navbar = () => {
     const [toggleMenuDisplayed, setToggleMenuDisplayed] = useState(false);
-    const [windowWidth, setWindowWidth] = useState(520);
-    const [isLoading, setIsLoading] = useState(true);
 
     const hamburgerMenuOnClick = event => {
         setToggleMenuDisplayed(!toggleMenuDisplayed);
     };
 
-    useEffect(() => {
-        const handleResize = () => setWindowWidth(window.innerWidth);
-        window.addEventListener("resize", handleResize);
-       if(windowWidth <= 520 && !toggleMenuDisplayed){
-           setToggleMenuDisplayed(true);
-       }
-    },[windowWidth, toggleMenuDisplayed]);
-
-    console.log(windowWidth, toggleMenuDisplayed)
+    const mobileMenuOnClick = event => {
+        setToggleMenuDisplayed(false);
+    };
 
     return (
     <NavbarContainer>
-        <LinkContainer to="/">
+        <LinkContainer to="/" onClick={mobileMenuOnClick}>
             <IoMdMusicalNotes/>
         </LinkContainer>
         <NavContainer>
@@ -54,16 +46,16 @@ const Navbar = props => {
         <HamburgerIcon onClick={hamburgerMenuOnClick}/>
         <HamburgerMenu>
             <HamburgerNavLinksList toggleMenuDisplayed={toggleMenuDisplayed}>
-                <HamburgerNavLink to="/about">
+                <HamburgerNavLink to="/about" onClick={mobileMenuOnClick}>
                     <HamburgerNavLinkLabel>About</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
-                <HamburgerNavLink to="/skills">
+                <HamburgerNavLink to="/skills" onClick={mobileMenuOnClick}>
                     <HamburgerNavLinkLabel>Skills</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
-                <HamburgerNavLink to="/projects">
+                <HamburgerNavLink to="/projects" onClick={mobileMenuOnClick}>
                     <HamburgerNavLinkLabel>Projects</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
-                <HamburgerNavLink to="/contact">
+                <HamburgerNavLink to="/contact" onClick={mobileMenuOnClick}>
                     <HamburgerNavLinkLabel>Contact</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
             </HamburgerNavLinksList>
@@ -106,8 +98,6 @@ const NavbarContainer = styled.div`
         height : auto;
     }
 `;
-
-// work on flex spacing for media query
 
 const LinkContainer = styled(Link)`
     text-align : center;
@@ -177,8 +167,19 @@ const ContactList = styled.ul`
     }
 `;
 
+const ContactListItemLinkLabel = styled.span`
+    font-size : 1rem;
+`;
+
 const ContactListItem = styled.li`
-    margin : 0.75rem
+    display : block;
+    margin : 0.75rem;
+    &:hover + ${ContactListItemLinkLabel}{
+        display : block;
+    }
+    &:hover {
+        display : none;
+    }
 `;
 
 const ContactListItemLink = styled.a`

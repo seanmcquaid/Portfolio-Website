@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { HeaderText, PageContainer, LeftContainer, RightContainer, ParagraphText, LoadingSpinner, Skill } from "components/components";
+import { HeaderText, LeftContainer, RightContainer, ParagraphText, LoadingSpinner, Skill } from "components/components";
 import Aux from "hoc/Aux/Aux";
 import styled from "styled-components";
 import skillsList from "./skillsList";
@@ -13,7 +13,7 @@ const Skills = () => {
     },[]);
 
     return(
-        <PageContainer>
+        <SkillsPageContainer>
             {isLoading ?
                 <LoadingSpinner isLoading={isLoading}/> :
                 <Aux>
@@ -36,9 +36,22 @@ const Skills = () => {
                         </IconsContainer>
                     </RightContainer>
                 </Aux>}
-        </PageContainer>
+        </SkillsPageContainer>
     );
 };
+
+const SkillsPageContainer = styled.div`
+    margin : 0 auto;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+    align-self : center;
+    @media (max-width : 915px){
+        flex-direction : column;
+        margin : auto;
+    }
+`;
 
 const IconsContainer = styled.div`
     display : flex;

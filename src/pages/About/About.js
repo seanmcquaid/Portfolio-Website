@@ -1,7 +1,8 @@
 import React, {useState, useEffect} from "react";
-import {PageContainer, ParagraphText, HeaderText, LeftContainer, RightContainer, Headshot, LoadingSpinner} from "components/components";
+import {ParagraphText, HeaderText, LeftContainer, RightContainer, Headshot, LoadingSpinner} from "components/components";
 import trumpetHeadshot from "images/trumpetHeadshot.jpg";
 import Aux from "hoc/Aux/Aux";
+import styled from "styled-components";
 
 const About = () => {
     const [isLoading, setIsLoading] = useState(true);
@@ -12,7 +13,7 @@ const About = () => {
     },[]);
 
     return(
-        <PageContainer>
+        <AboutPageContainer>
             {isLoading ? 
             <LoadingSpinner isLoading={isLoading}/> : 
             <Aux>
@@ -36,8 +37,21 @@ const About = () => {
                     <Headshot src={trumpetHeadshot} alt="trumpetHeadshot"/>
                 </RightContainer>
             </Aux>}
-        </PageContainer>
+        </AboutPageContainer>
     );
 };
+
+const AboutPageContainer = styled.div`
+    margin : 0 auto;
+    display : flex;
+    flex-direction : row;
+    justify-content : center;
+    align-items : center;
+    align-self : center;
+    @media (max-width : 915px){
+        flex-direction : column-reverse;
+        margin : auto;
+    }
+`;
 
 export default About;
