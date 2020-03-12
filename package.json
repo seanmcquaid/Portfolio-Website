@@ -5,9 +5,9 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
     "express": "^4.17.1",
+    "gh-pages": "^2.2.0",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
@@ -20,6 +20,8 @@
     "styled-normalize": "^8.0.7"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^9.5.0",
+    "jest": "24.9.0"
   }
 }
