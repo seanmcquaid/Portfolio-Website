@@ -47,10 +47,6 @@ const SkillsPageContainer = styled.div`
     justify-content : center;
     align-items : center;
     align-self : center;
-    height : 100vh;
-    width : 100vw;
-    min-height : 100vh;
-    width : 100vw;
     @media (max-width : 915px){
         flex-direction : column;
         margin : auto;
