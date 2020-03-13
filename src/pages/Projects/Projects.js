@@ -40,6 +40,10 @@ const ProjectPageContainer = styled.div`
     justify-content : center;
     align-items : center;
     align-self : center;
+    height : 100vh;
+    width : 100vw;
+    min-height : 100vh;
+    width : 100vw;
     @media (max-width : 915px){
         margin : auto;
     }
@@ -53,6 +57,7 @@ const ProjectsContainer = styled.div`
     width : 100%;
     max-width : 800px;
     height : 100%;
+    max-height : 1000px;
     @media(max-width : 915px){
         flex-direction : column;
     }
