@@ -1,10 +1,10 @@
 import React from "react";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {HashRouter as Router, Switch, Route} from "react-router-dom";
 import {Layout} from "components/components";
 import {Home, About, Contact, Skills, Projects} from "pages/pages";
 
 const App = () => (
-  <Router>
+  <Router basename="/">
     <Layout>
       <Switch>
           <Route exact path="/" component={Home}/>
