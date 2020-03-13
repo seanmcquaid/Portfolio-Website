@@ -1,8 +1,6 @@
 html {
     height : 100vh;
     width : 100vw;
-    min-height : 100vh;
-    width : 100vw;
 }
 
 body {
@@ -11,8 +9,6 @@ body {
     font-family: "Karla";
     color : #ffffffb6;
     height : 100vh;
-    width : 100vw;
-    min-height : 100vh;
     width : 100vw;
     background-color : #4C8577;
     line-height: 1.5rem;

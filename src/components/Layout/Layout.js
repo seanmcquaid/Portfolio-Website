@@ -11,10 +11,8 @@ const Layout = ({children}) => (
 
 const Container = styled.div`
     display : flex;
-    width : 100%;
-    min-width : 100%;
-    height : 100%;
-    min-height : 100%;
+    width : 100vw;
+    height : 100vh;
     background-color : #4C8577;
     @media(max-width : 520px){
         flex-direction : column;
