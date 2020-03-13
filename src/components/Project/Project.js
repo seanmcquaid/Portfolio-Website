@@ -23,7 +23,8 @@ const ProjectContainer = styled.div`
     align-items : center;
     width : 100%;
     max-width : 380px;
-    height : 600px;
+    height : 100%;
+    max-height : 600px;
     @media(max-width : 520px){
         border : none;
     }
