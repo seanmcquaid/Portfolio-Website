@@ -53,7 +53,7 @@ const ProjectsContainer = styled.div`
     width : 100%;
     max-width : 800px;
     height : 100%;
-    @media(max-width : 850px){
+    @media(max-width : 915px){
         flex-direction : column;
     }
 `;

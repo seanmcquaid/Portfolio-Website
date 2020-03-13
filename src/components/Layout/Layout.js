@@ -20,7 +20,7 @@ const Container = styled.div`
         flex-direction : column;
     }
     @media(max-width : 915px){
-        margin-top : 3.5rem;
+        margin-top : 4.5rem;
     }
 `;
 

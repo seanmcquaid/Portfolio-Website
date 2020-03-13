@@ -16,14 +16,17 @@ const Project = ({title, image, description, repoLink}) => (
 
 const ProjectContainer = styled.div`
     border : 2px solid #00000096;
-    margin : 1rem;
+    margin : 1.25rem;
     display : flex;
     flex-direction : column;
     justify-content : center;
     align-items : center;
     width : 100%;
     max-width : 380px;
-    height : 550px;
+    height : 600px;
+    @media(max-width : 520px){
+        border : none;
+    }
 `;
 
 const ProjectTitle = styled.h4`
