@@ -26,6 +26,8 @@ const ProjectContainer = styled.div`
     max-height : 600px;
     @media(max-width : 520px){
         border : none;
+        padding : 0;
+        margin : 1rem 0;
     }
 `;
 

@@ -39,6 +39,7 @@ const ProjectPageContainer = styled.div`
     flex-direction : column;
     justify-content : center;
     align-items : center;
+    width : 100%;
     @media (max-width : 975px){
         margin : auto;
     }
@@ -49,9 +50,14 @@ const ProjectsContainer = styled.div`
     flex-direction : row;
     align-items : center;
     margin : 1rem;
+    width : 100%;
     justify-content : center;
     @media(max-width : 975px){
         flex-direction : column;
+        margin : 1rem;
+    }
+    @media (max-width : 520px){
+        margin : 0;
     }
 `;
 
