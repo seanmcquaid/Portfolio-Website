@@ -6,9 +6,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
     strategy:
       matrix:
-        node-version: [8.x, 10.x, 12.x]
+        node-version: [10.x]
     steps:
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
@@ -18,6 +20,8 @@ jobs:
     - name: Install Packages
       run: npm install
     - name: Deploy to GH Pages
-      run: npm run deploy
-    - name: Updating Domain
-      run: echo "Update domain"
+      run: |
+        git config --global user.email "sean.m.mcquaid@gmail.com"
+        git config --global user.name "sean.mcquaid"
+        git remote set-url origin ${{ secrets.GITHUB_TOKEN }}@github.com/sean.mcquaid/${ {github.repository }}>.git
+        npm run deploy
