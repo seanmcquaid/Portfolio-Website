@@ -91,7 +91,7 @@ const NavbarContainer = styled.div`
     align-items : center;
     top : 0;
     z-index : 1;
-    width : 80px;
+    width : 120px;
     height : 100%;
     @media (max-width : 975px){
         position : fixed;
@@ -243,7 +243,7 @@ const HamburgerNavLinksList = styled.nav`
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    margin-top : 4.95rem;
+    margin-top : 5rem;
     position : fixed;
     width : 100%;
     min-width : 100%;
