@@ -93,10 +93,10 @@ const NavbarContainer = styled.div`
     z-index : 1;
     width : 80px;
     height : 100%;
-    @media (max-width : 915px){
+    @media (max-width : 975px){
         position : fixed;
         flex-direction : row;
-        height : 80px;
+        height : 60px;
         width : 100%;
     }
 `;
@@ -118,7 +118,7 @@ const NavContainer = styled.nav`
     flex-direction : column;
     justify-content : center;
     align-items : center;
-    @media (max-width : 915px){
+    @media (max-width : 975px){
         flex-direction : row;
     }
     @media (max-width : 520px){
@@ -136,7 +136,7 @@ const NavLink = styled(Link)`
     flex-direction : column;
     align-items : center;
     justify-content : center;
-    @media(max-width : 915px){
+    @media(max-width : 975px){
         width : 30px;
     }
 `;
@@ -168,7 +168,7 @@ const ContactList = styled.ul`
     list-style: none;
     justify-content : center;
     align-items : center;
-    @media (max-width : 915px){
+    @media (max-width : 975px){
         display : none;
     }
 `;

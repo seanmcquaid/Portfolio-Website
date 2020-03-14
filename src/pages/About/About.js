@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from "react";
-import {ParagraphText, HeaderText, LeftContainer, RightContainer, Headshot, LoadingSpinner} from "components/components";
+import {ParagraphText, HeaderText, Headshot, LoadingSpinner} from "components/components";
 import trumpetHeadshot from "images/trumpetHeadshot.jpg";
 import Aux from "hoc/Aux/Aux";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 
 const About = props => {
     const [isLoading, setIsLoading] = useState(true);
@@ -43,9 +43,74 @@ const AboutPageContainer = styled.div`
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    @media (max-width : 915px){
+    height : 100%;
+    width : 100%;
+    @media (max-width : 975px){
         flex-direction : column-reverse;
-        margin : auto;
+        margin : 1rem;
+    }
+    @media(max-width : 520px){
+        margin : 1rem;
+    }
+`;
+
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
+const LeftContainer = styled.div`
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : flex-start;
+    width : 100%;
+    height : 100%;
+    max-width : 550px;
+    margin : 0 1rem;
+    animation: ${fadeInAnimation} ease 2s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    @media(max-width : 975px){
+        justify-content : center;
+        align-items : center;
+        max-width : 100%;
+        max-height : 100%;
+        margin : 1rem 0;
+    }
+    @media (max-width : 520px){
+        max-height : 100%;
+        max-width : 100%;
+        margin : 1rem 0;
+    }
+`;
+
+const RightContainer = styled.div`
+    display : flex;
+    width : 100%;
+    height : 100%;
+    max-width : 300px;
+    max-height : 300px;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    margin : 0 1rem;
+    animation: ${fadeInAnimation} ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    @media (max-width : 975px){
+        margin : 1rem 0;
+        max-width : 100%;
+        max-height : 100%;
+    }
+    @media (max-width : 520px){
+        max-height : 100%;
+        max-width : 100%;
+        margin : 1rem 0;
     }
 `;
 

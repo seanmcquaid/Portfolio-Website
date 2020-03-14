@@ -16,7 +16,8 @@ const Project = ({title, image, description, repoLink}) => (
 
 const ProjectContainer = styled.div`
     border : 2px solid #00000096;
-    margin : 1.25rem;
+    margin : 1rem;
+    padding : 1rem;
     display : flex;
     flex-direction : column;
     justify-content : center;

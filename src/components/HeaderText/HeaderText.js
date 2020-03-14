@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export default styled.h1`
     padding : 0;
-    margin : 1rem;
+    margin: 1rem 1rem 0 1rem;
     font-family: Rubik;
     font-size : 2.5rem;
     color : white;

@@ -39,7 +39,7 @@ const ProjectPageContainer = styled.div`
     flex-direction : column;
     justify-content : center;
     align-items : center;
-    @media (max-width : 915px){
+    @media (max-width : 975px){
         margin : auto;
     }
 `;
@@ -48,8 +48,9 @@ const ProjectsContainer = styled.div`
     display : flex;
     flex-direction : row;
     align-items : center;
+    margin : 1rem;
     justify-content : center;
-    @media(max-width : 915px){
+    @media(max-width : 975px){
         flex-direction : column;
     }
 `;

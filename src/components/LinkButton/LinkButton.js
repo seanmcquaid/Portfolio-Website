@@ -10,6 +10,8 @@ const LinkButton = ({title, route}) => (
 );
 
 const LinkButtonContainer = styled(Link)`
+    padding : 1rem;
+    margin : 1rem;
     text-decoration : none;
     color : #00000096;
     border : 2px solid #00000096;
@@ -17,6 +19,7 @@ const LinkButtonContainer = styled(Link)`
     font-size : 1rem;
     width : 100px;
     text-align : center;
+    margin: 1rem 1rem 0 1rem;
     background-color : #c2d0ae;
     &:hover {
         transition : 0.5s;
