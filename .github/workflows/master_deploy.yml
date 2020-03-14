@@ -22,4 +22,6 @@ jobs:
         git config --global user.email "sean.m.mcquaid@gmail.com"
         git config --global user.name "sean.mcquaid"
         git remote set-url origin ${{ secrets.GITHUB_TOKEN }}@github.com/sean.mcquaid/${{ github.repository }}>.git
+        echo ${{ secrets.GITHUB_TOKEN }}
+        echo ${{ github.repository }}
         npm run deploy
