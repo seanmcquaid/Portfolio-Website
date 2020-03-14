@@ -55,7 +55,6 @@ const ContactPageContainer = styled.div`
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    align-self : center;
     @media (max-width : 915px){
         flex-direction : column;
         margin : auto;

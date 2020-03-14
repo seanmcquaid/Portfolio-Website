@@ -11,6 +11,7 @@ const fadeInAnimation = keyframes`
 
 export default styled.div`
     width : 100%;
+    height : 100%;
     max-width: 550px;
     display : flex;
     flex-direction : column;
