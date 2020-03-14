@@ -4,9 +4,9 @@ import { css } from "@emotion/core";
 import PropTypes from "prop-types";
 
 const override = css`
-    display : flex;
-    justify-content : center;
-    align-items : center;
+    position : absolute;
+    top : 50%;
+    left : 50%;
 `;
 
 const LoadingSpinner = ({isLoading}) => (

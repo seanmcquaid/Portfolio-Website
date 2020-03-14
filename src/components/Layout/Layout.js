@@ -11,14 +11,16 @@ const Layout = ({children}) => (
 
 const Container = styled.div`
     display : flex;
-    width : 100vw;
-    height : 100vh;
     background-color : #4C8577;
+    height : 100%;
+    width : 100%;
     @media(max-width : 520px){
         flex-direction : column;
+        height : auto;
+        width : auto;
     }
     @media(max-width : 915px){
-        margin-top : 4.5rem;
+        margin-top : 6.5rem;
     }
 `;
 

@@ -21,8 +21,6 @@ const ProjectContainer = styled.div`
     flex-direction : column;
     justify-content : center;
     align-items : center;
-    width : 100%;
-    height : 100%;
     max-width : 400px;
     max-height : 600px;
     @media(max-width : 520px){
@@ -38,19 +36,15 @@ const ProjectTitle = styled.h4`
 const ProjectImage = styled.img`
     border-radius : 5px;
     box-shadow : 0px 0px 20px rgba(0,0,0,.4);
-    margin : 1rem;
-    width : 100%;
     max-width : 300px;
     height : 200px;
 `;
 
 const ButtonsContainer = styled.div`
-    margin : 1rem;
     display : flex;
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    width : 100%;
     max-width : 100px;
 `;
 

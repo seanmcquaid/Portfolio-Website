@@ -10,12 +10,14 @@ const fadeInAnimation = keyframes`
 `;
 
 export default styled.div`
-    width : 100%;
-    height : 100%;
-    max-width: 550px;
     display : flex;
     flex-direction : column;
-    margin : 1rem;
+    justify-content : center;
+    align-items : flex-start;
+    width : 100%;
+    height : 100%;
+    max-width : 550px;
+    margin : 0 1rem;
     animation: ${fadeInAnimation} ease 2s; 
     animation-iteration-count: 1; 
     animation-fill-mode: forwards;

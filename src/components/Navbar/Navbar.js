@@ -89,16 +89,15 @@ const NavbarContainer = styled.div`
     flex-direction : column;
     justify-content : space-between;
     align-items : center;
-    width : 100px;
     top : 0;
-    height : 100%;
     z-index : 1;
+    width : 80px;
+    height : 100%;
     @media (max-width : 915px){
         position : fixed;
-        width : 100%;
-        min-width : 100%;
         flex-direction : row;
-        height : auto;
+        height : 80px;
+        width : 100%;
     }
 `;
 
@@ -210,7 +209,6 @@ const HamburgerMenu = styled.div`
     justify-content : center;
     align-items : center;
     width : 100%;
-    min-width : 100%;
     font-size: 1.5rem;
     position : fixed;
     top : 0;

@@ -60,7 +60,6 @@ const IconsContainer = styled.div`
     flex : 1;
     justify-content : center;
     align-items : center;
-    width : 100%;
 `;
 
 export default Skills;

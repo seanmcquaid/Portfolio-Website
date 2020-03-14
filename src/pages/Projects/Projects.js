@@ -49,8 +49,6 @@ const ProjectsContainer = styled.div`
     flex-direction : row;
     align-items : center;
     justify-content : center;
-    width : 100%;
-    height : 100%;
     @media(max-width : 915px){
         flex-direction : column;
     }
