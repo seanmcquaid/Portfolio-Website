@@ -91,12 +91,14 @@ const NavbarContainer = styled.div`
     align-items : center;
     top : 0;
     z-index : 1;
-    width : 120px;
+    width : 100px;
+    min-width : 100px;
     height : 100%;
     @media (max-width : 975px){
         position : fixed;
         flex-direction : row;
         height : 60px;
+        min-height : 60px;
         width : 100%;
     }
 `;
@@ -163,7 +165,6 @@ const ContactList = styled.ul`
     display : flex;
     flex-direction : column;
     text-align : center;
-    width: 100%;
     padding: 0;
     list-style: none;
     justify-content : center;
@@ -186,7 +187,6 @@ const ContactListItem = styled.li`
 const ContactListIconContainer = styled.div`
     display : block;
     font-size : 1.5rem;
-    width : 100%;
     height: 100%;
     &:hover + ${ContactListItemLinkLabel}{
         display : block;
