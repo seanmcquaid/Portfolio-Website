@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home/> Matches snapshot 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-fzoyTs hFHoLu"
+      >
+        <div
+          class="sc-fzoNJl kRFwYm"
+        >
+          <h1
+            class="sc-fznxsB hwcVxy"
+          >
+            Hello, I am Sean!
+          </h1>
+          <h2
+            class="sc-fznJRM cQkQrk"
+          >
+            Software Engineer, Front End Web Developer, Jazz Musician 
+          </h2>
+          <a
+            class="sc-fznWqX kBttbi"
+            href="#/contact"
+          >
+            Contact Me
+          </a>
+        </div>
+        <div
+          class="sc-fzoXWK iUyLOW"
+        >
+          <img
+            alt="headshot"
+            class="sc-fzqARJ jmTNSy"
+            src="headshot.jpg"
+          />
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-fzoyTs hFHoLu"
+    >
+      <div
+        class="sc-fzoNJl kRFwYm"
+      >
+        <h1
+          class="sc-fznxsB hwcVxy"
+        >
+          Hello, I am Sean!
+        </h1>
+        <h2
+          class="sc-fznJRM cQkQrk"
+        >
+          Software Engineer, Front End Web Developer, Jazz Musician 
+        </h2>
+        <a
+          class="sc-fznWqX kBttbi"
+          href="#/contact"
+        >
+          Contact Me
+        </a>
+      </div>
+      <div
+        class="sc-fzoXWK iUyLOW"
+      >
+        <img
+          alt="headshot"
+          class="sc-fzqARJ jmTNSy"
+          src="headshot.jpg"
+        />
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
