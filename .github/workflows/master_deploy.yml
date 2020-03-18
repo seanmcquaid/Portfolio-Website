@@ -18,6 +18,10 @@ jobs:
     - name: Install Packages
       run: npm install
     - name: Deploy to GH Pages
+    - name: Run Unit Tests
+      run: npm test
+      env:
+        CI: true
       run: |
         git config --global user.email "sean.m.mcquaid@gmail.com"
         git config --global user.name "seanmcquaid"
