@@ -23,9 +23,9 @@ const Container = styled.div`
         margin-top : 6.5rem;
     }
     @media(max-width : 975px){
-        margin-top : 4.5rem;
         height : auto;
         width : auto;
+        margin-top : 6.5rem;
     }
 `;
 
