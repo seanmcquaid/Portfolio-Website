@@ -9,6 +9,12 @@ describe("<Layout/>", () => {
         const layout = render(<Router><Layout/></Router>);
         expect(layout).toMatchSnapshot();
     });
+
+    it("Navbar is displayed properly", () => {
+        const {getByTestId} = render(<Router><Layout/></Router>);
+        const navbar = getByTestId("navbar");
+        expect(navbar).toBeVisible();
+    });
     
     it("Children Display Properly", () => {
         const children = "Children are here!";

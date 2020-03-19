@@ -6,10 +6,47 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzoyTs eOzRcJ"
+        class="sc-fzoNJl bDWikf"
       >
         <div
-          class="css-pxexdf"
+          class="sc-fzqNqU cEAaaW"
+          data-testid="loadingSpinnerContainer"
+          id="loadingSpinnerContainer"
+        >
+          <div
+            class="css-0"
+          >
+            <div
+              class="css-1hx8gej"
+            />
+            <div
+              class="css-tz1l7o"
+            />
+            <div
+              class="css-x6c2dr"
+            />
+            <div
+              class="css-13v3l44"
+            />
+            <div
+              class="css-xcyvz3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-fzoNJl bDWikf"
+    >
+      <div
+        class="sc-fzqNqU cEAaaW"
+        data-testid="loadingSpinnerContainer"
+        id="loadingSpinnerContainer"
+      >
+        <div
+          class="css-0"
         >
           <div
             class="css-1hx8gej"
@@ -27,31 +64,6 @@ Object {
             class="css-xcyvz3"
           />
         </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-fzoyTs eOzRcJ"
-    >
-      <div
-        class="css-pxexdf"
-      >
-        <div
-          class="css-1hx8gej"
-        />
-        <div
-          class="css-tz1l7o"
-        />
-        <div
-          class="css-x6c2dr"
-        />
-        <div
-          class="css-13v3l44"
-        />
-        <div
-          class="css-xcyvz3"
-        />
       </div>
     </div>
   </div>,

@@ -6,16 +6,16 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznWqX irIRLA"
+        class="sc-fzoiQi cFWRbC"
       >
         <h4
-          class="sc-fzoiQi ivtdEB"
+          class="sc-fzqARJ eurAtz"
         >
           Portfolio
         </h4>
         <img
           alt="Portfolio"
-          class="sc-fzqARJ fzRiKg"
+          class="sc-fzqNqU ganvPH"
           src="https://via.placeholder.com/150"
         />
         <p
@@ -24,10 +24,10 @@ Object {
           Portfolio website
         </p>
         <div
-          class="sc-fzqNqU jlHnxa"
+          class="sc-fzoyTs eNtAnY"
         >
           <a
-            class="sc-fznJRM hqmDd"
+            class="sc-fznWqX kKWfFq"
             href="www.github.com/seanmcquaid"
             target="blank"
           >
@@ -39,16 +39,16 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fznWqX irIRLA"
+      class="sc-fzoiQi cFWRbC"
     >
       <h4
-        class="sc-fzoiQi ivtdEB"
+        class="sc-fzqARJ eurAtz"
       >
         Portfolio
       </h4>
       <img
         alt="Portfolio"
-        class="sc-fzqARJ fzRiKg"
+        class="sc-fzqNqU ganvPH"
         src="https://via.placeholder.com/150"
       />
       <p
@@ -57,10 +57,10 @@ Object {
         Portfolio website
       </p>
       <div
-        class="sc-fzqNqU jlHnxa"
+        class="sc-fzoyTs eNtAnY"
       >
         <a
-          class="sc-fznJRM hqmDd"
+          class="sc-fznWqX kKWfFq"
           href="www.github.com/seanmcquaid"
           target="blank"
         >

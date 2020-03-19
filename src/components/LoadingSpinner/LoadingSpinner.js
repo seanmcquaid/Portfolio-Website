@@ -1,22 +1,23 @@
 import React from "react";
 import {ScaleLoader} from "react-spinners";
-import { css } from "@emotion/core";
+import styled from "styled-components";
 import PropTypes from "prop-types";
 
-const override = css`
+const LoadingSpinner = ({isLoading}) => (
+    <LoadingSpinnerContainer data-testid="loadingSpinnerContainer" id="loadingSpinnerContainer">
+        <ScaleLoader 
+            size={1000} 
+            color={"#ffffffb6"} 
+            loading={isLoading}
+        />
+    </LoadingSpinnerContainer>
+);
+
+const LoadingSpinnerContainer = styled.div`
     position : absolute;
     top : 50%;
     left : 50%;
 `;
-
-const LoadingSpinner = ({isLoading}) => (
-    <ScaleLoader 
-        css={override} 
-        size={1000} 
-        color={"#ffffffb6"} 
-        loading={isLoading}
-    />
-);
 
 LoadingSpinner.propTypes = {
     isLoading : PropTypes.bool.isRequired,

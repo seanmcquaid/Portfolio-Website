@@ -17,64 +17,64 @@ const Navbar = () => {
     };
 
     return (
-    <NavbarContainer>
-        <LinkContainer to="/" onClick={mobileMenuOnClick}>
+    <NavbarContainer data-testid="navbar" id="navbar">
+        <LinkContainer to="/" onClick={mobileMenuOnClick} data-testid="homeButton" id="homeButton">
             <IoMdMusicalNotes/>
         </LinkContainer>
-        <NavContainer>
-            <NavLink to="/">
+        <NavContainer data-testid="desktopNavMenu" id="desktopNavMenu">
+            <NavLink to="/" data-testid="desktopHomeLink" id="desktopHomeLink">
                 <NavLinkIconContainer><IoMdHome/></NavLinkIconContainer>
                 <NavLinkLabel>Home</NavLinkLabel>
             </NavLink>
-            <NavLink to="/about">
+            <NavLink to="/about" data-testid="desktopAboutLink" id="desktopAboutLink">
                 <NavLinkIconContainer><IoMdPerson/></NavLinkIconContainer>
                 <NavLinkLabel>About</NavLinkLabel>
             </NavLink>
-            <NavLink to="/skills">
+            <NavLink to="/skills" data-testid="desktopSkillsLink" id="desktopSkillsLink">
                 <NavLinkIconContainer><IoMdSettings/></NavLinkIconContainer>
                 <NavLinkLabel>Skills</NavLinkLabel>
             </NavLink>
-            <NavLink to="/projects">
+            <NavLink to="/projects" data-testid="desktopProjectsLink" id="desktopProjectsLink">
                 <NavLinkIconContainer><IoMdFiling/></NavLinkIconContainer>
                 <NavLinkLabel>Projects</NavLinkLabel>
             </NavLink>
-            <NavLink to="/contact">
+            <NavLink to="/contact" data-testid="desktopContactLink" id="desktopContactLink">
                 <NavLinkIconContainer><IoMdMail/></NavLinkIconContainer>
                 <NavLinkLabel>Contact</NavLinkLabel>
             </NavLink>
         </NavContainer>
-        <HamburgerIcon onClick={hamburgerMenuOnClick}/>
-        <HamburgerMenu>
+        <HamburgerIcon onClick={hamburgerMenuOnClick} data-testid="mobileMenuToggleButton" id="mobileMenuToggleButton"/>
+        <HamburgerMenu data-testid="mobileNavMenu" id="mobileMenuToggleButton">
             <HamburgerNavLinksList toggleMenuDisplayed={toggleMenuDisplayed}>
-                <HamburgerNavLink to="/about" onClick={mobileMenuOnClick}>
+                <HamburgerNavLink to="/about" onClick={mobileMenuOnClick} data-testid="mobileAboutLink" id="mobileAboutLink">
                     <HamburgerNavLinkLabel>About</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
-                <HamburgerNavLink to="/skills" onClick={mobileMenuOnClick}>
+                <HamburgerNavLink to="/skills" onClick={mobileMenuOnClick} data-testid="mobileSkillsLink" id="mobileSkillsLink">
                     <HamburgerNavLinkLabel>Skills</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
-                <HamburgerNavLink to="/projects" onClick={mobileMenuOnClick}>
+                <HamburgerNavLink to="/projects" onClick={mobileMenuOnClick} data-testid="mobileProjectsLink" id="mobileProjectsLink">
                     <HamburgerNavLinkLabel>Projects</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
-                <HamburgerNavLink to="/contact" onClick={mobileMenuOnClick}>
+                <HamburgerNavLink to="/contact" onClick={mobileMenuOnClick} data-testid="mobileContactLink" id="mobileContactLink">
                     <HamburgerNavLinkLabel>Contact</HamburgerNavLinkLabel>
                 </HamburgerNavLink>
             </HamburgerNavLinksList>
         </HamburgerMenu>
-        <ContactList>
+        <ContactList data-testid="desktopContactMenu" id="desktopContactMenu">
             <ContactListItem>
-                <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank">
+                <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank" data-testid="desktopLinkedInLink" id="desktopLinkedInLink">
                     <ContactListIconContainer><IoLogoLinkedin/></ContactListIconContainer>
                     <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
                 </ContactListItemLink>
             </ContactListItem>
             <ContactListItem>
-                <ContactListItemLink href="https://github.com/seanmcquaid" target="blank">
+                <ContactListItemLink href="https://github.com/seanmcquaid" target="blank" data-testid="desktopGitHubLink" id="desktopGitHubLink">
                     <ContactListIconContainer><IoLogoGithub/></ContactListIconContainer>
                     <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
                 </ContactListItemLink>
             </ContactListItem>
             <ContactListItem>
-                <ContactListItemLink href={resume} target="blank">
+                <ContactListItemLink href={resume} target="blank" data-testid="desktopResumeLink" id="desktopResumeLink">
                     <ContactListIconContainer><IoIosPaper/></ContactListIconContainer>
                     <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
                 </ContactListItemLink>
