@@ -1,7 +1,7 @@
 import React from "react";
 import {HashRouter as Router, Switch, Route} from "react-router-dom";
 import {Layout} from "components/components";
-import {Home, About, Contact, Skills, Projects} from "pages/pages";
+import {Home, About, Contact, Skills, Projects, Error} from "pages/pages";
 
 const App = () => (
   <Router basename="/">
@@ -12,7 +12,7 @@ const App = () => (
           <Route exact path="/contact" component={Contact}/>
           <Route exact path="/skills" component={Skills}/>
           <Route exact path="/projects" component={Projects}/>
-          <Route component={Home}/>
+          <Route component={Error}/>
       </Switch>
     </Layout>
   </Router>

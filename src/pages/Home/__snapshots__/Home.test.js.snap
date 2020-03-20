@@ -7,17 +7,23 @@ Object {
     <div>
       <div
         class="sc-fzoNJl bPrdeo"
+        data-testid="homePage"
+        id="homePage"
       >
         <div
           class="sc-fzoXWK evzNVC"
         >
           <h1
             class="sc-fznxsB hwcVxy"
+            data-testid="skillsPageHeader"
+            id="homePageHeader"
           >
             Hello, I am Sean!
           </h1>
           <h2
             class="sc-fznJRM cQkQrk"
+            data-testid="homePageSubHeader"
+            id="homePageSubHeader"
           >
             Software Engineer, Front End Web Developer, Jazz Musician 
           </h2>
@@ -32,8 +38,10 @@ Object {
           class="sc-fzpmMD bzrqep"
         >
           <img
-            alt="headshot"
+            alt="headshotImage"
             class="sc-fzqARJ jmTNSy"
+            data-testid="headshotImage"
+            id="headshotImage"
             src="headshot.jpg"
           />
         </div>
@@ -43,17 +51,23 @@ Object {
   "container": <div>
     <div
       class="sc-fzoNJl bPrdeo"
+      data-testid="homePage"
+      id="homePage"
     >
       <div
         class="sc-fzoXWK evzNVC"
       >
         <h1
           class="sc-fznxsB hwcVxy"
+          data-testid="skillsPageHeader"
+          id="homePageHeader"
         >
           Hello, I am Sean!
         </h1>
         <h2
           class="sc-fznJRM cQkQrk"
+          data-testid="homePageSubHeader"
+          id="homePageSubHeader"
         >
           Software Engineer, Front End Web Developer, Jazz Musician 
         </h2>
@@ -68,8 +82,10 @@ Object {
         class="sc-fzpmMD bzrqep"
       >
         <img
-          alt="headshot"
+          alt="headshotImage"
           class="sc-fzqARJ jmTNSy"
+          data-testid="headshotImage"
+          id="headshotImage"
           src="headshot.jpg"
         />
       </div>

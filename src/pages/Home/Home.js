@@ -9,14 +9,14 @@ import headshot from "images/headshot.jpg"
 import styled, {keyframes} from "styled-components";
 
 const Home = () => (
-    <HomePageContainer>
+    <HomePageContainer id="homePage" data-testid="homePage">
         <LeftContainer>
-            <HeaderText>Hello, I am Sean!</HeaderText>
-            <SubHeaderText>Software Engineer, Front End Web Developer, Jazz Musician </SubHeaderText>
+            <HeaderText id="homePageHeader" data-testid="skillsPageHeader">Hello, I am Sean!</HeaderText>
+            <SubHeaderText id="homePageSubHeader" data-testid="homePageSubHeader">Software Engineer, Front End Web Developer, Jazz Musician </SubHeaderText>
             <LinkButton route="/contact" title="Contact Me"/>
         </LeftContainer>
         <RightContainer>
-            <Headshot src={headshot} alt="headshot"/>
+            <Headshot src={headshot} alt="headshotImage" id="headshotImage" data-testid="headshotImage"/>
         </RightContainer>
     </HomePageContainer>
 );
