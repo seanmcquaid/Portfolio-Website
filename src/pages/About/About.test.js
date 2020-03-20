@@ -22,6 +22,7 @@ describe("<About/>", () => {
             rerender(<About/>);
             jest.advanceTimersByTime(1500);
         });
+        expect(() => getByTestId("loadingSpinner")).toThrowError();
         expect(getByTestId("aboutPage")).toBeVisible();
     });
 });
