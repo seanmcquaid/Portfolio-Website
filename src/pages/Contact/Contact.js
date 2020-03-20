@@ -14,30 +14,30 @@ const Contact = () => {
     },[]);
 
     return(
-        <ContactPageContainer>
+        <ContactPageContainer id="contactPage" data-testid="contactPage">
             {isLoading ? 
             <LoadingSpinner isLoading={isLoading}/> : 
             <Aux>
                 <LeftContainer>
-                    <HeaderText>Contact Me</HeaderText>
-                    <ParagraphText>If you would like to contact me, I would love to hear from you! Feel free to contact me through my email, check out my LinkedIn or GitHub, or even look at my Resume!</ParagraphText>
+                    <HeaderText id="contactPageHeader" data-testid="contactPageHeader">Contact Me</HeaderText>
+                    <ParagraphText id="contactInfoText" data-testid="contactInfoText">If you would like to contact me, I would love to hear from you! Feel free to contact me through my email, check out my LinkedIn or GitHub, or even look at my Resume!</ParagraphText>
                 </LeftContainer>
                 <RightContainer>
                     <ContactList>
                         <ContactListItem>
-                            <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank">
+                            <ContactListItemLink href="https://www.linkedin.com/in/sean-mcquaid-292b3588/" target="blank" id="linkedInLink" data-testid="linkedInLink">
                                 <IoLogoLinkedin/>
                                 <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
                             </ContactListItemLink>
                         </ContactListItem>
                         <ContactListItem>
-                            <ContactListItemLink href="https://github.com/seanmcquaid" target="blank">
+                            <ContactListItemLink href="https://github.com/seanmcquaid" target="blank" id="gitHubLink" data-testid="gitHubLink">
                                 <IoLogoGithub/>
                                 <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
                             </ContactListItemLink>
                         </ContactListItem>
                         <ContactListItem>
-                            <ContactListItemLink href={resume} target="blank">
+                            <ContactListItemLink href={resume} target="blank" id="resumeLink" data-testid="resumeLink">
                                 <IoIosPaper/>
                                 <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
                             </ContactListItemLink>

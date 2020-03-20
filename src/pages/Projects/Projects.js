@@ -13,12 +13,12 @@ const Projects = () => {
     },[]);
 
     return(
-        <ProjectPageContainer>
+        <ProjectsPageContainer id="projectsPage" data-testid="projectsPage">
             {isLoading ?
                 <LoadingSpinner isLoading={isLoading}/> :
                 <Aux>
-                    <HeaderText>Projects</HeaderText>
-                    <ProjectsContainer>
+                    <HeaderText id="projectsPageHeader" data-testid="projectsPageHeader">Projects</HeaderText>
+                    <ProjectsContainer id="projectsList" data-testid="projectsList">
                         {projectsList.map((project, i) =>
                             <Project 
                                 key={i} 
@@ -30,11 +30,11 @@ const Projects = () => {
                             />)}
                     </ProjectsContainer>
                 </Aux>}
-        </ProjectPageContainer>
+        </ProjectsPageContainer>
     );
 };
 
-const ProjectPageContainer = styled.div`
+const ProjectsPageContainer = styled.div`
     margin : 0 auto;
     display : flex;
     flex-direction : column;

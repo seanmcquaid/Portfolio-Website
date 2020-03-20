@@ -13,16 +13,16 @@ const Skills = () => {
     },[]);
 
     return(
-        <SkillsPageContainer>
+        <SkillsPageContainer id="skillsPage" data-testid="skillsPage">
             {isLoading ?
                 <LoadingSpinner isLoading={isLoading}/> :
                 <Aux>
                     <LeftContainer>
-                        <HeaderText>Skills</HeaderText>
+                        <HeaderText id="skillsPageHeader" data-testid="skillsPageHeader">Skills</HeaderText>
                         <ParagraphText>I currently work with Java/Springboot at work, however, my speciality is in Full-Stack JavaScript development. I specifically have a passion for creating visually appealing applications that solve a specific business problem. I currently spend most of my time outside of work attempting to come up with creative solutions in React and React Native.</ParagraphText>
                     </LeftContainer>
                     <RightContainer>
-                        <IconsContainer>
+                        <IconsContainer id="skillsList" data-testid="skillsList">
                             {skillsList.map((skill, i) => {
                                 const {name, IconComponent} = skill;
                                 return (

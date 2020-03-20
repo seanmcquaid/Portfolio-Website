@@ -1,5 +1,5 @@
 import React from "react";
-import {render, cleanup, waitForElementToBeRemoved} from "@testing-library/react";
+import {render, cleanup} from "@testing-library/react";
 import About from "./About";
 import "@testing-library/jest-dom/extend-expect";
 import { act } from "react-dom/test-utils";
@@ -15,7 +15,7 @@ describe("<About/>", () => {
         const {getByTestId} = render(<About/>);
         expect(getByTestId("loadingSpinner")).toBeVisible();
     });
-    it("LoadingSpinner isn't visible after initial loading is done", async () => {
+    it("About Page Displays after 1.5 seconds", async () => {
         jest.useFakeTimers();
         const {rerender, getByTestId} = render(<About/>);
         act(() => {
@@ -23,6 +23,6 @@ describe("<About/>", () => {
             jest.advanceTimersByTime(1500);
         });
         expect(() => getByTestId("loadingSpinner")).toThrowError();
-        expect(getByTestId("aboutPage")).toBeVisible();
+        expect(getByTestId("aboutPageHeader")).toBeVisible();
     });
 });

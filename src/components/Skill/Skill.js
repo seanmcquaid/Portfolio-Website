@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import {FaAccessibleIcon} from "react-icons/fa";
 
 const Skill = ({IconComponent, name}) => (
-    <IconContainer>
+    <IconContainer id={`${name}Icon`} data-testid={`${name}Icon`}>
         <IconComponent/>
         <IconName>{name}</IconName>
     </IconContainer>

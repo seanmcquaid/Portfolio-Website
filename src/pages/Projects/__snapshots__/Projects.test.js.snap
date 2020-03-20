@@ -7,6 +7,8 @@ Object {
     <div>
       <div
         class="sc-fzoNJl bDWikf"
+        data-testid="projectsPage"
+        id="projectsPage"
       >
         <div
           class="sc-fzqNqU cEAaaW"
@@ -39,6 +41,8 @@ Object {
   "container": <div>
     <div
       class="sc-fzoNJl bDWikf"
+      data-testid="projectsPage"
+      id="projectsPage"
     >
       <div
         class="sc-fzqNqU cEAaaW"
