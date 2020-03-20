@@ -6,19 +6,8 @@ import {HashRouter as Router} from "react-router-dom";
 
 describe("<Layout/>", () => {
     it("Snapshot matches", () => {
-        const layout = render(<Router><Layout/></Router>);
-        expect(layout).toMatchSnapshot();
-    });
-
-    it("Navbar is displayed properly", () => {
-        const {getByTestId} = render(<Router><Layout/></Router>);
-        const navbar = getByTestId("navbar");
-        expect(navbar).toBeVisible();
-    });
-    
-    it("Children Display Properly", () => {
         const children = "Children are here!";
-        const {queryByText} = render(<Router><Layout children={children}/></Router>);
-        expect(queryByText(children)).toHaveTextContent(children);
+        const layout = render(<Router><Layout children={children}/></Router>);
+        expect(layout).toMatchSnapshot();
     });
 });

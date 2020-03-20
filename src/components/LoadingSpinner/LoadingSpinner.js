@@ -4,7 +4,7 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 const LoadingSpinner = ({isLoading}) => (
-    <LoadingSpinnerContainer data-testid="loadingSpinnerContainer" id="loadingSpinnerContainer">
+    <LoadingSpinnerContainer data-testid="loadingSpinner" id="loadingSpinner">
         <ScaleLoader 
             size={1000} 
             color={"#ffffffb6"} 

@@ -10,8 +10,8 @@ Object {
       >
         <div
           class="sc-fzqNqU cEAaaW"
-          data-testid="loadingSpinnerContainer"
-          id="loadingSpinnerContainer"
+          data-testid="loadingSpinner"
+          id="loadingSpinner"
         >
           <div
             class="css-0"
@@ -42,8 +42,8 @@ Object {
     >
       <div
         class="sc-fzqNqU cEAaaW"
-        data-testid="loadingSpinnerContainer"
-        id="loadingSpinnerContainer"
+        data-testid="loadingSpinner"
+        id="loadingSpinner"
       >
         <div
           class="css-0"

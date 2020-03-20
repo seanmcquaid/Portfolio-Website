@@ -7,19 +7,27 @@ Object {
     <div>
       <div
         class="sc-fzoiQi cFWRbC"
+        data-testid="projectInfo1"
+        id="projectInfo1"
       >
         <h4
           class="sc-fzqARJ eurAtz"
+          data-testid="projectTitle1"
+          id="projectTitle1"
         >
           Portfolio
         </h4>
         <img
           alt="Portfolio"
           class="sc-fzqNqU ganvPH"
+          data-testid="projectImage1"
+          id="projectImage1"
           src="https://via.placeholder.com/150"
         />
         <p
           class="sc-fzpjYC eJEkNF"
+          data-testid="projectDescription1"
+          id="projectDescription1"
         >
           Portfolio website
         </p>
@@ -28,7 +36,9 @@ Object {
         >
           <a
             class="sc-fznWqX kKWfFq"
+            data-testid="projectRepoButton1"
             href="www.github.com/seanmcquaid"
+            id="projectRepoButton1"
             target="blank"
           >
             Github
@@ -40,19 +50,27 @@ Object {
   "container": <div>
     <div
       class="sc-fzoiQi cFWRbC"
+      data-testid="projectInfo1"
+      id="projectInfo1"
     >
       <h4
         class="sc-fzqARJ eurAtz"
+        data-testid="projectTitle1"
+        id="projectTitle1"
       >
         Portfolio
       </h4>
       <img
         alt="Portfolio"
         class="sc-fzqNqU ganvPH"
+        data-testid="projectImage1"
+        id="projectImage1"
         src="https://via.placeholder.com/150"
       />
       <p
         class="sc-fzpjYC eJEkNF"
+        data-testid="projectDescription1"
+        id="projectDescription1"
       >
         Portfolio website
       </p>
@@ -61,7 +79,9 @@ Object {
       >
         <a
           class="sc-fznWqX kKWfFq"
+          data-testid="projectRepoButton1"
           href="www.github.com/seanmcquaid"
+          id="projectRepoButton1"
           target="blank"
         >
           Github

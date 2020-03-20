@@ -7,11 +7,13 @@ Object {
     <div>
       <div
         class="sc-fzoNJl hnWekv"
+        data-testid="aboutPage"
+        id="aboutPage"
       >
         <div
           class="sc-fzqNqU cEAaaW"
-          data-testid="loadingSpinnerContainer"
-          id="loadingSpinnerContainer"
+          data-testid="loadingSpinner"
+          id="loadingSpinner"
         >
           <div
             class="css-0"
@@ -39,11 +41,13 @@ Object {
   "container": <div>
     <div
       class="sc-fzoNJl hnWekv"
+      data-testid="aboutPage"
+      id="aboutPage"
     >
       <div
         class="sc-fzqNqU cEAaaW"
-        data-testid="loadingSpinnerContainer"
-        id="loadingSpinnerContainer"
+        data-testid="loadingSpinner"
+        id="loadingSpinner"
       >
         <div
           class="css-0"

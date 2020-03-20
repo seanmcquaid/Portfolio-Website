@@ -1,5 +1,5 @@
 import React from "react";
-import {render} from "@testing-library/react";
+import {render, fireEvent} from "@testing-library/react";
 import Project from "./Project";
 
 describe("<Project/>", () => {
@@ -9,8 +9,10 @@ describe("<Project/>", () => {
             image : "https://via.placeholder.com/150", 
             description : "Portfolio website", 
             repoLink : "www.github.com/seanmcquaid",
+            projectId : 1,
         };
         const project = render(<Project {...props}/>);
         expect(project).toMatchSnapshot();
     });
+
 });

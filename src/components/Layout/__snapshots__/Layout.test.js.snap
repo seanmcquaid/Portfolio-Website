@@ -367,6 +367,7 @@ Object {
             </li>
           </ul>
         </div>
+        Children are here!
       </div>
     </div>
   </body>,
@@ -733,6 +734,7 @@ Object {
           </li>
         </ul>
       </div>
+      Children are here!
     </div>
   </div>,
   "debug": [Function],

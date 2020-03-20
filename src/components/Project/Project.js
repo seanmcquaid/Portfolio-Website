@@ -3,13 +3,15 @@ import styled from "styled-components";
 import { ParagraphText, ExternalLinkButton } from "components/components";
 import PropTypes from "prop-types";
 
-const Project = ({title, image, description, repoLink}) => (
-    <ProjectContainer>
-        <ProjectTitle>{title}</ProjectTitle>
-        <ProjectImage src={image} alt={title}/>
-        <ParagraphText>{description}</ParagraphText>
+const Project = ({title, image, description, repoLink, projectId}) => (
+    <ProjectContainer id={"projectInfo" + projectId} data-testid={"projectInfo" + projectId}>
+        <ProjectTitle id={"projectTitle" + projectId} data-testid={"projectTitle" + projectId}>{title}</ProjectTitle>
+        <ProjectImage src={image} alt={title} id={"projectImage" + projectId} data-testid={"projectImage" + projectId}/>
+        <ParagraphText id={"projectDescription" + projectId} data-testid={"projectDescription" + projectId}>{description}</ParagraphText>
         <ButtonsContainer>
-            <ExternalLinkButton href={repoLink} target="blank">Github</ExternalLinkButton>
+            <ExternalLinkButton href={repoLink} target="blank" id={"projectRepoButton" + projectId} data-testid={"projectRepoButton" + projectId}>
+                Github
+            </ExternalLinkButton>
         </ButtonsContainer>
     </ProjectContainer>
 );
@@ -56,6 +58,7 @@ Project.propTypes = {
     image : PropTypes.string.isRequired, 
     description : PropTypes.string.isRequired, 
     repoLink : PropTypes.string.isRequired,
+    projectId : PropTypes.number.isRequired,
 };
 
 Project.defaultProps = {

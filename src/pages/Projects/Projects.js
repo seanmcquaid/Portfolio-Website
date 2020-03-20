@@ -26,6 +26,7 @@ const Projects = () => {
                                 image={project.image} 
                                 description={project.description} 
                                 repoLink={project.repoLink}
+                                projectId={i}
                             />)}
                     </ProjectsContainer>
                 </Aux>}
