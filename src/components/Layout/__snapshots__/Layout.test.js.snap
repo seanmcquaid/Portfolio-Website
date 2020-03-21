@@ -185,7 +185,7 @@ Object {
             </a>
           </nav>
           <svg
-            class="sc-fzplWN kfZCqW"
+            class="sc-fzplWN infenK"
             data-testid="mobileMenuToggleButton"
             fill="currentColor"
             height="1em"
@@ -552,7 +552,7 @@ Object {
           </a>
         </nav>
         <svg
-          class="sc-fzplWN kfZCqW"
+          class="sc-fzplWN infenK"
           data-testid="mobileMenuToggleButton"
           fill="currentColor"
           height="1em"

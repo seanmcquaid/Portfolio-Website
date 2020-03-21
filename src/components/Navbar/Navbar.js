@@ -9,10 +9,12 @@ const Navbar = () => {
     const [toggleMenuDisplayed, setToggleMenuDisplayed] = useState(false);
 
     const hamburgerMenuOnClick = event => {
+        event.preventDefault();
         setToggleMenuDisplayed(!toggleMenuDisplayed);
     };
 
     const mobileMenuOnClick = event => {
+        event.preventDefault();
         setToggleMenuDisplayed(false);
     };
 
@@ -221,6 +223,7 @@ const HamburgerMenu = styled.div`
 const HamburgerIcon = styled(GiHamburgerMenu)`
     font-size : 1.5rem;
     padding : 1rem;
+    display : block;
     &:hover {
         cursor : pointer;
     }
