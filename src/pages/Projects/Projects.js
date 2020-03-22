@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { HeaderText, LoadingSpinner, Project } from "components/components";
-import styled from "styled-components";
+import styled, {keyframes} from "styled-components";
 import Aux from "hoc/Aux/Aux";
 import projectsList from "./projectsList";
 
@@ -17,7 +17,7 @@ const Projects = () => {
             {isLoading ?
                 <LoadingSpinner isLoading={isLoading}/> :
                 <Aux>
-                    <HeaderText id="projectsPageHeader" data-testid="projectsPageHeader">Projects</HeaderText>
+                    <ProjectsPageHeader id="projectsPageHeader" data-testid="projectsPageHeader">Projects</ProjectsPageHeader>
                     <ProjectsContainer id="projectsList" data-testid="projectsList">
                         {projectsList.map((project, i) =>
                             <Project 
@@ -34,6 +34,15 @@ const Projects = () => {
     );
 };
 
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
 const ProjectsPageContainer = styled.div`
     margin : 0 auto;
     display : flex;
@@ -46,6 +55,12 @@ const ProjectsPageContainer = styled.div`
     }
 `;
 
+const ProjectsPageHeader = styled(HeaderText)`
+    animation: ${fadeInAnimation} ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+`;
+
 const ProjectsContainer = styled.div`
     display : flex;
     flex-direction : row;
@@ -53,6 +68,9 @@ const ProjectsContainer = styled.div`
     margin : 1rem;
     width : 100%;
     justify-content : center;
+    animation: ${fadeInAnimation} ease 2s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
     @media(max-width : 975px){
         flex-direction : column;
         margin : 1rem;
