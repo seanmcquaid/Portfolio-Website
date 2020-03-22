@@ -8,13 +8,11 @@ import resume from "images/Sean McQuaid - Resume.pdf";
 const Navbar = () => {
     const [toggleMenuDisplayed, setToggleMenuDisplayed] = useState(false);
 
-    const hamburgerMenuOnClick = event => {
-        event.preventDefault();
+    const hamburgerMenuOnClick = () => {
         setToggleMenuDisplayed(!toggleMenuDisplayed);
     };
 
-    const mobileMenuOnClick = event => {
-        event.preventDefault();
+    const mobileMenuOnClick = () => {
         setToggleMenuDisplayed(false);
     };
 
