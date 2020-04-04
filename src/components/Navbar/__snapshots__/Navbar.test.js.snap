@@ -6,12 +6,12 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm bWSlVj"
+        class="sc-AxjAm VfmIA"
         data-testid="navbar"
         id="navbar"
       >
         <a
-          class="sc-AxirZ fFeCRJ"
+          class="sc-AxirZ cnmwyD"
           data-testid="homeButton"
           href="#/"
           id="homeButton"
@@ -36,7 +36,7 @@ Object {
           id="desktopNavMenu"
         >
           <a
-            class="sc-AxhCb hRzIZh"
+            class="sc-AxhCb kQBoVz"
             data-testid="desktopHomeLink"
             href="#/"
             id="desktopHomeLink"
@@ -65,7 +65,7 @@ Object {
             </span>
           </a>
           <a
-            class="sc-AxhCb hRzIZh"
+            class="sc-AxhCb kQBoVz"
             data-testid="desktopAboutLink"
             href="#/about"
             id="desktopAboutLink"
@@ -94,7 +94,7 @@ Object {
             </span>
           </a>
           <a
-            class="sc-AxhCb hRzIZh"
+            class="sc-AxhCb kQBoVz"
             data-testid="desktopSkillsLink"
             href="#/skills"
             id="desktopSkillsLink"
@@ -123,7 +123,7 @@ Object {
             </span>
           </a>
           <a
-            class="sc-AxhCb hRzIZh"
+            class="sc-AxhCb kQBoVz"
             data-testid="desktopProjectsLink"
             href="#/projects"
             id="desktopProjectsLink"
@@ -152,7 +152,7 @@ Object {
             </span>
           </a>
           <a
-            class="sc-AxhCb hRzIZh"
+            class="sc-AxhCb kQBoVz"
             data-testid="desktopContactLink"
             href="#/contact"
             id="desktopContactLink"
@@ -203,7 +203,7 @@ Object {
           id="mobileMenuToggleButton"
         >
           <nav
-            class="sc-fznyAO uffLU"
+            class="sc-fznyAO jefWsP"
           >
             <a
               class="sc-fznKkj dGhEQm"
@@ -256,22 +256,22 @@ Object {
           </nav>
         </div>
         <ul
-          class="sc-AxheI jqeeAV"
+          class="sc-AxheI jMIuVM"
           data-testid="desktopContactMenu"
           id="desktopContactMenu"
         >
           <li
-            class="sc-AxmLO bGVrCB"
+            class="sc-AxmLO bsqIBN"
           >
             <a
-              class="sc-fzoLsD eZqUxI"
+              class="sc-fzoLsD eVaKKO"
               data-testid="desktopLinkedInLink"
               href="https://www.linkedin.com/in/sean-mcquaid-292b3588/"
               id="desktopLinkedInLink"
               target="blank"
             >
               <div
-                class="sc-fzozJi djesxo"
+                class="sc-fzozJi EoHts"
               >
                 <svg
                   fill="currentColor"
@@ -288,24 +288,24 @@ Object {
                 </svg>
               </div>
               <span
-                class="sc-Axmtr dRfdEi"
+                class="sc-Axmtr kcFsFG"
               >
                 LinkedIn
               </span>
             </a>
           </li>
           <li
-            class="sc-AxmLO bGVrCB"
+            class="sc-AxmLO bsqIBN"
           >
             <a
-              class="sc-fzoLsD eZqUxI"
+              class="sc-fzoLsD eVaKKO"
               data-testid="desktopGitHubLink"
               href="https://github.com/seanmcquaid"
               id="desktopGitHubLink"
               target="blank"
             >
               <div
-                class="sc-fzozJi djesxo"
+                class="sc-fzozJi EoHts"
               >
                 <svg
                   fill="currentColor"
@@ -322,24 +322,24 @@ Object {
                 </svg>
               </div>
               <span
-                class="sc-Axmtr dRfdEi"
+                class="sc-Axmtr kcFsFG"
               >
                 GitHub
               </span>
             </a>
           </li>
           <li
-            class="sc-AxmLO bGVrCB"
+            class="sc-AxmLO bsqIBN"
           >
             <a
-              class="sc-fzoLsD eZqUxI"
+              class="sc-fzoLsD eVaKKO"
               data-testid="desktopResumeLink"
               href="Sean McQuaid - Resume.pdf"
               id="desktopResumeLink"
               target="blank"
             >
               <div
-                class="sc-fzozJi djesxo"
+                class="sc-fzozJi EoHts"
               >
                 <svg
                   fill="currentColor"
@@ -356,7 +356,7 @@ Object {
                 </svg>
               </div>
               <span
-                class="sc-Axmtr dRfdEi"
+                class="sc-Axmtr kcFsFG"
               >
                 Resume
               </span>
@@ -368,12 +368,12 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm bWSlVj"
+      class="sc-AxjAm VfmIA"
       data-testid="navbar"
       id="navbar"
     >
       <a
-        class="sc-AxirZ fFeCRJ"
+        class="sc-AxirZ cnmwyD"
         data-testid="homeButton"
         href="#/"
         id="homeButton"
@@ -398,7 +398,7 @@ Object {
         id="desktopNavMenu"
       >
         <a
-          class="sc-AxhCb hRzIZh"
+          class="sc-AxhCb kQBoVz"
           data-testid="desktopHomeLink"
           href="#/"
           id="desktopHomeLink"
@@ -427,7 +427,7 @@ Object {
           </span>
         </a>
         <a
-          class="sc-AxhCb hRzIZh"
+          class="sc-AxhCb kQBoVz"
           data-testid="desktopAboutLink"
           href="#/about"
           id="desktopAboutLink"
@@ -456,7 +456,7 @@ Object {
           </span>
         </a>
         <a
-          class="sc-AxhCb hRzIZh"
+          class="sc-AxhCb kQBoVz"
           data-testid="desktopSkillsLink"
           href="#/skills"
           id="desktopSkillsLink"
@@ -485,7 +485,7 @@ Object {
           </span>
         </a>
         <a
-          class="sc-AxhCb hRzIZh"
+          class="sc-AxhCb kQBoVz"
           data-testid="desktopProjectsLink"
           href="#/projects"
           id="desktopProjectsLink"
@@ -514,7 +514,7 @@ Object {
           </span>
         </a>
         <a
-          class="sc-AxhCb hRzIZh"
+          class="sc-AxhCb kQBoVz"
           data-testid="desktopContactLink"
           href="#/contact"
           id="desktopContactLink"
@@ -565,7 +565,7 @@ Object {
         id="mobileMenuToggleButton"
       >
         <nav
-          class="sc-fznyAO uffLU"
+          class="sc-fznyAO jefWsP"
         >
           <a
             class="sc-fznKkj dGhEQm"
@@ -618,22 +618,22 @@ Object {
         </nav>
       </div>
       <ul
-        class="sc-AxheI jqeeAV"
+        class="sc-AxheI jMIuVM"
         data-testid="desktopContactMenu"
         id="desktopContactMenu"
       >
         <li
-          class="sc-AxmLO bGVrCB"
+          class="sc-AxmLO bsqIBN"
         >
           <a
-            class="sc-fzoLsD eZqUxI"
+            class="sc-fzoLsD eVaKKO"
             data-testid="desktopLinkedInLink"
             href="https://www.linkedin.com/in/sean-mcquaid-292b3588/"
             id="desktopLinkedInLink"
             target="blank"
           >
             <div
-              class="sc-fzozJi djesxo"
+              class="sc-fzozJi EoHts"
             >
               <svg
                 fill="currentColor"
@@ -650,24 +650,24 @@ Object {
               </svg>
             </div>
             <span
-              class="sc-Axmtr dRfdEi"
+              class="sc-Axmtr kcFsFG"
             >
               LinkedIn
             </span>
           </a>
         </li>
         <li
-          class="sc-AxmLO bGVrCB"
+          class="sc-AxmLO bsqIBN"
         >
           <a
-            class="sc-fzoLsD eZqUxI"
+            class="sc-fzoLsD eVaKKO"
             data-testid="desktopGitHubLink"
             href="https://github.com/seanmcquaid"
             id="desktopGitHubLink"
             target="blank"
           >
             <div
-              class="sc-fzozJi djesxo"
+              class="sc-fzozJi EoHts"
             >
               <svg
                 fill="currentColor"
@@ -684,24 +684,24 @@ Object {
               </svg>
             </div>
             <span
-              class="sc-Axmtr dRfdEi"
+              class="sc-Axmtr kcFsFG"
             >
               GitHub
             </span>
           </a>
         </li>
         <li
-          class="sc-AxmLO bGVrCB"
+          class="sc-AxmLO bsqIBN"
         >
           <a
-            class="sc-fzoLsD eZqUxI"
+            class="sc-fzoLsD eVaKKO"
             data-testid="desktopResumeLink"
             href="Sean McQuaid - Resume.pdf"
             id="desktopResumeLink"
             target="blank"
           >
             <div
-              class="sc-fzozJi djesxo"
+              class="sc-fzozJi EoHts"
             >
               <svg
                 fill="currentColor"
@@ -718,7 +718,7 @@ Object {
               </svg>
             </div>
             <span
-              class="sc-Axmtr dRfdEi"
+              class="sc-Axmtr kcFsFG"
             >
               Resume
             </span>

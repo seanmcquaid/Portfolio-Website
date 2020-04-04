@@ -98,8 +98,8 @@ const NavbarContainer = styled.div`
         position : fixed;
         flex-direction : row;
         align-items : baseline;
-        height : 70px;
-        min-height : 66px;
+        height : 80px;
+        min-height : 80px;
         width : 100%;
     }
     @media (max-width : 520px){
@@ -111,6 +111,7 @@ const LinkContainer = styled(Link)`
     text-align : center;
     padding: 1rem;
     display : flex;
+    margin-top : 0.5rem;
     flex-direction : column;
     justify-content : center;
     align-items : center;
@@ -133,7 +134,7 @@ const NavContainer = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-    margin : 0.25rem;
+    margin-top: 0.25rem;
     padding : 1rem;
     text-decoration : none;
     font-size : 1.5rem;
@@ -168,6 +169,7 @@ const ContactList = styled.ul`
     flex-direction : column;
     text-align : center;
     padding: 0;
+    margin : 0;
     list-style: none;
     justify-content : center;
     align-items : center;
@@ -178,23 +180,18 @@ const ContactList = styled.ul`
 
 const ContactListItemLinkLabel = styled.span`
     font-size : 1rem;
-    display : none;
+    visibility : hidden;
 `;
 
 const ContactListItem = styled.li`
-    padding : 1rem;
-    height : 30px;
+    margin : 0.25rem;
 `;
 
 const ContactListIconContainer = styled.div`
-    display : block;
     font-size : 1.5rem;
     height: 100%;
     &:hover + ${ContactListItemLinkLabel}{
-        display : block;
-    }
-    &:hover {
-        display : none;
+        visibility : visible;
     }
 `;
 
@@ -202,7 +199,6 @@ const ContactListItemLink = styled.a`
     text-decoration : none;
     font-size : 1.5rem;
     color : #ffffffb6;
-    margin : 0.25rem;
 `;
 
 const HamburgerMenu = styled.div`
@@ -246,7 +242,7 @@ const HamburgerNavLinksList = styled.nav`
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    margin-top : 5.7rem;
+    margin-top : 6.25rem;
     position : fixed;
     width : 100%;
     min-width : 100%;
