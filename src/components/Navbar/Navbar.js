@@ -97,9 +97,13 @@ const NavbarContainer = styled.div`
     @media (max-width : 975px){
         position : fixed;
         flex-direction : row;
-        height : 60px;
-        min-height : 60px;
+        align-items : baseline;
+        height : 70px;
+        min-height : 66px;
         width : 100%;
+    }
+    @media (max-width : 520px){
+        align-items : center;
     }
 `;
 
@@ -129,6 +133,7 @@ const NavContainer = styled.nav`
 `;
 
 const NavLink = styled(Link)`
+    margin : 0.25rem;
     padding : 1rem;
     text-decoration : none;
     font-size : 1.5rem;
@@ -145,7 +150,7 @@ const NavLink = styled(Link)`
 
 const NavLinkLabel = styled.span`
     font-size : 1rem;
-    display : none;
+    visibility : hidden;
 `;
 
 const NavLinkIconContainer = styled.div`
@@ -154,10 +159,7 @@ const NavLinkIconContainer = styled.div`
     width : 100%;
     height: 100%;
     &:hover + ${NavLinkLabel}{
-        display : block;
-    }
-    &:hover {
-        display : none;
+        visibility : visible;
     }
 `;
 
@@ -200,7 +202,7 @@ const ContactListItemLink = styled.a`
     text-decoration : none;
     font-size : 1.5rem;
     color : #ffffffb6;
-    
+    margin : 0.25rem;
 `;
 
 const HamburgerMenu = styled.div`
@@ -225,7 +227,7 @@ const HamburgerIcon = styled(GiHamburgerMenu)`
     &:hover {
         cursor : pointer;
     }
-    @media (min-width : 520px){
+    @media (min-width : 521px){
         display : none;
     }
 `;
@@ -244,7 +246,7 @@ const HamburgerNavLinksList = styled.nav`
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    margin-top : 5rem;
+    margin-top : 5.7rem;
     position : fixed;
     width : 100%;
     min-width : 100%;
