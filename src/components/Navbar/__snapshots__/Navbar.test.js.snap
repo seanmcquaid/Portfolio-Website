@@ -11,59 +11,39 @@ Object {
         id="navbar"
       >
         <a
-          class="sc-AxirZ cnmwyD"
+          class="sc-AxirZ esVepc"
           data-testid="homeButton"
           href="#/"
           id="homeButton"
         >
-          <svg
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 512 512"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="sc-AxgMl mcXLr"
           >
-            <path
-              d="M160 64v257.6c-8.2-2.7-17.2-4.1-26.6-4.1-38.3 0-69.4 27.1-69.4 65.4 0 38.3 31.1 65.1 69.4 65.1 38.3 0 69.6-28.2 69.6-69.1V200h202v121.6c-8.2-2.7-17.2-4.1-26.6-4.1-38.3 0-69.4 27.1-69.4 65.4 0 38.3 31.1 65.1 69.4 65.1 38.3 0 69.6-28.2 69.6-69.1V64H160zm245 96H203v-53h202v53z"
-            />
-          </svg>
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              stroke-width="0"
+              viewBox="0 0 512 512"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M160 64v257.6c-8.2-2.7-17.2-4.1-26.6-4.1-38.3 0-69.4 27.1-69.4 65.4 0 38.3 31.1 65.1 69.4 65.1 38.3 0 69.6-28.2 69.6-69.1V200h202v121.6c-8.2-2.7-17.2-4.1-26.6-4.1-38.3 0-69.4 27.1-69.4 65.4 0 38.3 31.1 65.1 69.4 65.1 38.3 0 69.6-28.2 69.6-69.1V64H160zm245 96H203v-53h202v53z"
+              />
+            </svg>
+          </div>
+          <span
+            class="sc-AxhUy gLXoPp"
+          >
+            Home
+          </span>
         </a>
         <nav
           class="sc-AxiKw bPcyZw"
           data-testid="desktopNavMenu"
           id="desktopNavMenu"
         >
-          <a
-            class="sc-AxhCb kQBoVz"
-            data-testid="desktopHomeLink"
-            href="#/"
-            id="desktopHomeLink"
-          >
-            <div
-              class="sc-AxgMl mcXLr"
-            >
-              <svg
-                fill="currentColor"
-                height="1em"
-                stroke="currentColor"
-                stroke-width="0"
-                viewBox="0 0 512 512"
-                width="1em"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M208 448V320h96v128h97.6V256H464L256 64 48 256h62.4v192z"
-                />
-              </svg>
-            </div>
-            <span
-              class="sc-AxhUy gLXoPp"
-            >
-              Home
-            </span>
-          </a>
           <a
             class="sc-AxhCb kQBoVz"
             data-testid="desktopAboutLink"
@@ -373,59 +353,39 @@ Object {
       id="navbar"
     >
       <a
-        class="sc-AxirZ cnmwyD"
+        class="sc-AxirZ esVepc"
         data-testid="homeButton"
         href="#/"
         id="homeButton"
       >
-        <svg
-          fill="currentColor"
-          height="1em"
-          stroke="currentColor"
-          stroke-width="0"
-          viewBox="0 0 512 512"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
+        <div
+          class="sc-AxgMl mcXLr"
         >
-          <path
-            d="M160 64v257.6c-8.2-2.7-17.2-4.1-26.6-4.1-38.3 0-69.4 27.1-69.4 65.4 0 38.3 31.1 65.1 69.4 65.1 38.3 0 69.6-28.2 69.6-69.1V200h202v121.6c-8.2-2.7-17.2-4.1-26.6-4.1-38.3 0-69.4 27.1-69.4 65.4 0 38.3 31.1 65.1 69.4 65.1 38.3 0 69.6-28.2 69.6-69.1V64H160zm245 96H203v-53h202v53z"
-          />
-        </svg>
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            stroke-width="0"
+            viewBox="0 0 512 512"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M160 64v257.6c-8.2-2.7-17.2-4.1-26.6-4.1-38.3 0-69.4 27.1-69.4 65.4 0 38.3 31.1 65.1 69.4 65.1 38.3 0 69.6-28.2 69.6-69.1V200h202v121.6c-8.2-2.7-17.2-4.1-26.6-4.1-38.3 0-69.4 27.1-69.4 65.4 0 38.3 31.1 65.1 69.4 65.1 38.3 0 69.6-28.2 69.6-69.1V64H160zm245 96H203v-53h202v53z"
+            />
+          </svg>
+        </div>
+        <span
+          class="sc-AxhUy gLXoPp"
+        >
+          Home
+        </span>
       </a>
       <nav
         class="sc-AxiKw bPcyZw"
         data-testid="desktopNavMenu"
         id="desktopNavMenu"
       >
-        <a
-          class="sc-AxhCb kQBoVz"
-          data-testid="desktopHomeLink"
-          href="#/"
-          id="desktopHomeLink"
-        >
-          <div
-            class="sc-AxgMl mcXLr"
-          >
-            <svg
-              fill="currentColor"
-              height="1em"
-              stroke="currentColor"
-              stroke-width="0"
-              viewBox="0 0 512 512"
-              width="1em"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M208 448V320h96v128h97.6V256H464L256 64 48 256h62.4v192z"
-              />
-            </svg>
-          </div>
-          <span
-            class="sc-AxhUy gLXoPp"
-          >
-            Home
-          </span>
-        </a>
         <a
           class="sc-AxhCb kQBoVz"
           data-testid="desktopAboutLink"

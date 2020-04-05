@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, {keyframes} from "styled-components";
 import {Link} from "react-router-dom";
-import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdHome, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
+import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
 import resume from "images/Sean McQuaid - Resume.pdf";
 
@@ -19,13 +19,10 @@ const Navbar = () => {
     return (
     <NavbarContainer data-testid="navbar" id="navbar">
         <LinkContainer to="/" onClick={mobileMenuOnClick} data-testid="homeButton" id="homeButton">
-            <IoMdMusicalNotes/>
+            <NavLinkIconContainer><IoMdMusicalNotes/></NavLinkIconContainer>
+            <NavLinkLabel>Home</NavLinkLabel>
         </LinkContainer>
         <NavContainer data-testid="desktopNavMenu" id="desktopNavMenu">
-            <NavLink to="/" data-testid="desktopHomeLink" id="desktopHomeLink">
-                <NavLinkIconContainer><IoMdHome/></NavLinkIconContainer>
-                <NavLinkLabel>Home</NavLinkLabel>
-            </NavLink>
             <NavLink to="/about" data-testid="desktopAboutLink" id="desktopAboutLink">
                 <NavLinkIconContainer><IoMdPerson/></NavLinkIconContainer>
                 <NavLinkLabel>About</NavLinkLabel>
@@ -117,6 +114,7 @@ const LinkContainer = styled(Link)`
     align-items : center;
     font-size : 1.5rem;
     color : #ffffffb6;
+    text-decoration : none;
 `;
 
 const NavContainer = styled.nav`
