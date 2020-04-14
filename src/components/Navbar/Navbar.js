@@ -150,6 +150,9 @@ const NavLink = styled(Link)`
 const NavLinkLabel = styled.span`
     font-size : 1rem;
     visibility : hidden;
+    @media (max-width : 520px){
+        display : none;
+    }
 `;
 
 const NavLinkIconContainer = styled.div`
