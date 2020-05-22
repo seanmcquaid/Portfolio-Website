@@ -115,6 +115,9 @@ const RightContainer = styled.div`
         max-height : 100%;
         max-width : 100%;
     }
+    @media(max-height : 620px){
+        max-height : 100%;
+    }
 `;
 
 export default Skills;

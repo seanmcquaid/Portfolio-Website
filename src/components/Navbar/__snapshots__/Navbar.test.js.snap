@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm dkksar"
+        class="sc-AxjAm fDPzpx"
         data-testid="navbar"
         id="navbar"
       >
@@ -40,12 +40,12 @@ Object {
           </span>
         </a>
         <nav
-          class="sc-AxiKw cbALXj"
+          class="sc-AxiKw eJLkVJ"
           data-testid="desktopNavMenu"
           id="desktopNavMenu"
         >
           <a
-            class="sc-AxhCb TpGIA"
+            class="sc-AxhCb khTPIi"
             data-testid="desktopAboutLink"
             href="#/about"
             id="desktopAboutLink"
@@ -74,7 +74,7 @@ Object {
             </span>
           </a>
           <a
-            class="sc-AxhCb TpGIA"
+            class="sc-AxhCb khTPIi"
             data-testid="desktopSkillsLink"
             href="#/skills"
             id="desktopSkillsLink"
@@ -103,7 +103,7 @@ Object {
             </span>
           </a>
           <a
-            class="sc-AxhCb TpGIA"
+            class="sc-AxhCb khTPIi"
             data-testid="desktopProjectsLink"
             href="#/projects"
             id="desktopProjectsLink"
@@ -132,7 +132,7 @@ Object {
             </span>
           </a>
           <a
-            class="sc-AxhCb TpGIA"
+            class="sc-AxhCb khTPIi"
             data-testid="desktopContactLink"
             href="#/contact"
             id="desktopContactLink"
@@ -236,7 +236,7 @@ Object {
           </nav>
         </div>
         <ul
-          class="sc-AxheI iljacG"
+          class="sc-AxheI iuLlEc"
           data-testid="desktopContactMenu"
           id="desktopContactMenu"
         >
@@ -348,7 +348,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm dkksar"
+      class="sc-AxjAm fDPzpx"
       data-testid="navbar"
       id="navbar"
     >
@@ -382,12 +382,12 @@ Object {
         </span>
       </a>
       <nav
-        class="sc-AxiKw cbALXj"
+        class="sc-AxiKw eJLkVJ"
         data-testid="desktopNavMenu"
         id="desktopNavMenu"
       >
         <a
-          class="sc-AxhCb TpGIA"
+          class="sc-AxhCb khTPIi"
           data-testid="desktopAboutLink"
           href="#/about"
           id="desktopAboutLink"
@@ -416,7 +416,7 @@ Object {
           </span>
         </a>
         <a
-          class="sc-AxhCb TpGIA"
+          class="sc-AxhCb khTPIi"
           data-testid="desktopSkillsLink"
           href="#/skills"
           id="desktopSkillsLink"
@@ -445,7 +445,7 @@ Object {
           </span>
         </a>
         <a
-          class="sc-AxhCb TpGIA"
+          class="sc-AxhCb khTPIi"
           data-testid="desktopProjectsLink"
           href="#/projects"
           id="desktopProjectsLink"
@@ -474,7 +474,7 @@ Object {
           </span>
         </a>
         <a
-          class="sc-AxhCb TpGIA"
+          class="sc-AxhCb khTPIi"
           data-testid="desktopContactLink"
           href="#/contact"
           id="desktopContactLink"
@@ -578,7 +578,7 @@ Object {
         </nav>
       </div>
       <ul
-        class="sc-AxheI iljacG"
+        class="sc-AxheI iuLlEc"
         data-testid="desktopContactMenu"
         id="desktopContactMenu"
       >
