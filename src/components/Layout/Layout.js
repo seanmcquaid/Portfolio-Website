@@ -16,16 +16,19 @@ const Container = styled.div`
     width : 100%;
     justify-content  :center;
     align-items : center;
+    @media(max-height : 600px){
+        margin-top : 7rem;
+    }
     @media(max-width : 520px){
         flex-direction : column;
         height : auto;
         width : auto;
-        margin-top : 6.5rem;
+        margin-top : 7rem;
     }
     @media(max-width : 975px){
         height : auto;
         width : auto;
-        margin-top : 6.5rem;
+        margin-top : 7rem;
     }
 `;
 
