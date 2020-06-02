@@ -24,8 +24,8 @@ const ProjectContainer = styled.div`
     flex-direction : column;
     justify-content : center;
     align-items : center;
-    max-width : 400px;
-    max-height : 600px;
+    width : 400px;
+    height : 500px;
     @media(max-width : 520px){
         border : none;
         padding : 0;
