@@ -50,6 +50,7 @@ const ProjectsPageContainer = styled.div`
     justify-content : center;
     align-items : center;
     width : 100%;
+    height : 100%;
     @media (max-width : 975px){
         margin : auto;
     }
@@ -65,8 +66,12 @@ const ProjectsContainer = styled.div`
     display : flex;
     flex-direction : row;
     align-items : center;
-    margin : 1rem;
+    flex-wrap : wrap;
+    flex : 1;
+    margin-top : 1rem;
     width : 100%;
+    height : 100%;
+    overflow : scroll;
     justify-content : center;
     animation: ${fadeInAnimation} ease 2s; 
     animation-iteration-count: 1; 

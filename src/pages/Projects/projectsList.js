@@ -1,4 +1,5 @@
 import setListCreator from "images/setListCreator.jpg";
+import dekTech from "images/dekTech.jpg";
 import recipeDashboard from "images/recipeDashboard.jpg";
 
 export default [
@@ -11,7 +12,13 @@ export default [
     {
         title : "Recipe Dashboard",
         image : recipeDashboard,
-        description : "Created a simple Recipe Dashboard to practice TDD and some performance optimization concepts in React!",
+        description : "Created a Recipe Dashboard using React that allows a user to search for a recipe with an ingredient and get recipe instructions with measurements in US/Metric!",
+        repoLink : "https://github.com/seanmcquaid/DekTech",
+    },
+    {
+        title : "DekTech",
+        image : dekTech,
+        description : "Built with the MERN Stack, this project is meant to provide MTG players with a new way to search for cards and create commander decks quickly and effectively with a more modern UI than other similar applications!",
         repoLink : "https://github.com/seanmcquaid/DekTech",
     },
 ];
