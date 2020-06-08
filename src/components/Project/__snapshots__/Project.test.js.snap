@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzoiQi gWkQJh"
+        class="sc-fzoiQi kKRmQY"
         data-testid="projectInfo1"
         id="projectInfo1"
       >
@@ -19,7 +19,7 @@ Object {
         </h4>
         <img
           alt="Portfolio"
-          class="sc-fzqNqU ganvPH"
+          class="sc-fzqNqU hJCjwJ"
           data-testid="projectImage1"
           id="projectImage1"
           src="https://via.placeholder.com/150"
@@ -32,7 +32,7 @@ Object {
           Portfolio website
         </p>
         <div
-          class="sc-fzoyTs eNtAnY"
+          class="sc-fzoyTs jcQEQW"
         >
           <a
             class="sc-fznWqX kKWfFq"
@@ -49,7 +49,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzoiQi gWkQJh"
+      class="sc-fzoiQi kKRmQY"
       data-testid="projectInfo1"
       id="projectInfo1"
     >
@@ -62,7 +62,7 @@ Object {
       </h4>
       <img
         alt="Portfolio"
-        class="sc-fzqNqU ganvPH"
+        class="sc-fzqNqU hJCjwJ"
         data-testid="projectImage1"
         id="projectImage1"
         src="https://via.placeholder.com/150"
@@ -75,7 +75,7 @@ Object {
         Portfolio website
       </p>
       <div
-        class="sc-fzoyTs eNtAnY"
+        class="sc-fzoyTs jcQEQW"
       >
         <a
           class="sc-fznWqX kKWfFq"
