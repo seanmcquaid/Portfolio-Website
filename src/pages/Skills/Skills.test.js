@@ -1,10 +1,11 @@
 import React from "react";
-import {render} from "@testing-library/react";
+import {render, act, cleanup} from "@testing-library/react";
 import Skills from "./Skills";
-import { act } from "react-dom/test-utils";
 import "@testing-library/jest-dom/extend-expect";
 
 describe("<Skills/>", () => {
+
+    afterEach(cleanup);
     it("Matches snapshot", () => {
         const skills = render(<Skills/>);
         expect(skills).toMatchSnapshot();
@@ -15,11 +16,13 @@ describe("<Skills/>", () => {
     });
     it("Skills Page Displays after 1.5 seconds", async () => {
         jest.useFakeTimers();
-        const {rerender, getByTestId} = render(<Skills/>);
+
+        const {getByTestId} = render(<Skills/>);
+
         act(() => {
-            rerender(<Skills/>);
             jest.advanceTimersByTime(1500);
         });
+        
         expect(() => getByTestId("loadingSpinner")).toThrowError();
         expect(getByTestId("skillsPageHeader")).toBeVisible();
     });

@@ -6,6 +6,6 @@ import Error from "./Error";
 describe("<Error/>", () => {
     it("Matches snapshot", () => {
         const error = render(<Router><Error/></Router>);
-        expect(Error).toMatchSnapshot();
+        expect(error).toMatchSnapshot();
     });
 });

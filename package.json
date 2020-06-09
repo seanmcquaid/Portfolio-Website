@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@babel/runtime": "^7.10.2",
     "@emotion/core": "^10.0.28",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/user-event": "^7.2.1",
@@ -11,13 +12,13 @@
     "gh-pages": "^2.2.0",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-icons": "^3.9.0",
-    "react-router-dom": "^5.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.0",
-    "react-spinners": "^0.8.0",
-    "styled-components": "^5.0.1",
+    "react-spinners": "^0.8.3",
+    "styled-components": "^5.1.1",
     "styled-normalize": "^8.0.7"
   },
   "scripts": {
@@ -25,7 +26,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jest-environment-jsdom-sixteen",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,11 +45,12 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^10.0.1",
-    "@types/jest": "^25.1.4",
+    "@testing-library/react": "^10.2.1",
+    "@types/jest": "^25.2.3",
     "history": "^4.10.1",
     "jest": "24.9.0",
-    "jest-styled-components": "^7.0.0",
+    "jest-environment-jsdom-sixteen": "^1.0.3",
+    "jest-styled-components": "^7.0.2",
     "mq-polyfill": "^1.1.8",
     "react-test-renderer": "^16.13.1"
   }
