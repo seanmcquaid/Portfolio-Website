@@ -183,7 +183,7 @@ Object {
           <div
             class="sc-fzpans hGqZeR"
             data-testid="mobileNavMenu"
-            id="mobileMenuToggleButton"
+            id="mobileNavMenu"
           >
             <nav
               class="sc-fznyAO jefWsP"
@@ -530,7 +530,7 @@ Object {
         <div
           class="sc-fzpans hGqZeR"
           data-testid="mobileNavMenu"
-          id="mobileMenuToggleButton"
+          id="mobileNavMenu"
         >
           <nav
             class="sc-fznyAO jefWsP"

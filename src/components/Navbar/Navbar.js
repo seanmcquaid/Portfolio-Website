@@ -41,7 +41,7 @@ const Navbar = () => {
             </NavLink>
         </NavContainer>
         <HamburgerIcon onClick={hamburgerMenuOnClick} data-testid="mobileMenuToggleButton" id="mobileMenuToggleButton"/>
-        <HamburgerMenu data-testid="mobileNavMenu" id="mobileMenuToggleButton">
+        <HamburgerMenu data-testid="mobileNavMenu" id="mobileNavMenu">
             <HamburgerNavLinksList toggleMenuDisplayed={toggleMenuDisplayed}>
                 <HamburgerNavLink to="/about" onClick={mobileMenuOnClick} data-testid="mobileAboutLink" id="mobileAboutLink">
                     <HamburgerNavLinkLabel>About</HamburgerNavLinkLabel>

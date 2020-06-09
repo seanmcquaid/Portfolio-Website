@@ -13,7 +13,7 @@ Object {
         <a
           class="sc-AxirZ esVepc"
           data-testid="homeButton"
-          href="#/"
+          href="/"
           id="homeButton"
         >
           <div
@@ -47,7 +47,7 @@ Object {
           <a
             class="sc-AxhCb khTPIi"
             data-testid="desktopAboutLink"
-            href="#/about"
+            href="/about"
             id="desktopAboutLink"
           >
             <div
@@ -76,7 +76,7 @@ Object {
           <a
             class="sc-AxhCb khTPIi"
             data-testid="desktopSkillsLink"
-            href="#/skills"
+            href="/skills"
             id="desktopSkillsLink"
           >
             <div
@@ -105,7 +105,7 @@ Object {
           <a
             class="sc-AxhCb khTPIi"
             data-testid="desktopProjectsLink"
-            href="#/projects"
+            href="/projects"
             id="desktopProjectsLink"
           >
             <div
@@ -134,7 +134,7 @@ Object {
           <a
             class="sc-AxhCb khTPIi"
             data-testid="desktopContactLink"
-            href="#/contact"
+            href="/contact"
             id="desktopContactLink"
           >
             <div
@@ -180,7 +180,7 @@ Object {
         <div
           class="sc-fzpans hGqZeR"
           data-testid="mobileNavMenu"
-          id="mobileMenuToggleButton"
+          id="mobileNavMenu"
         >
           <nav
             class="sc-fznyAO jefWsP"
@@ -188,7 +188,7 @@ Object {
             <a
               class="sc-fznKkj dGhEQm"
               data-testid="mobileAboutLink"
-              href="#/about"
+              href="/about"
               id="mobileAboutLink"
             >
               <span
@@ -200,7 +200,7 @@ Object {
             <a
               class="sc-fznKkj dGhEQm"
               data-testid="mobileSkillsLink"
-              href="#/skills"
+              href="/skills"
               id="mobileSkillsLink"
             >
               <span
@@ -212,7 +212,7 @@ Object {
             <a
               class="sc-fznKkj dGhEQm"
               data-testid="mobileProjectsLink"
-              href="#/projects"
+              href="/projects"
               id="mobileProjectsLink"
             >
               <span
@@ -224,7 +224,7 @@ Object {
             <a
               class="sc-fznKkj dGhEQm"
               data-testid="mobileContactLink"
-              href="#/contact"
+              href="/contact"
               id="mobileContactLink"
             >
               <span
@@ -355,7 +355,7 @@ Object {
       <a
         class="sc-AxirZ esVepc"
         data-testid="homeButton"
-        href="#/"
+        href="/"
         id="homeButton"
       >
         <div
@@ -389,7 +389,7 @@ Object {
         <a
           class="sc-AxhCb khTPIi"
           data-testid="desktopAboutLink"
-          href="#/about"
+          href="/about"
           id="desktopAboutLink"
         >
           <div
@@ -418,7 +418,7 @@ Object {
         <a
           class="sc-AxhCb khTPIi"
           data-testid="desktopSkillsLink"
-          href="#/skills"
+          href="/skills"
           id="desktopSkillsLink"
         >
           <div
@@ -447,7 +447,7 @@ Object {
         <a
           class="sc-AxhCb khTPIi"
           data-testid="desktopProjectsLink"
-          href="#/projects"
+          href="/projects"
           id="desktopProjectsLink"
         >
           <div
@@ -476,7 +476,7 @@ Object {
         <a
           class="sc-AxhCb khTPIi"
           data-testid="desktopContactLink"
-          href="#/contact"
+          href="/contact"
           id="desktopContactLink"
         >
           <div
@@ -522,7 +522,7 @@ Object {
       <div
         class="sc-fzpans hGqZeR"
         data-testid="mobileNavMenu"
-        id="mobileMenuToggleButton"
+        id="mobileNavMenu"
       >
         <nav
           class="sc-fznyAO jefWsP"
@@ -530,7 +530,7 @@ Object {
           <a
             class="sc-fznKkj dGhEQm"
             data-testid="mobileAboutLink"
-            href="#/about"
+            href="/about"
             id="mobileAboutLink"
           >
             <span
@@ -542,7 +542,7 @@ Object {
           <a
             class="sc-fznKkj dGhEQm"
             data-testid="mobileSkillsLink"
-            href="#/skills"
+            href="/skills"
             id="mobileSkillsLink"
           >
             <span
@@ -554,7 +554,7 @@ Object {
           <a
             class="sc-fznKkj dGhEQm"
             data-testid="mobileProjectsLink"
-            href="#/projects"
+            href="/projects"
             id="mobileProjectsLink"
           >
             <span
@@ -566,7 +566,7 @@ Object {
           <a
             class="sc-fznKkj dGhEQm"
             data-testid="mobileContactLink"
-            href="#/contact"
+            href="/contact"
             id="mobileContactLink"
           >
             <span
