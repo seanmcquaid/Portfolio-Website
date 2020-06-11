@@ -6,12 +6,12 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzoNJl bPrdeo"
+        class="sc-fznxKY dxythX"
         data-testid="homePage"
         id="homePage"
       >
         <div
-          class="sc-fzoXWK evzNVC"
+          class="sc-fznMAR kdcijV"
         >
           <h1
             class="sc-fznxsB hwcVxy"
@@ -29,13 +29,14 @@ Object {
           </h2>
           <a
             class="sc-fznWqX kBttbi"
+            data-testid="Contact MeLinkButton"
             href="#/contact"
           >
             Contact Me
           </a>
         </div>
         <div
-          class="sc-fzpmMD bzrqep"
+          class="sc-fznWOq jtizem"
         >
           <img
             alt="headshotImage"
@@ -50,12 +51,12 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzoNJl bPrdeo"
+      class="sc-fznxKY dxythX"
       data-testid="homePage"
       id="homePage"
     >
       <div
-        class="sc-fzoXWK evzNVC"
+        class="sc-fznMAR kdcijV"
       >
         <h1
           class="sc-fznxsB hwcVxy"
@@ -73,13 +74,14 @@ Object {
         </h2>
         <a
           class="sc-fznWqX kBttbi"
+          data-testid="Contact MeLinkButton"
           href="#/contact"
         >
           Contact Me
         </a>
       </div>
       <div
-        class="sc-fzpmMD bzrqep"
+        class="sc-fznWOq jtizem"
       >
         <img
           alt="headshotImage"

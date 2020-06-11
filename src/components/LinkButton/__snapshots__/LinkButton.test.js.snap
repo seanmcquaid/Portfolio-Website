@@ -7,6 +7,7 @@ Object {
     <div>
       <a
         class="sc-AxjAm kcMThJ"
+        data-testid="Test Link ButtonLinkButton"
         href="#/"
       >
         Test Link Button
@@ -16,6 +17,7 @@ Object {
   "container": <div>
     <a
       class="sc-AxjAm kcMThJ"
+      data-testid="Test Link ButtonLinkButton"
       href="#/"
     >
       Test Link Button
