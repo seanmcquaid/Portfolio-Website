@@ -13,7 +13,7 @@ export default [
         title : "Recipe Dashboard",
         image : recipeDashboard,
         description : "Created a Recipe Dashboard using React that allows a user to search for a recipe with an ingredient and get recipe instructions with measurements in US/Metric!",
-        repoLink : "https://github.com/seanmcquaid/DekTech",
+        repoLink : "https://github.com/seanmcquaid/Recipe-Dashboard",
     },
     {
         title : "DekTech",
