@@ -71,7 +71,7 @@ const ProjectsContainer = styled.div`
     margin-top : 1rem;
     width : 100%;
     height : 100%;
-    overflow : scroll;
+    overflow : auto;
     justify-content : center;
     animation: ${fadeInAnimation} ease 2s; 
     animation-iteration-count: 1; 
