@@ -6,26 +6,19 @@ body {
     background-color : #4C8577;
     line-height: 1.5rem;
     height : 100%;
+    width : 100%;
+    overflow: auto;
+
 }
 
 html{
     height : 100%;
     width : 100%;
-    position: fixed;
+    overflow: auto;
 }
 
 #root {
     height : 100%;
     width : 100%;
-}
-
-@media (max-width : 975px){
-    html{
-        position: relative;
-    }
-}
-@media(max-width : 520px){
-    html{
-        position: relative;
-    }
+    overflow: auto;
 }

@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzoyTs erbkho"
+        class="sc-fzoyTs dCZNCI"
       >
         <div
-          class="sc-AxjAm dvJbbV"
+          class="sc-AxjAm kxGDPh"
           data-testid="navbar"
           id="navbar"
         >
@@ -353,10 +353,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzoyTs erbkho"
+      class="sc-fzoyTs dCZNCI"
     >
       <div
-        class="sc-AxjAm dvJbbV"
+        class="sc-AxjAm kxGDPh"
         data-testid="navbar"
         id="navbar"
       >

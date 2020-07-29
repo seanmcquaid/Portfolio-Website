@@ -92,6 +92,7 @@ const NavbarContainer = styled.div`
     width : 100px;
     min-width : 100px;
     height : 100%;
+    overflow: auto;
     @media (max-width : 975px){
         position : fixed;
         flex-direction : row;
