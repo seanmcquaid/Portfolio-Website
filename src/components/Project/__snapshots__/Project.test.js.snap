@@ -32,7 +32,7 @@ Object {
           Portfolio website
         </p>
         <div
-          class="sc-fzoyTs jcQEQW"
+          class="sc-fzoyTs dqxPnh"
         >
           <a
             class="sc-fznWqX kKWfFq"
@@ -41,7 +41,7 @@ Object {
             id="projectRepoButton1"
             target="blank"
           >
-            Github
+            GitHub Repo
           </a>
         </div>
       </div>
@@ -75,7 +75,7 @@ Object {
         Portfolio website
       </p>
       <div
-        class="sc-fzoyTs jcQEQW"
+        class="sc-fzoyTs dqxPnh"
       >
         <a
           class="sc-fznWqX kKWfFq"
@@ -84,7 +84,7 @@ Object {
           id="projectRepoButton1"
           target="blank"
         >
-          Github
+          GitHub Repo
         </a>
       </div>
     </div>

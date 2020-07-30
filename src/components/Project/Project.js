@@ -10,7 +10,7 @@ const Project = ({title, image, description, repoLink, projectId}) => (
         <ParagraphText id={"projectDescription" + projectId} data-testid={"projectDescription" + projectId}>{description}</ParagraphText>
         <ButtonsContainer>
             <ExternalLinkButton href={repoLink} target="blank" id={"projectRepoButton" + projectId} data-testid={"projectRepoButton" + projectId}>
-                Github
+                GitHub Repo
             </ExternalLinkButton>
         </ButtonsContainer>
     </ProjectContainer>
@@ -51,7 +51,7 @@ const ButtonsContainer = styled.div`
     flex-direction : row;
     justify-content : center;
     align-items : center;
-    max-width : 100px;
+    max-width : 200px;
     height : 200px;
 `;
 
