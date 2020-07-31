@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled, {keyframes} from "styled-components";
 import {Link} from "react-router-dom";
-import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes } from "react-icons/io";
+import { IoLogoGithub, IoLogoLinkedin, IoMdMail, IoIosPaper, IoMdPerson, IoMdSettings, IoMdFiling, IoMdMusicalNotes, IoMdContact } from "react-icons/io";
 import {GiHamburgerMenu} from "react-icons/gi";
 import resume from "images/Sean McQuaid - Resume.pdf";
 
@@ -36,7 +36,7 @@ const Navbar = () => {
                 <NavLinkLabel>Projects</NavLinkLabel>
             </NavLink>
             <NavLink to="/contact" data-testid="desktopContactLink" id="desktopContactLink">
-                <NavLinkIconContainer><IoMdMail/></NavLinkIconContainer>
+                <NavLinkIconContainer><IoMdContact/></NavLinkIconContainer>
                 <NavLinkLabel>Contact</NavLinkLabel>
             </NavLink>
         </NavContainer>
@@ -74,6 +74,12 @@ const Navbar = () => {
                 <ContactListItemLink href={resume} target="blank" data-testid="desktopResumeLink" id="desktopResumeLink">
                     <ContactListIconContainer><IoIosPaper/></ContactListIconContainer>
                     <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
+                </ContactListItemLink>
+            </ContactListItem>
+            <ContactListItem>
+                <ContactListItemLink href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!" data-testid="desktopEmailLink" id="desktopEmailLink">
+                    <ContactListIconContainer><IoMdMail/></ContactListIconContainer>
+                    <ContactListItemLinkLabel>Email</ContactListItemLinkLabel>
                 </ContactListItemLink>
             </ContactListItem>
         </ContactList>

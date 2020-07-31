@@ -153,7 +153,7 @@ Object {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"
+                    d="M256 48C141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208S370.4 48 256 48zm0 62.4c34.3 0 62.4 28.1 62.4 62.4s-28.1 62.4-62.4 62.4-62.4-28.1-62.4-62.4 28.1-62.4 62.4-62.4zm0 300.4c-52 0-97.8-27-124.8-66.6 1-41.6 83.2-64.5 124.8-64.5s123.8 22.9 124.8 64.5c-27 39.5-72.8 66.6-124.8 66.6z"
                   />
                 </svg>
               </div>
@@ -345,6 +345,39 @@ Object {
                 </span>
               </a>
             </li>
+            <li
+              class="sc-AxmLO bsqIBN"
+            >
+              <a
+                class="sc-fzoLsD eVaKKO"
+                data-testid="desktopEmailLink"
+                href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!"
+                id="desktopEmailLink"
+              >
+                <div
+                  class="sc-fzozJi cnMJOU"
+                >
+                  <svg
+                    fill="currentColor"
+                    height="1em"
+                    stroke="currentColor"
+                    stroke-width="0"
+                    viewBox="0 0 512 512"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"
+                    />
+                  </svg>
+                </div>
+                <span
+                  class="sc-Axmtr kcFsFG"
+                >
+                  Email
+                </span>
+              </a>
+            </li>
           </ul>
         </div>
         Children are here!
@@ -500,7 +533,7 @@ Object {
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <path
-                  d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"
+                  d="M256 48C141.6 48 48 141.6 48 256s93.6 208 208 208 208-93.6 208-208S370.4 48 256 48zm0 62.4c34.3 0 62.4 28.1 62.4 62.4s-28.1 62.4-62.4 62.4-62.4-28.1-62.4-62.4 28.1-62.4 62.4-62.4zm0 300.4c-52 0-97.8-27-124.8-66.6 1-41.6 83.2-64.5 124.8-64.5s123.8 22.9 124.8 64.5c-27 39.5-72.8 66.6-124.8 66.6z"
                 />
               </svg>
             </div>
@@ -689,6 +722,39 @@ Object {
                 class="sc-Axmtr kcFsFG"
               >
                 Resume
+              </span>
+            </a>
+          </li>
+          <li
+            class="sc-AxmLO bsqIBN"
+          >
+            <a
+              class="sc-fzoLsD eVaKKO"
+              data-testid="desktopEmailLink"
+              href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!"
+              id="desktopEmailLink"
+            >
+              <div
+                class="sc-fzozJi cnMJOU"
+              >
+                <svg
+                  fill="currentColor"
+                  height="1em"
+                  stroke="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M437.332 80H74.668C51.199 80 32 99.198 32 122.667v266.666C32 412.802 51.199 432 74.668 432h362.664C460.801 432 480 412.802 480 389.333V122.667C480 99.198 460.801 80 437.332 80zM432 170.667L256 288 80 170.667V128l176 117.333L432 128v42.667z"
+                  />
+                </svg>
+              </div>
+              <span
+                class="sc-Axmtr kcFsFG"
+              >
+                Email
               </span>
             </a>
           </li>

@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react";
 import { HeaderText, ParagraphText, LoadingSpinner } from "components/components";
 import Aux from "hoc/Aux/Aux";
 import styled, {keyframes} from "styled-components";
-import {IoLogoLinkedin, IoLogoGithub, IoIosPaper} from "react-icons/io";
+import {IoLogoLinkedin, IoLogoGithub, IoIosPaper, IoMdMail} from "react-icons/io";
 import resume from "images/Sean McQuaid - Resume.pdf";
 
 const Contact = () => {
@@ -40,6 +40,12 @@ const Contact = () => {
                             <ContactListItemLink href={resume} target="blank" id="resumeLink" data-testid="resumeLink">
                                 <IoIosPaper/>
                                 <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
+                            </ContactListItemLink>
+                        </ContactListItem>
+                        <ContactListItem>
+                            <ContactListItemLink href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!" data-testid="desktopEmailLink" id="desktopEmailLink">
+                                <IoMdMail/>
+                                <ContactListItemLinkLabel>Email</ContactListItemLinkLabel>
                             </ContactListItemLink>
                         </ContactListItem>
                     </ContactList>
