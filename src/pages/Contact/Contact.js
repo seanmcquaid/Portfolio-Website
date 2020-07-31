@@ -71,14 +71,16 @@ const ContactList = styled.ul`
     display : flex;
     flex-direction : row;
     justify-content : center;
-    align-items : center;
+    align-items : space-between;
     width: 100%;
-    padding: 0;
+    padding: 1rem;
     list-style: none;
 `;
 
 const ContactListItem = styled.li`
-    margin : 1.5rem
+    padding: 0.75rem;
+    width : 40px;
+    height : 40px;
 `;
 
 const fadeInAnimation = keyframes`
