@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzoiQi kKRmQY"
+        class="sc-fzoiQi kWYkrd"
         data-testid="projectInfo1"
         id="projectInfo1"
       >
@@ -49,7 +49,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzoiQi kKRmQY"
+      class="sc-fzoiQi kWYkrd"
       data-testid="projectInfo1"
       id="projectInfo1"
     >
