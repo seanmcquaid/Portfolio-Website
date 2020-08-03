@@ -235,6 +235,7 @@ const HamburgerMenu = styled.div`
     position : fixed;
     top : 0;
     left : 0;
+    margin-top : 3.25rem;
     @media (min-width : 520px){
         display : none;
     }
