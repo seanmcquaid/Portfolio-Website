@@ -6,29 +6,30 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fznxKY dxythX"
+        class="sc-fznxKY eHJZTz"
         data-testid="homePage"
         id="homePage"
       >
         <div
-          class="sc-fznMAR kdcijV"
+          class="sc-fznMAR kKViZT"
         >
           <h1
-            class="sc-fznxsB hwcVxy"
+            class="sc-fznxsB hbwhCu"
             data-testid="skillsPageHeader"
             id="homePageHeader"
           >
             Hello, I am Sean!
           </h1>
           <h2
-            class="sc-fznJRM cQkQrk"
+            class="sc-fznJRM kvSjGo"
             data-testid="homePageSubHeader"
             id="homePageSubHeader"
           >
-            Software Engineer, Front End Web Developer, Jazz Musician 
+            Software Engineer, Front End Web Developer, Jazz Musician
+             
           </h2>
           <a
-            class="sc-fznWqX kBttbi"
+            class="sc-fznWqX cGYnCm"
             data-testid="Contact MeLinkButton"
             href="#/contact"
           >
@@ -36,11 +37,11 @@ Object {
           </a>
         </div>
         <div
-          class="sc-fznWOq jtizem"
+          class="sc-fznWOq egoEaM"
         >
           <img
             alt="headshotImage"
-            class="sc-fzqARJ jmTNSy"
+            class="sc-fzqARJ iafsoq"
             data-testid="headshotImage"
             id="headshotImage"
             src="headshot.jpg"
@@ -51,29 +52,30 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fznxKY dxythX"
+      class="sc-fznxKY eHJZTz"
       data-testid="homePage"
       id="homePage"
     >
       <div
-        class="sc-fznMAR kdcijV"
+        class="sc-fznMAR kKViZT"
       >
         <h1
-          class="sc-fznxsB hwcVxy"
+          class="sc-fznxsB hbwhCu"
           data-testid="skillsPageHeader"
           id="homePageHeader"
         >
           Hello, I am Sean!
         </h1>
         <h2
-          class="sc-fznJRM cQkQrk"
+          class="sc-fznJRM kvSjGo"
           data-testid="homePageSubHeader"
           id="homePageSubHeader"
         >
-          Software Engineer, Front End Web Developer, Jazz Musician 
+          Software Engineer, Front End Web Developer, Jazz Musician
+           
         </h2>
         <a
-          class="sc-fznWqX kBttbi"
+          class="sc-fznWqX cGYnCm"
           data-testid="Contact MeLinkButton"
           href="#/contact"
         >
@@ -81,11 +83,11 @@ Object {
         </a>
       </div>
       <div
-        class="sc-fznWOq jtizem"
+        class="sc-fznWOq egoEaM"
       >
         <img
           alt="headshotImage"
-          class="sc-fzqARJ jmTNSy"
+          class="sc-fzqARJ iafsoq"
           data-testid="headshotImage"
           id="headshotImage"
           src="headshot.jpg"

@@ -6,19 +6,20 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzoNJl ihDLsq"
+        class="sc-fzoNJl hPZkSy"
       >
         <h1
-          class="sc-fznxsB hwcVxy"
+          class="sc-fznxsB hbwhCu"
         >
           Error
         </h1>
         <h2
-          class="sc-fznJRM cQkQrk"
+          class="sc-fznJRM kvSjGo"
         >
-          There was a problem going to the page you typed in. Please go to the 
+          There was a problem going to the page you typed in. Please go to the
+           
           <a
-            class="sc-fzoXWK fLhmit"
+            class="sc-fzoXWK kpyOat"
             href="#/"
           >
             Home Page
@@ -30,19 +31,20 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzoNJl ihDLsq"
+      class="sc-fzoNJl hPZkSy"
     >
       <h1
-        class="sc-fznxsB hwcVxy"
+        class="sc-fznxsB hbwhCu"
       >
         Error
       </h1>
       <h2
-        class="sc-fznJRM cQkQrk"
+        class="sc-fznJRM kvSjGo"
       >
-        There was a problem going to the page you typed in. Please go to the 
+        There was a problem going to the page you typed in. Please go to the
+         
         <a
-          class="sc-fzoXWK fLhmit"
+          class="sc-fzoXWK kpyOat"
           href="#/"
         >
           Home Page

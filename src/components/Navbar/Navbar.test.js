@@ -1,49 +1,61 @@
 import React from "react";
-import {render, fireEvent, act} from "@testing-library/react";
-import {Router} from "react-router-dom";
-import {createMemoryHistory} from "history";
+import { render, fireEvent, act } from "@testing-library/react";
+import { Router } from "react-router-dom";
+import { createMemoryHistory } from "history";
 import Navbar from "./Navbar";
 import "@testing-library/jest-dom/extend-expect";
 
 describe("<Navbar/>", () => {
-    it("Matches snapshot", () => {
-        const history = createMemoryHistory();
-        const navbar = render(<Router history={history}><Navbar/></Router>);
-        expect(navbar).toMatchSnapshot();
+  it("Matches snapshot", () => {
+    const history = createMemoryHistory();
+    const navbar = render(
+      <Router history={history}>
+        <Navbar />
+      </Router>
+    );
+    expect(navbar).toMatchSnapshot();
+  });
+
+  it("Hamburger menu toggle works", () => {
+    const history = createMemoryHistory();
+    const { getByTestId } = render(
+      <Router history={history}>
+        <Navbar />
+      </Router>
+    );
+
+    act(() => {
+      window.innerWidth = 320;
+      window.innerHeight = 568;
+
+      fireEvent(window, new Event("resize"));
     });
 
-    it("Hamburger menu toggle works", () => {
-        const history = createMemoryHistory();
-        const {getByTestId} = render(<Router history={history}><Navbar/></Router>);
+    fireEvent.click(getByTestId("mobileMenuToggleButton"));
 
-        act(() => {
-            window.innerWidth = 320;
-            window.innerHeight = 568;
-        
-            fireEvent(window, new Event("resize"));
-        });
+    expect(getByTestId("mobileAboutLink")).toBeVisible();
+  });
 
-        fireEvent.click(getByTestId("mobileMenuToggleButton"));
+  it("Mobile menu toggle works", () => {
+    const history = createMemoryHistory();
 
-        expect(getByTestId("mobileAboutLink")).toBeVisible();
+    const { getByTestId } = render(
+      <Router history={history}>
+        <Navbar />
+      </Router>
+    );
+
+    act(() => {
+      window.innerWidth = 320;
+      window.innerHeight = 568;
+
+      fireEvent(window, new Event("resize"));
     });
 
-    it("Mobile menu toggle works", () => {
-        const history = createMemoryHistory();
+    fireEvent.click(getByTestId("mobileMenuToggleButton"));
 
-        const {getByTestId} = render(<Router history={history}><Navbar/></Router>);
+    fireEvent.click(getByTestId("homeButton"));
 
-        act(() => {
-            window.innerWidth = 320;
-            window.innerHeight = 568;
-        
-            fireEvent(window, new Event("resize"));
-        });
-
-          fireEvent.click(getByTestId("mobileMenuToggleButton"));
-
-          fireEvent.click(getByTestId("homeButton"));
-
-          expect(getByTestId("mobileAboutLink")).not.toBeVisible();
-    });
+    expect(getByTestId("mobileAboutLink")).not.toBeVisible();
+  });
 });

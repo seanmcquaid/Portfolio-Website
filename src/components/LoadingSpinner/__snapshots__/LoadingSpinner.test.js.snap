@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm gDzEQa"
+        class="sc-AxjAm dCTSzu"
         data-testid="loadingSpinner"
         id="loadingSpinner"
       >
@@ -34,7 +34,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm gDzEQa"
+      class="sc-AxjAm dCTSzu"
       data-testid="loadingSpinner"
       id="loadingSpinner"
     >

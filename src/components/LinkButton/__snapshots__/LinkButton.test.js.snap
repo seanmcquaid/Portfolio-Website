@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
-        class="sc-AxjAm kcMThJ"
+        class="sc-AxjAm hcZamp"
         data-testid="Test Link ButtonLinkButton"
         href="#/"
       >
@@ -16,7 +16,7 @@ Object {
   </body>,
   "container": <div>
     <a
-      class="sc-AxjAm kcMThJ"
+      class="sc-AxjAm hcZamp"
       data-testid="Test Link ButtonLinkButton"
       href="#/"
     >

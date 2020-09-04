@@ -5,11 +5,4 @@ import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
 import Error from "./Error/Error";
 
-export {
-    About,
-    Home,
-    Contact,
-    Projects,
-    Skills,
-    Error,
-};
+export { About, Home, Contact, Projects, Skills, Error };

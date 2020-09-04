@@ -11,15 +11,15 @@ import LoadingSpinner from "./LoadingSpinner/LoadingSpinner";
 import ExternalLinkButton from "./ExternalLinkButton/ExternalLinkButton";
 
 export {
-    Layout,
-    Navbar,
-    Project,
-    Skill,
-    HeaderText,
-    SubHeaderText,
-    LinkButton,
-    ParagraphText,
-    Headshot,
-    LoadingSpinner,
-    ExternalLinkButton
+  Layout,
+  Navbar,
+  Project,
+  Skill,
+  HeaderText,
+  SubHeaderText,
+  LinkButton,
+  ParagraphText,
+  Headshot,
+  LoadingSpinner,
+  ExternalLinkButton,
 };

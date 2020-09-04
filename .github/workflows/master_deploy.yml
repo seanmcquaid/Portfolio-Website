@@ -10,20 +10,20 @@ jobs:
       matrix:
         node-version: [10.x]
     steps:
-    - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: Install Packages
-      run: npm install
-    - name: Run Unit Tests
-      run: npm test
-      env:
-        CI: true
-    - name: Deploy to GH Pages
-      run: |
-        git config --global user.email "sean.m.mcquaid@gmail.com"
-        git config --global user.name "seanmcquaid"
-        git remote set-url origin "https://seanmcquaid:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-        npm run deploy
+      - uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install Packages
+        run: npm install
+      - name: Run Unit Tests
+        run: npm test
+        env:
+          CI: true
+      - name: Deploy to GH Pages
+        run: |
+          git config --global user.email "sean.m.mcquaid@gmail.com"
+          git config --global user.name "seanmcquaid"
+          git remote set-url origin "https://seanmcquaid:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          npm run deploy

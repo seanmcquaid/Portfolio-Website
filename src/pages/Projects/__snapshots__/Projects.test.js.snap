@@ -6,12 +6,12 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzoNJl fbTRjj"
+        class="sc-fzoNJl kQXeNH"
         data-testid="projectsPage"
         id="projectsPage"
       >
         <div
-          class="sc-fzqNqU cEAaaW"
+          class="sc-fzqNqU gsISeG"
           data-testid="loadingSpinner"
           id="loadingSpinner"
         >
@@ -40,12 +40,12 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzoNJl fbTRjj"
+      class="sc-fzoNJl kQXeNH"
       data-testid="projectsPage"
       id="projectsPage"
     >
       <div
-        class="sc-fzqNqU cEAaaW"
+        class="sc-fzqNqU gsISeG"
         data-testid="loadingSpinner"
         id="loadingSpinner"
       >
