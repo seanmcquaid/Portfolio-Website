@@ -17,7 +17,7 @@ export default [
     image: whacAMole,
     description:
       "Built with React/TypeScript on the Front End and Java/Springboot on the Back End, this is a recreation of the classic arcade game, Whac-A-Mole.",
-    repoLink: "https://github.com/seanmcquaid/SetListCreator",
+    repoLink: "https://github.com/seanmcquaid/Whac-A-Mole",
   },
   {
     title: "What Don't You Want?!",
