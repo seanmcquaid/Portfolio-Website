@@ -2,6 +2,7 @@ import setListCreator from "images/setListCreator.jpg";
 import dekTech from "images/dekTech.jpg";
 import recipeDashboard from "images/recipeDashboard.jpg";
 import whatDontYouWantWeb from "images/whatDontYouWantWeb.jpg";
+import whacAMole from "images/whacAMole.jpg";
 
 export default [
   {
@@ -9,6 +10,13 @@ export default [
     image: setListCreator,
     description:
       "Developed with the PERN stack, this solution is meant to connect Wedding Bandleaders and clients more easily to create a more efficient process for creating an ideal setlist for a wedding!",
+    repoLink: "https://github.com/seanmcquaid/SetListCreator",
+  },
+  {
+    title: "Whac-A-Mole",
+    image: whacAMole,
+    description:
+      "Built with React/TypeScript on the Front End and Java/Springboot on the Back End, this is a recreation of the classic arcade game, Whac-A-Mole.",
     repoLink: "https://github.com/seanmcquaid/SetListCreator",
   },
   {
