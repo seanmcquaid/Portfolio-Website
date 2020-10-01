@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   HeaderText,
   ParagraphText,
   LoadingSpinner,
   Skill,
-} from "components/components";
-import Aux from "hoc/Aux/Aux";
-import styled, { keyframes } from "styled-components";
-import skillsList from "./skillsList";
+} from 'components/components';
+import styled, { keyframes } from 'styled-components';
+import skillsList from './skillsList';
 
 const Skills = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,13 +17,13 @@ const Skills = () => {
   }, []);
 
   return (
-    <SkillsPageContainer id="skillsPage" data-testid="skillsPage">
+    <SkillsPageContainer id='skillsPage' data-testid='skillsPage'>
       {isLoading ? (
         <LoadingSpinner isLoading={isLoading} />
       ) : (
-        <Aux>
+        <>
           <LeftContainer>
-            <HeaderText id="skillsPageHeader" data-testid="skillsPageHeader">
+            <HeaderText id='skillsPageHeader' data-testid='skillsPageHeader'>
               Skills
             </HeaderText>
             <ParagraphText>
@@ -37,7 +36,7 @@ const Skills = () => {
             </ParagraphText>
           </LeftContainer>
           <RightContainer>
-            <IconsContainer id="skillsList" data-testid="skillsList">
+            <IconsContainer id='skillsList' data-testid='skillsList'>
               {skillsList.map((skill, i) => {
                 const { name, IconComponent } = skill;
                 return (
@@ -46,7 +45,7 @@ const Skills = () => {
               })}
             </IconsContainer>
           </RightContainer>
-        </Aux>
+        </>
       )}
     </SkillsPageContainer>
   );

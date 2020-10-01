@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { HeaderText, LoadingSpinner, Project } from "components/components";
-import styled, { keyframes } from "styled-components";
-import Aux from "hoc/Aux/Aux";
-import projectsList from "./projectsList";
+import React, { useEffect, useState } from 'react';
+import { HeaderText, LoadingSpinner, Project } from 'components/components';
+import styled, { keyframes } from 'styled-components';
+import projectsList from './projectsList';
 
 const Projects = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -13,18 +12,18 @@ const Projects = () => {
   }, []);
 
   return (
-    <ProjectsPageContainer id="projectsPage" data-testid="projectsPage">
+    <ProjectsPageContainer id='projectsPage' data-testid='projectsPage'>
       {isLoading ? (
         <LoadingSpinner isLoading={isLoading} />
       ) : (
-        <Aux>
+        <>
           <ProjectsPageHeader
-            id="projectsPageHeader"
-            data-testid="projectsPageHeader"
+            id='projectsPageHeader'
+            data-testid='projectsPageHeader'
           >
             Projects
           </ProjectsPageHeader>
-          <ProjectsContainer id="projectsList" data-testid="projectsList">
+          <ProjectsContainer id='projectsList' data-testid='projectsList'>
             {projectsList.map((project, i) => (
               <Project
                 key={i}
@@ -36,7 +35,7 @@ const Projects = () => {
               />
             ))}
           </ProjectsContainer>
-        </Aux>
+        </>
       )}
     </ProjectsPageContainer>
   );

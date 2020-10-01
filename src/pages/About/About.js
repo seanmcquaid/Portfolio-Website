@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import {
   ParagraphText,
   HeaderText,
   Headshot,
   LoadingSpinner,
-} from "components/components";
-import trumpetHeadshot from "images/trumpetHeadshot.jpg";
-import Aux from "hoc/Aux/Aux";
-import styled, { keyframes } from "styled-components";
+} from 'components/components';
+import trumpetHeadshot from 'images/trumpetHeadshot.jpg';
+import styled, { keyframes } from 'styled-components';
 
 const About = (props) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,16 +17,16 @@ const About = (props) => {
   }, []);
 
   return (
-    <AboutPageContainer id="aboutPage" data-testid="aboutPage">
+    <AboutPageContainer id='aboutPage' data-testid='aboutPage'>
       {isLoading ? (
         <LoadingSpinner isLoading={isLoading} />
       ) : (
-        <Aux>
+        <>
           <LeftContainer>
-            <HeaderText id="aboutPageHeader" data-testid="aboutPageHeader">
+            <HeaderText id='aboutPageHeader' data-testid='aboutPageHeader'>
               About
             </HeaderText>
-            <ParagraphText id="bioParagraphOne" data-testid="bioParagraphOne">
+            <ParagraphText id='bioParagraphOne' data-testid='bioParagraphOne'>
               Originally from New York, I moved to Atlanta roughly three years
               ago. My professional background is in music and now, Software
               Engineering. I have been playing the trumpet for over 20 years and
@@ -35,7 +34,7 @@ const About = (props) => {
               Atlanta, I quickly realized that I wanted a day job that would
               allow me to utilize my creative problem solving skills from music.
             </ParagraphText>
-            <ParagraphText id="bioParagraphTwo" data-testid="bioParagraphTwo">
+            <ParagraphText id='bioParagraphTwo' data-testid='bioParagraphTwo'>
               I accidentally discovered programming one night while scrolling on
               Facebook and seeing that a musician friend of mine from high
               school recently landed a job at Google. Upon investigating more
@@ -48,8 +47,8 @@ const About = (props) => {
               role at Chick-fil-A and I am LOVING IT!
             </ParagraphText>
             <ParagraphText
-              id="bioParagraphThree"
-              data-testid="bioParagraphThree"
+              id='bioParagraphThree'
+              data-testid='bioParagraphThree'
             >
               My ultimate career goal is to be a Software Architect and make
               enterprise wide technical decisions that will help everyone in the
@@ -63,12 +62,12 @@ const About = (props) => {
           <RightContainer>
             <Headshot
               src={trumpetHeadshot}
-              alt="trumpetHeadshot"
-              id="bioHeadshot"
-              data-testid="bioHeadshot"
+              alt='trumpetHeadshot'
+              id='bioHeadshot'
+              data-testid='bioHeadshot'
             />
           </RightContainer>
-        </Aux>
+        </>
       )}
     </AboutPageContainer>
   );
