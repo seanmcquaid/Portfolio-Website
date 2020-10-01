@@ -8,7 +8,7 @@ import {
 import trumpetHeadshot from 'images/trumpetHeadshot.jpg';
 import styled, { keyframes } from 'styled-components';
 
-const About = (props) => {
+const About = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
