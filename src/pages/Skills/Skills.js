@@ -110,8 +110,7 @@ const RightContainer = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 400px;
   flex-direction: column;
   justify-content: center;
   align-items: center;

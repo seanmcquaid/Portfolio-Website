@@ -11,7 +11,9 @@ import {
   DiPython,
   DiAws,
   DiJava,
+  DiAngularSimple,
 } from "react-icons/di";
+import { FaVuejs } from 'react-icons/fa';
 
 export default [
   {
@@ -61,5 +63,13 @@ export default [
   {
     name: "Git",
     IconComponent: DiGit,
+  },
+  {
+    name: "Angular",
+    IconComponent: DiAngularSimple
+  },
+  {
+    name: "Vue.js",
+    IconComponent: FaVuejs
   },
 ];
