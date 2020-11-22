@@ -17,13 +17,13 @@ const Skills = () => {
   }, []);
 
   return (
-    <SkillsPageContainer id='skillsPage' data-testid='skillsPage'>
+    <SkillsPageContainer id="skillsPage" data-testid="skillsPage">
       {isLoading ? (
         <LoadingSpinner isLoading={isLoading} />
       ) : (
         <>
           <LeftContainer>
-            <HeaderText id='skillsPageHeader' data-testid='skillsPageHeader'>
+            <HeaderText id="skillsPageHeader" data-testid="skillsPageHeader">
               Skills
             </HeaderText>
             <ParagraphText>
@@ -36,7 +36,7 @@ const Skills = () => {
             </ParagraphText>
           </LeftContainer>
           <RightContainer>
-            <IconsContainer id='skillsList' data-testid='skillsList'>
+            <IconsContainer id="skillsList" data-testid="skillsList">
               {skillsList.map((skill, i) => {
                 const { name, IconComponent } = skill;
                 return (

@@ -1,28 +1,28 @@
-import React from "react";
-import styled from "styled-components";
-import { ParagraphText, ExternalLinkButton } from "components/components";
-import PropTypes from "prop-types";
+import React from 'react';
+import styled from 'styled-components';
+import { ParagraphText, ExternalLinkButton } from 'components/components';
+import PropTypes from 'prop-types';
 
 const Project = ({ title, image, description, repoLink, projectId }) => (
   <ProjectContainer
-    id={"projectInfo" + projectId}
-    data-testid={"projectInfo" + projectId}
+    id={'projectInfo' + projectId}
+    data-testid={'projectInfo' + projectId}
   >
     <ProjectTitle
-      id={"projectTitle" + projectId}
-      data-testid={"projectTitle" + projectId}
+      id={'projectTitle' + projectId}
+      data-testid={'projectTitle' + projectId}
     >
       {title}
     </ProjectTitle>
     <ProjectImage
       src={image}
       alt={title}
-      id={"projectImage" + projectId}
-      data-testid={"projectImage" + projectId}
+      id={'projectImage' + projectId}
+      data-testid={'projectImage' + projectId}
     />
     <ParagraphText
-      id={"projectDescription" + projectId}
-      data-testid={"projectDescription" + projectId}
+      id={'projectDescription' + projectId}
+      data-testid={'projectDescription' + projectId}
     >
       {description}
     </ParagraphText>
@@ -30,8 +30,8 @@ const Project = ({ title, image, description, repoLink, projectId }) => (
       <ExternalLinkButton
         href={repoLink}
         target="blank"
-        id={"projectRepoButton" + projectId}
-        data-testid={"projectRepoButton" + projectId}
+        id={'projectRepoButton' + projectId}
+        data-testid={'projectRepoButton' + projectId}
       >
         GitHub Repo
       </ExternalLinkButton>
@@ -86,10 +86,10 @@ Project.propTypes = {
 };
 
 Project.defaultProps = {
-  title: "Project Here",
-  image: "Placeholder Image",
-  description: "Placeholder description",
-  repoLink: "www.google.com",
+  title: 'Project Here',
+  image: 'Placeholder Image',
+  description: 'Placeholder description',
+  repoLink: 'www.google.com',
 };
 
 export default Project;

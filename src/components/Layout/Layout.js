@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import { Navbar } from "components/components";
+import React from 'react';
+import styled from 'styled-components';
+import { Navbar } from 'components/components';
 
 const Layout = ({ children }) => (
   <Container>

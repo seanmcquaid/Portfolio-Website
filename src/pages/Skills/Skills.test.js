@@ -1,19 +1,19 @@
-import React from "react";
-import { render, act, cleanup } from "@testing-library/react";
-import Skills from "./Skills";
-import "@testing-library/jest-dom/extend-expect";
+import React from 'react';
+import { render, act, cleanup } from '@testing-library/react';
+import Skills from './Skills';
+import '@testing-library/jest-dom/extend-expect';
 
-describe("<Skills/>", () => {
+describe('<Skills/>', () => {
   afterEach(cleanup);
-  it("Matches snapshot", () => {
+  it('Matches snapshot', () => {
     const skills = render(<Skills />);
     expect(skills).toMatchSnapshot();
   });
-  it("LoadingSpinner is visible on initial load", async () => {
+  it('LoadingSpinner is visible on initial load', async () => {
     const { getByTestId } = render(<Skills />);
-    expect(getByTestId("loadingSpinner")).toBeVisible();
+    expect(getByTestId('loadingSpinner')).toBeVisible();
   });
-  it("Skills Page Displays after 1.5 seconds", async () => {
+  it('Skills Page Displays after 1.5 seconds', async () => {
     jest.useFakeTimers();
 
     const { getByTestId } = render(<Skills />);
@@ -22,7 +22,7 @@ describe("<Skills/>", () => {
       jest.advanceTimersByTime(1500);
     });
 
-    expect(() => getByTestId("loadingSpinner")).toThrowError();
-    expect(getByTestId("skillsPageHeader")).toBeVisible();
+    expect(() => getByTestId('loadingSpinner')).toThrowError();
+    expect(getByTestId('skillsPageHeader')).toBeVisible();
   });
 });

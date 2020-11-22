@@ -12,64 +12,64 @@ import {
   DiAws,
   DiJava,
   DiAngularSimple,
-} from "react-icons/di";
+} from 'react-icons/di';
 import { FaVuejs } from 'react-icons/fa';
 
 export default [
   {
-    name: "JavaScript",
+    name: 'JavaScript',
     IconComponent: DiJavascript,
   },
   {
-    name: "React",
+    name: 'React',
     IconComponent: DiReact,
   },
   {
-    name: "Node.js",
+    name: 'Node.js',
     IconComponent: DiNodejs,
   },
   {
-    name: "Java",
+    name: 'Java',
     IconComponent: DiJava,
   },
   {
-    name: "HTML",
+    name: 'HTML',
     IconComponent: DiHtml5,
   },
   {
-    name: "CSS",
+    name: 'CSS',
     IconComponent: DiCss3,
   },
   {
-    name: "mySQL",
+    name: 'mySQL',
     IconComponent: DiMysql,
   },
   {
-    name: "PostgreSQL",
+    name: 'PostgreSQL',
     IconComponent: DiPostgresql,
   },
   {
-    name: "MongoDB",
+    name: 'MongoDB',
     IconComponent: DiMongodb,
   },
   {
-    name: "AWS",
+    name: 'AWS',
     IconComponent: DiAws,
   },
   {
-    name: "Python",
+    name: 'Python',
     IconComponent: DiPython,
   },
   {
-    name: "Git",
+    name: 'Git',
     IconComponent: DiGit,
   },
   {
-    name: "Angular",
-    IconComponent: DiAngularSimple
+    name: 'Angular',
+    IconComponent: DiAngularSimple,
   },
   {
-    name: "Vue.js",
-    IconComponent: FaVuejs
+    name: 'Vue.js',
+    IconComponent: FaVuejs,
   },
 ];

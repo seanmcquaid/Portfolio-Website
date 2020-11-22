@@ -1,7 +1,7 @@
-import React from "react";
-import styled, { keyframes } from "styled-components";
-import PropTypes from "prop-types";
-import { FaAccessibleIcon } from "react-icons/fa";
+import React from 'react';
+import styled, { keyframes } from 'styled-components';
+import PropTypes from 'prop-types';
+import { FaAccessibleIcon } from 'react-icons/fa';
 
 const Skill = ({ IconComponent, name }) => (
   <IconContainer id={`${name}Icon`} data-testid={`${name}Icon`}>
@@ -49,7 +49,7 @@ Skill.propTypes = {
 
 Skill.defaultProps = {
   IconComponent: FaAccessibleIcon,
-  name: "Placeholder Name",
+  name: 'Placeholder Name',
 };
 
 export default Skill;

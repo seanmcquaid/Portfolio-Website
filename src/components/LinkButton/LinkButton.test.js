@@ -1,14 +1,14 @@
-import React from "react";
-import LinkButton from "./LinkButton";
-import { HashRouter as Router } from "react-router-dom";
-import { render } from "@testing-library/react";
-import "@testing-library/jest-dom/extend-expect";
+import React from 'react';
+import LinkButton from './LinkButton';
+import { HashRouter as Router } from 'react-router-dom';
+import { render } from '@testing-library/react';
+import '@testing-library/jest-dom/extend-expect';
 
-describe("<LinkButton/>", () => {
-  it("Matches snapshot", () => {
+describe('<LinkButton/>', () => {
+  it('Matches snapshot', () => {
     const props = {
-      title: "Test Link Button",
-      route: "/",
+      title: 'Test Link Button',
+      route: '/',
     };
     const linkButton = render(
       <Router>

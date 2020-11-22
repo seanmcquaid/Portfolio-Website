@@ -12,18 +12,18 @@ const Projects = () => {
   }, []);
 
   return (
-    <ProjectsPageContainer id='projectsPage' data-testid='projectsPage'>
+    <ProjectsPageContainer id="projectsPage" data-testid="projectsPage">
       {isLoading ? (
         <LoadingSpinner isLoading={isLoading} />
       ) : (
         <>
           <ProjectsPageHeader
-            id='projectsPageHeader'
-            data-testid='projectsPageHeader'
+            id="projectsPageHeader"
+            data-testid="projectsPageHeader"
           >
             Projects
           </ProjectsPageHeader>
-          <ProjectsContainer id='projectsList' data-testid='projectsList'>
+          <ProjectsContainer id="projectsList" data-testid="projectsList">
             {projectsList.map((project, i) => (
               <Project
                 key={i}

@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import {
   HeaderText,
   SubHeaderText,
   LinkButton,
   Headshot,
-} from "components/components";
-import headshot from "images/headshot.jpg";
-import styled, { keyframes } from "styled-components";
+} from 'components/components';
+import headshot from 'images/headshot.jpg';
+import styled, { keyframes } from 'styled-components';
 
 const Home = () => (
   <HomePageContainer id="homePage" data-testid="homePage">
@@ -15,7 +15,7 @@ const Home = () => (
         Hello, I am Sean!
       </HeaderText>
       <SubHeaderText id="homePageSubHeader" data-testid="homePageSubHeader">
-        Software Engineer, Front End Web Developer, Jazz Musician{" "}
+        Software Engineer, Front End Web Developer, Jazz Musician{' '}
       </SubHeaderText>
       <LinkButton route="/contact" title="Contact Me" />
     </LeftContainer>

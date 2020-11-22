@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const LinkButton = ({ title, route }) => (
   <LinkButtonContainer to={route} data-testid={`${title}LinkButton`}>
@@ -34,8 +34,8 @@ LinkButton.propTypes = {
 };
 
 LinkButton.defaultProps = {
-  route: "/",
-  title: "Home",
+  route: '/',
+  title: 'Home',
 };
 
 export default LinkButton;

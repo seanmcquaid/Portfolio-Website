@@ -22,16 +22,16 @@ const Contact = () => {
   }, []);
 
   return (
-    <ContactPageContainer id='contactPage' data-testid='contactPage'>
+    <ContactPageContainer id="contactPage" data-testid="contactPage">
       {isLoading ? (
         <LoadingSpinner isLoading={isLoading} />
       ) : (
         <>
           <LeftContainer>
-            <HeaderText id='contactPageHeader' data-testid='contactPageHeader'>
+            <HeaderText id="contactPageHeader" data-testid="contactPageHeader">
               Contact Me
             </HeaderText>
-            <ParagraphText id='contactInfoText' data-testid='contactInfoText'>
+            <ParagraphText id="contactInfoText" data-testid="contactInfoText">
               If you would like to contact me, I would love to hear from you!
               Feel free to contact me through my email, check out my LinkedIn or
               GitHub, or even look at my Resume!
@@ -41,10 +41,10 @@ const Contact = () => {
             <ContactList>
               <ContactListItem>
                 <ContactListItemLink
-                  href='https://www.linkedin.com/in/sean-mcquaid-292b3588/'
-                  target='blank'
-                  id='linkedInLink'
-                  data-testid='linkedInLink'
+                  href="https://www.linkedin.com/in/sean-mcquaid-292b3588/"
+                  target="blank"
+                  id="linkedInLink"
+                  data-testid="linkedInLink"
                 >
                   <IoLogoLinkedin />
                   <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
@@ -52,10 +52,10 @@ const Contact = () => {
               </ContactListItem>
               <ContactListItem>
                 <ContactListItemLink
-                  href='https://github.com/seanmcquaid'
-                  target='blank'
-                  id='gitHubLink'
-                  data-testid='gitHubLink'
+                  href="https://github.com/seanmcquaid"
+                  target="blank"
+                  id="gitHubLink"
+                  data-testid="gitHubLink"
                 >
                   <IoLogoGithub />
                   <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
@@ -64,9 +64,9 @@ const Contact = () => {
               <ContactListItem>
                 <ContactListItemLink
                   href={resume}
-                  target='blank'
-                  id='resumeLink'
-                  data-testid='resumeLink'
+                  target="blank"
+                  id="resumeLink"
+                  data-testid="resumeLink"
                 >
                   <IoIosPaper />
                   <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
@@ -74,9 +74,9 @@ const Contact = () => {
               </ContactListItem>
               <ContactListItem>
                 <ContactListItemLink
-                  href='mailto: sean.m.mcquaid@gmail.com?subject=Hello!'
-                  data-testid='desktopEmailLink'
-                  id='desktopEmailLink'
+                  href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!"
+                  data-testid="desktopEmailLink"
+                  id="desktopEmailLink"
                 >
                   <IoMdMail />
                   <ContactListItemLinkLabel>Email</ContactListItemLinkLabel>

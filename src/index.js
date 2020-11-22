@@ -1,8 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { Normalize } from "styled-normalize";
-import App from "./App";
-import "./index.css";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Normalize } from 'styled-normalize';
+import App from './App';
+import './index.css';
 
 const Root = () => (
   <React.Fragment>
@@ -11,4 +11,4 @@ const Root = () => (
   </React.Fragment>
 );
 
-ReactDOM.render(<Root />, document.getElementById("root"));
+ReactDOM.render(<Root />, document.getElementById('root'));

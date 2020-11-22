@@ -1,13 +1,13 @@
-import React from "react";
-import styled from "styled-components";
-import { HeaderText, SubHeaderText } from "components/components";
-import { Link } from "react-router-dom";
+import React from 'react';
+import styled from 'styled-components';
+import { HeaderText, SubHeaderText } from 'components/components';
+import { Link } from 'react-router-dom';
 
 const Error = () => (
   <ErrorPageContainer>
     <HeaderText>Error</HeaderText>
     <SubHeaderText>
-      There was a problem going to the page you typed in. Please go to the{" "}
+      There was a problem going to the page you typed in. Please go to the{' '}
       <HomePageLink to="/">Home Page</HomePageLink> and check out my portfolio!
     </SubHeaderText>
   </ErrorPageContainer>

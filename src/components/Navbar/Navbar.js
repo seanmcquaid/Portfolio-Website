@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import styled, { keyframes } from "styled-components";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import styled, { keyframes } from 'styled-components';
+import { Link } from 'react-router-dom';
 import {
   IoLogoGithub,
   IoLogoLinkedin,
@@ -11,9 +11,9 @@ import {
   IoMdFiling,
   IoMdMusicalNotes,
   IoMdContact,
-} from "react-icons/io";
-import { GiHamburgerMenu } from "react-icons/gi";
-import resume from "images/Sean McQuaid - Resume.pdf";
+} from 'react-icons/io';
+import { GiHamburgerMenu } from 'react-icons/gi';
+import resume from 'images/Sean McQuaid - Resume.pdf';
 
 const Navbar = () => {
   const [toggleMenuDisplayed, setToggleMenuDisplayed] = useState(false);
@@ -356,7 +356,7 @@ const fadeInAnimation = keyframes`
 `;
 
 const HamburgerNavLinksList = styled.nav`
-  display: ${(props) => (props.toggleMenuDisplayed ? "flex" : "none")};
+  display: ${(props) => (props.toggleMenuDisplayed ? 'flex' : 'none')};
   flex-direction: row;
   justify-content: center;
   align-items: center;
