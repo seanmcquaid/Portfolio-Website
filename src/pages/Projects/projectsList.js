@@ -1,15 +1,15 @@
 import setListCreator from 'images/setListCreator.jpg';
-import recipeDashboard from 'images/recipeDashboard.jpg';
+import tableManagementSystem from 'images/tableManagementSystem.jpg';
 import whatDontYouWantWeb from 'images/whatDontYouWantWeb.jpg';
 import whacAMole from 'images/whacAMole.jpg';
 
 export default [
   {
-    title: 'Set List Creator',
-    image: setListCreator,
+    title: 'Table Management System',
+    image: tableManagementSystem,
     description:
-      'Developed with the PERN stack, this solution is meant to connect Wedding Bandleaders and clients more easily to create a more efficient process for creating an ideal setlist for a wedding!',
-    repoLink: 'https://github.com/seanmcquaid/SetListCreator',
+      'Created with Vue.js, Express and GraphQL to manage table configurations for restaurants during COVID',
+    repoLink: 'https://github.com/seanmcquaid/Table-Management-System',
   },
   {
     title: 'Whac-A-Mole',
@@ -26,10 +26,10 @@ export default [
     repoLink: 'https://github.com/seanmcquaid/WDYW-Web',
   },
   {
-    title: 'Recipe Dashboard',
-    image: recipeDashboard,
+    title: 'Set List Creator',
+    image: setListCreator,
     description:
-      'Created a Recipe Dashboard using React that allows a user to search for a recipe with an ingredient and get recipe instructions with measurements in US/Metric!',
-    repoLink: 'https://github.com/seanmcquaid/Recipe-Dashboard',
+      'Developed with the PERN stack, this solution is meant to connect Wedding Bandleaders and clients more easily to create a more efficient process for creating an ideal setlist for a wedding!',
+    repoLink: 'https://github.com/seanmcquaid/SetListCreator',
   },
 ];
