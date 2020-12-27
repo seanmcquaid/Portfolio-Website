@@ -1,9 +1,16 @@
-import setListCreator from 'images/setListCreator.jpg';
 import tableManagementSystem from 'images/tableManagementSystem.jpg';
-import whatDontYouWantWeb from 'images/whatDontYouWantWeb.jpg';
+import setListCreator from 'images/setListCreator.jpg';
 import whacAMole from 'images/whacAMole.jpg';
+import webChat from 'images/webChat.jpg';
 
 export default [
+  {
+    title: 'Web Chat',
+    image: webChat,
+    description:
+      'Built a Web Chat app for users to communicate with people on their friends list in real time with the MERN stack and Socket.io',
+    repoLink: 'https://github.com/seanmcquaid/Web-Chat',
+  },
   {
     title: 'Table Management System',
     image: tableManagementSystem,
@@ -17,13 +24,6 @@ export default [
     description:
       'Built with React/TypeScript on the Front End and Java/Springboot on the Back End, this is a recreation of the classic arcade game, Whac-A-Mole.',
     repoLink: 'https://github.com/seanmcquaid/Whac-A-Mole',
-  },
-  {
-    title: "What Don't You Want?!",
-    image: whatDontYouWantWeb,
-    description:
-      'Built a React App with TypeScript that solves the most common issue for picky eaters, deciding what they want to eat! This was inspired by many conversations with my girlfriend trying to figure out what we want for dinner.',
-    repoLink: 'https://github.com/seanmcquaid/WDYW-Web',
   },
   {
     title: 'Set List Creator',
