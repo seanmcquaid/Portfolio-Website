@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1c022b0aa289ea0344df7b034935d506",
+    "revision": "df1231c289576ca608cb44949adfd73d",
     "url": "/index.html"
   },
   {
-    "revision": "0171d094ef2796784e49",
+    "revision": "00d85d4c1d98d122cbc2",
     "url": "/static/css/main.fec187b6.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.64ed2813.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "0171d094ef2796784e49",
-    "url": "/static/js/main.a41e7d92.chunk.js"
+    "revision": "00d85d4c1d98d122cbc2",
+    "url": "/static/js/main.a50c5614.chunk.js"
   },
   {
     "revision": "35ec47dfee4c65c275be",
@@ -38,6 +38,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "2ff60e43e564c7df70645aa670d3c9a4",
     "url": "/static/media/trumpetHeadshot.2ff60e43.jpg"
+  },
+  {
+    "revision": "e3f46ed5ad35ac9e73a73865c0614aa5",
+    "url": "/static/media/webChat.e3f46ed5.jpg"
   },
   {
     "revision": "6e03f79b57d7d4727c7b73c03f47bd30",
