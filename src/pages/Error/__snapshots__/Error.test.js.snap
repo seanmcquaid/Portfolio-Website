@@ -21,10 +21,12 @@ Object {
           <a
             class="sc-fzoXWK kpyOat"
             href="#/"
+            title="Home Page Link"
           >
             Home Page
           </a>
-           and check out my portfolio!
+           
+          and check out my portfolio!
         </h2>
       </div>
     </div>
@@ -46,10 +48,12 @@ Object {
         <a
           class="sc-fzoXWK kpyOat"
           href="#/"
+          title="Home Page Link"
         >
           Home Page
         </a>
-         and check out my portfolio!
+         
+        and check out my portfolio!
       </h2>
     </div>
   </div>,

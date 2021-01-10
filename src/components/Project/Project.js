@@ -32,6 +32,7 @@ const Project = ({ title, image, description, repoLink, projectId }) => (
         target="blank"
         id={'projectRepoButton' + projectId}
         data-testid={'projectRepoButton' + projectId}
+        title={`${title} GitHub Repo Link`}
       >
         GitHub Repo
       </ExternalLinkButton>

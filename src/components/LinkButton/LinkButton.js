@@ -4,7 +4,11 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const LinkButton = ({ title, route }) => (
-  <LinkButtonContainer to={route} data-testid={`${title}LinkButton`}>
+  <LinkButtonContainer
+    to={route}
+    data-testid={`${title}LinkButton`}
+    title={`${title} Link`}
+  >
     {title}
   </LinkButtonContainer>
 );

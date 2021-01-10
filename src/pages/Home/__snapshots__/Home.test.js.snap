@@ -32,6 +32,7 @@ Object {
             class="sc-fznWqX cGYnCm"
             data-testid="Contact MeLinkButton"
             href="#/contact"
+            title="Contact Me Link"
           >
             Contact Me
           </a>
@@ -78,6 +79,7 @@ Object {
           class="sc-fznWqX cGYnCm"
           data-testid="Contact MeLinkButton"
           href="#/contact"
+          title="Contact Me Link"
         >
           Contact Me
         </a>

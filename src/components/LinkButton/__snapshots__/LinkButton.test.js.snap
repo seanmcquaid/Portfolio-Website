@@ -9,6 +9,7 @@ Object {
         class="sc-AxjAm hcZamp"
         data-testid="Test Link ButtonLinkButton"
         href="#/"
+        title="Test Link Button Link"
       >
         Test Link Button
       </a>
@@ -19,6 +20,7 @@ Object {
       class="sc-AxjAm hcZamp"
       data-testid="Test Link ButtonLinkButton"
       href="#/"
+      title="Test Link Button Link"
     >
       Test Link Button
     </a>

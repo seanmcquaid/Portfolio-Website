@@ -8,7 +8,10 @@ const Error = () => (
     <HeaderText>Error</HeaderText>
     <SubHeaderText>
       There was a problem going to the page you typed in. Please go to the{' '}
-      <HomePageLink to="/">Home Page</HomePageLink> and check out my portfolio!
+      <HomePageLink to="/" title="Home Page Link">
+        Home Page
+      </HomePageLink>{' '}
+      and check out my portfolio!
     </SubHeaderText>
   </ErrorPageContainer>
 );

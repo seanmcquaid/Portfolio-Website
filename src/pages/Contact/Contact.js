@@ -45,6 +45,7 @@ const Contact = () => {
                   target="blank"
                   id="linkedInLink"
                   data-testid="linkedInLink"
+                  title="LinkedIn Link"
                 >
                   <IoLogoLinkedin />
                   <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
@@ -56,6 +57,7 @@ const Contact = () => {
                   target="blank"
                   id="gitHubLink"
                   data-testid="gitHubLink"
+                  title="GitHub Link"
                 >
                   <IoLogoGithub />
                   <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
@@ -67,6 +69,7 @@ const Contact = () => {
                   target="blank"
                   id="resumeLink"
                   data-testid="resumeLink"
+                  title="Resume Link"
                 >
                   <IoIosPaper />
                   <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
@@ -77,6 +80,7 @@ const Contact = () => {
                   href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!"
                   data-testid="desktopEmailLink"
                   id="desktopEmailLink"
+                  title="Email Link"
                 >
                   <IoMdMail />
                   <ContactListItemLinkLabel>Email</ContactListItemLinkLabel>

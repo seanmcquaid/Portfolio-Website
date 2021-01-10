@@ -40,6 +40,7 @@ Object {
             href="www.github.com/seanmcquaid"
             id="projectRepoButton1"
             target="blank"
+            title="Portfolio GitHub Repo Link"
           >
             GitHub Repo
           </a>
@@ -83,6 +84,7 @@ Object {
           href="www.github.com/seanmcquaid"
           id="projectRepoButton1"
           target="blank"
+          title="Portfolio GitHub Repo Link"
         >
           GitHub Repo
         </a>

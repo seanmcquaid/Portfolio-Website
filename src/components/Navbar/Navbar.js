@@ -33,6 +33,7 @@ const Navbar = () => {
         onClick={mobileMenuOnClick}
         data-testid="homeButton"
         id="homeButton"
+        title="Home Page Link"
       >
         <NavLinkIconContainer>
           <IoMdMusicalNotes />
@@ -44,6 +45,7 @@ const Navbar = () => {
           to="/about"
           data-testid="desktopAboutLink"
           id="desktopAboutLink"
+          title="About Page Link"
         >
           <NavLinkIconContainer>
             <IoMdPerson />
@@ -54,6 +56,7 @@ const Navbar = () => {
           to="/skills"
           data-testid="desktopSkillsLink"
           id="desktopSkillsLink"
+          title="Skills Page Link"
         >
           <NavLinkIconContainer>
             <IoMdSettings />
@@ -64,6 +67,7 @@ const Navbar = () => {
           to="/projects"
           data-testid="desktopProjectsLink"
           id="desktopProjectsLink"
+          title="Projects Page Link"
         >
           <NavLinkIconContainer>
             <IoMdFiling />
@@ -74,6 +78,7 @@ const Navbar = () => {
           to="/contact"
           data-testid="desktopContactLink"
           id="desktopContactLink"
+          title="Contact Page Link"
         >
           <NavLinkIconContainer>
             <IoMdContact />
@@ -85,6 +90,7 @@ const Navbar = () => {
         onClick={hamburgerMenuOnClick}
         data-testid="mobileMenuToggleButton"
         id="mobileMenuToggleButton"
+        title="Mobile Nav Toggle"
       />
       <HamburgerMenu data-testid="mobileNavMenu" id="mobileNavMenu">
         <HamburgerNavLinksList toggleMenuDisplayed={toggleMenuDisplayed}>
@@ -93,6 +99,7 @@ const Navbar = () => {
             onClick={mobileMenuOnClick}
             data-testid="mobileAboutLink"
             id="mobileAboutLink"
+            title="About Page Link"
           >
             <HamburgerNavLinkLabel>About</HamburgerNavLinkLabel>
           </HamburgerNavLink>
@@ -101,6 +108,7 @@ const Navbar = () => {
             onClick={mobileMenuOnClick}
             data-testid="mobileSkillsLink"
             id="mobileSkillsLink"
+            title="Skills Page Link"
           >
             <HamburgerNavLinkLabel>Skills</HamburgerNavLinkLabel>
           </HamburgerNavLink>
@@ -109,6 +117,7 @@ const Navbar = () => {
             onClick={mobileMenuOnClick}
             data-testid="mobileProjectsLink"
             id="mobileProjectsLink"
+            title="Projects Page Link"
           >
             <HamburgerNavLinkLabel>Projects</HamburgerNavLinkLabel>
           </HamburgerNavLink>
@@ -117,6 +126,7 @@ const Navbar = () => {
             onClick={mobileMenuOnClick}
             data-testid="mobileContactLink"
             id="mobileContactLink"
+            title="Contact Page Link"
           >
             <HamburgerNavLinkLabel>Contact</HamburgerNavLinkLabel>
           </HamburgerNavLink>
@@ -129,6 +139,7 @@ const Navbar = () => {
             target="blank"
             data-testid="desktopLinkedInLink"
             id="desktopLinkedInLink"
+            title="LinkedIn Link"
           >
             <ContactListIconContainer>
               <IoLogoLinkedin />
@@ -142,6 +153,7 @@ const Navbar = () => {
             target="blank"
             data-testid="desktopGitHubLink"
             id="desktopGitHubLink"
+            title="GitHub Link"
           >
             <ContactListIconContainer>
               <IoLogoGithub />
@@ -155,6 +167,7 @@ const Navbar = () => {
             target="blank"
             data-testid="desktopResumeLink"
             id="desktopResumeLink"
+            title="Resume Link"
           >
             <ContactListIconContainer>
               <IoIosPaper />
@@ -167,6 +180,7 @@ const Navbar = () => {
             href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!"
             data-testid="desktopEmailLink"
             id="desktopEmailLink"
+            title="Email Link"
           >
             <ContactListIconContainer>
               <IoMdMail />
