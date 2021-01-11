@@ -4,6 +4,7 @@ import {
   SubHeaderText,
   LinkButton,
   Headshot,
+  ExternalLinkButton,
 } from 'components/components';
 import headshot from 'images/headshot.jpg';
 import styled, { keyframes } from 'styled-components';
@@ -17,7 +18,15 @@ const Home = () => (
       <SubHeaderText id="homePageSubHeader" data-testid="homePageSubHeader">
         Software Engineer, Front End Web Developer, Jazz Musician{' '}
       </SubHeaderText>
-      <LinkButton route="/contact" title="Contact Me" />
+      <ButtonsContainer>
+        <LinkButton route="/contact" title="Contact Me" />
+        <ExternalLinkButton
+          href="https://www.musicianthatcodes.com/"
+          target="blank"
+        >
+          My Blog
+        </ExternalLinkButton>
+      </ButtonsContainer>
     </LeftContainer>
     <RightContainer>
       <Headshot
@@ -92,6 +101,11 @@ const RightContainer = styled.div`
   }
   @media (max-width: 520px) {
   }
+`;
+
+const ButtonsContainer = styled.div`
+  width: 100%;
+  padding: 2.5rem;
 `;
 
 export default Home;

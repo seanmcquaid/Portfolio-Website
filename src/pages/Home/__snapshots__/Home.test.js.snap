@@ -28,14 +28,25 @@ Object {
             Software Engineer, Front End Web Developer, Jazz Musician
              
           </h2>
-          <a
-            class="sc-fznWqX cGYnCm"
-            data-testid="Contact MeLinkButton"
-            href="#/contact"
-            title="Contact Me Link"
+          <div
+            class="sc-fzolEj bodGXU"
           >
-            Contact Me
-          </a>
+            <a
+              class="sc-fznWqX cGYnCm"
+              data-testid="Contact MeLinkButton"
+              href="#/contact"
+              title="Contact Me Link"
+            >
+              Contact Me
+            </a>
+            <a
+              class="sc-fzoyTs iMVHXP"
+              href="https://www.musicianthatcodes.com/"
+              target="blank"
+            >
+              My Blog
+            </a>
+          </div>
         </div>
         <div
           class="sc-fznWOq egoEaM"
@@ -75,14 +86,25 @@ Object {
           Software Engineer, Front End Web Developer, Jazz Musician
            
         </h2>
-        <a
-          class="sc-fznWqX cGYnCm"
-          data-testid="Contact MeLinkButton"
-          href="#/contact"
-          title="Contact Me Link"
+        <div
+          class="sc-fzolEj bodGXU"
         >
-          Contact Me
-        </a>
+          <a
+            class="sc-fznWqX cGYnCm"
+            data-testid="Contact MeLinkButton"
+            href="#/contact"
+            title="Contact Me Link"
+          >
+            Contact Me
+          </a>
+          <a
+            class="sc-fzoyTs iMVHXP"
+            href="https://www.musicianthatcodes.com/"
+            target="blank"
+          >
+            My Blog
+          </a>
+        </div>
       </div>
       <div
         class="sc-fznWOq egoEaM"
