@@ -90,6 +90,7 @@ const RightContainer = styled.div`
   justify-content: center;
   align-items: center;
   margin: 0 1rem;
+  padding: 1rem;
   max-width: 300px;
   animation: ${fadeInAnimation} ease 1s;
   animation-iteration-count: 1;
@@ -104,8 +105,13 @@ const RightContainer = styled.div`
 `;
 
 const ButtonsContainer = styled.div`
+  display: flex;
   width: 100%;
-  padding: 2.5rem;
+  @media (max-width: 975px) {
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
 `;
 
 export default Home;
