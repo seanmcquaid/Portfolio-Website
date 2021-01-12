@@ -56,7 +56,7 @@ Object {
             class="sc-fzqARJ iafsoq"
             data-testid="headshotImage"
             id="headshotImage"
-            src="headshot.jpg"
+            src="headshot.jp2"
           />
         </div>
       </div>
@@ -114,7 +114,7 @@ Object {
           class="sc-fzqARJ iafsoq"
           data-testid="headshotImage"
           id="headshotImage"
-          src="headshot.jpg"
+          src="headshot.jp2"
         />
       </div>
     </div>

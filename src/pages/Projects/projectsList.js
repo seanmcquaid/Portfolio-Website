@@ -1,7 +1,7 @@
-import tableManagementSystem from 'images/tableManagementSystem.jpg';
-import setListCreator from 'images/setListCreator.jpg';
-import whacAMole from 'images/whacAMole.jpg';
-import webChat from 'images/webChat.jpg';
+import tableManagementSystem from 'images/tableManagementSystem.jp2';
+import setListCreator from 'images/setListCreator.jp2';
+import whacAMole from 'images/whacAMole.jp2';
+import webChat from 'images/webChat.jp2';
 
 export default [
   {

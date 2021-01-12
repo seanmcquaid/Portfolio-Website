@@ -6,7 +6,7 @@ import {
   Headshot,
   ExternalLinkButton,
 } from 'components/components';
-import headshot from 'images/headshot.jpg';
+import headshot from 'images/headshot.jp2';
 import styled, { keyframes } from 'styled-components';
 
 const Home = () => (

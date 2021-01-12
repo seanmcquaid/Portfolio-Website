@@ -5,7 +5,7 @@ import {
   Headshot,
   LoadingSpinner,
 } from 'components/components';
-import trumpetHeadshot from 'images/trumpetHeadshot.jpg';
+import trumpetHeadshot from 'images/trumpetHeadshot.jp2';
 import styled, { keyframes } from 'styled-components';
 
 const About = () => {
