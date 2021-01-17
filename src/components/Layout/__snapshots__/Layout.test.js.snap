@@ -189,7 +189,7 @@ Object {
             />
           </svg>
           <div
-            class="sc-fzpans fofBkG"
+            class="sc-fzpans GDLLc"
             data-testid="mobileNavMenu"
             id="mobileNavMenu"
           >
@@ -585,7 +585,7 @@ Object {
           />
         </svg>
         <div
-          class="sc-fzpans fofBkG"
+          class="sc-fzpans GDLLc"
           data-testid="mobileNavMenu"
           id="mobileNavMenu"
         >

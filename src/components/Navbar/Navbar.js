@@ -346,6 +346,12 @@ const HamburgerMenu = styled.div`
   @media (min-width: 520px) {
     display: none;
   }
+
+  @media not all and (min-resolution: 0.001dpcm) {
+    @media {
+      margin-top: auto;
+    }
+  }
 `;
 
 const HamburgerIcon = styled(GiHamburgerMenu)`
