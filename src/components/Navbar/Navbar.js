@@ -11,7 +11,6 @@ import {
   IoMdFiling,
   IoMdMusicalNotes,
   IoMdContact,
-  IoIosLaptop,
 } from 'react-icons/io';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import resume from 'images/Sean McQuaid - Resume.pdf';
@@ -187,20 +186,6 @@ const Navbar = () => {
               <IoMdMail />
             </ContactListIconContainer>
             <ContactListItemLinkLabel>Email</ContactListItemLinkLabel>
-          </ContactListItemLink>
-        </ContactListItem>
-        <ContactListItem>
-          <ContactListItemLink
-            href="https://www.musicianthatcodes.com/"
-            target="blank"
-            data-testid="desktopBlogLink"
-            id="desktopBlogLink"
-            title="Blog Link"
-          >
-            <ContactListIconContainer>
-              <IoIosLaptop />
-            </ContactListIconContainer>
-            <ContactListItemLinkLabel>Blog</ContactListItemLinkLabel>
           </ContactListItemLink>
         </ContactListItem>
       </ContactList>

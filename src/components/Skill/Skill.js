@@ -14,6 +14,9 @@ const IconName = styled.p`
   margin: 0.25rem;
   font-size: 1rem;
   visibility: hidden;
+  @media (max-width: 975px) {
+    visibility: visible;
+  }
 `;
 
 const fadeInAnimation = keyframes`
@@ -31,14 +34,19 @@ const IconContainer = styled.div`
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  width: 25%;
+  width: 15%;
   margin: 0.75rem;
-  &:hover ${IconName} {
-    visibility: visible;
-    transition: 0.25s;
-    animation: ${fadeInAnimation} ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+  @media (min-width: 975px) {
+    &:hover ${IconName} {
+      visibility: visible;
+      transition: 0.25s;
+      animation: ${fadeInAnimation} ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+  @media (max-width: 520px) {
+    width: 25%;
   }
 `;
 

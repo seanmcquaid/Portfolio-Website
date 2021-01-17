@@ -111,6 +111,7 @@ const LeftContainer = styled.div`
   animation: ${fadeInAnimation} ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  overflow: auto;
   @media (max-width: 975px) {
     justify-content: center;
     align-items: center;

@@ -84,8 +84,6 @@ const LeftContainer = styled.div`
 
 const RightContainer = styled.div`
   display: flex;
-  width: 100%;
-  height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -99,8 +97,6 @@ const RightContainer = styled.div`
     margin: 0;
     max-width: 220px;
     max-height: 290px;
-  }
-  @media (max-width: 520px) {
   }
 `;
 

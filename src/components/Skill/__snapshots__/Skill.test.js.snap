@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxirZ jMlLGi"
+        class="sc-AxirZ gRHoBQ"
         data-testid="Placeholder NameIcon"
         id="Placeholder NameIcon"
       >
@@ -24,7 +24,7 @@ Object {
           />
         </svg>
         <p
-          class="sc-AxjAm eEJfMp"
+          class="sc-AxjAm XDFHD"
         >
           Placeholder Name
         </p>
@@ -33,7 +33,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxirZ jMlLGi"
+      class="sc-AxirZ gRHoBQ"
       data-testid="Placeholder NameIcon"
       id="Placeholder NameIcon"
     >
@@ -51,7 +51,7 @@ Object {
         />
       </svg>
       <p
-        class="sc-AxjAm eEJfMp"
+        class="sc-AxjAm XDFHD"
       >
         Placeholder Name
       </p>

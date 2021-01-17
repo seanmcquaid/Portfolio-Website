@@ -14,11 +14,16 @@ import {
   DiAngularSimple,
 } from 'react-icons/di';
 import { FaVuejs } from 'react-icons/fa';
+import { SiSvelte, SiTypescript } from 'react-icons/si';
 
 export default [
   {
     name: 'JavaScript',
     IconComponent: DiJavascript,
+  },
+  {
+    name: 'TypeScript',
+    IconComponent: SiTypescript,
   },
   {
     name: 'React',
@@ -71,5 +76,9 @@ export default [
   {
     name: 'Vue.js',
     IconComponent: FaVuejs,
+  },
+  {
+    name: 'Svelte',
+    IconComponent: SiSvelte,
   },
 ];
