@@ -26,21 +26,19 @@ const Project = ({ title, image, description, repoLink, projectId }) => (
     >
       {description}
     </ParagraphText>
-    <ButtonsContainer>
-      <ExternalLinkButton
-        href={repoLink}
-        target="blank"
-        id={'projectRepoButton' + projectId}
-        data-testid={'projectRepoButton' + projectId}
-        title={`${title} GitHub Repo Link`}
-      >
-        GitHub Repo
-      </ExternalLinkButton>
-    </ButtonsContainer>
+    <ExternalLinkButton
+      href={repoLink}
+      target="blank"
+      id={'projectRepoButton' + projectId}
+      data-testid={'projectRepoButton' + projectId}
+      title={`${title} GitHub Repo Link`}
+    >
+      GitHub Repo
+    </ExternalLinkButton>
   </ProjectContainer>
 );
 
-const ProjectContainer = styled.div`
+const ProjectContainer = styled.li`
   border: 2px solid #00000096;
   margin: 1rem;
   padding: 1rem;
@@ -48,34 +46,24 @@ const ProjectContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
-  max-width: 400px;
-  max-height: 500px;
-  @media (max-width: 520px) {
-    padding: 0;
+  max-width: 26rem;
+  height: 28rem;
+  @media (max-width: 975px) {
     margin: 1rem 0;
+    padding: 1rem 0;
   }
 `;
 
-const ProjectTitle = styled.h4`
+const ProjectTitle = styled.label`
   font-size: 1.25rem;
   color: white;
+  padding: 0.5rem;
 `;
 
 const ProjectImage = styled.img`
   border-radius: 5px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
   max-width: 300px;
-`;
-
-const ButtonsContainer = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  max-width: 200px;
-  height: 200px;
 `;
 
 Project.propTypes = {
