@@ -1,9 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import {
-  HeaderText,
-  ParagraphText,
-  LoadingSpinner,
-} from 'components/components';
+import React from 'react';
+import { HeaderText, ParagraphText } from 'components/components';
 import styled, { keyframes } from 'styled-components';
 import {
   IoLogoLinkedin,
@@ -13,97 +9,102 @@ import {
 } from 'react-icons/io';
 import resume from 'images/Sean McQuaid - Resume.pdf';
 
-const Contact = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  return (
-    <ContactPageContainer id="contactPage" data-testid="contactPage">
-      {isLoading ? (
-        <LoadingSpinner isLoading={isLoading} />
-      ) : (
-        <>
-          <LeftContainer>
-            <HeaderText id="contactPageHeader" data-testid="contactPageHeader">
-              Contact Me
-            </HeaderText>
-            <ParagraphText id="contactInfoText" data-testid="contactInfoText">
-              If you would like to contact me, I would love to hear from you!
-              Feel free to contact me through my email, check out my LinkedIn or
-              GitHub, or even look at my Resume!
-            </ParagraphText>
-          </LeftContainer>
-          <RightContainer>
-            <ContactList>
-              <ContactListItem>
-                <ContactListItemLink
-                  href="https://www.linkedin.com/in/sean-mcquaid-292b3588/"
-                  target="blank"
-                  id="linkedInLink"
-                  data-testid="linkedInLink"
-                  title="LinkedIn Link"
-                >
-                  <IoLogoLinkedin />
-                  <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
-                </ContactListItemLink>
-              </ContactListItem>
-              <ContactListItem>
-                <ContactListItemLink
-                  href="https://github.com/seanmcquaid"
-                  target="blank"
-                  id="gitHubLink"
-                  data-testid="gitHubLink"
-                  title="GitHub Link"
-                >
-                  <IoLogoGithub />
-                  <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
-                </ContactListItemLink>
-              </ContactListItem>
-              <ContactListItem>
-                <ContactListItemLink
-                  href={resume}
-                  target="blank"
-                  id="resumeLink"
-                  data-testid="resumeLink"
-                  title="Resume Link"
-                >
-                  <IoIosPaper />
-                  <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
-                </ContactListItemLink>
-              </ContactListItem>
-              <ContactListItem>
-                <ContactListItemLink
-                  href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!"
-                  data-testid="desktopEmailLink"
-                  id="desktopEmailLink"
-                  title="Email Link"
-                >
-                  <IoMdMail />
-                  <ContactListItemLinkLabel>Email</ContactListItemLinkLabel>
-                </ContactListItemLink>
-              </ContactListItem>
-            </ContactList>
-          </RightContainer>
-        </>
-      )}
-    </ContactPageContainer>
-  );
-};
+const Contact = () => (
+  <ContactPageContainer id="contactPage" data-testid="contactPage">
+    <Header>
+      <HeaderText id="contactPageHeader" data-testid="contactPageHeader">
+        Contact Me
+      </HeaderText>
+      <ParagraphText id="contactInfoText" data-testid="contactInfoText">
+        If you would like to contact me, I would love to hear from you! Feel
+        free to contact me through my email, check out my LinkedIn or GitHub, or
+        even look at my Resume!
+      </ParagraphText>
+    </Header>
+    <Main>
+      <ContactList>
+        <ContactListItem>
+          <ContactListItemLink
+            href="https://www.linkedin.com/in/sean-mcquaid-292b3588/"
+            target="blank"
+            id="linkedInLink"
+            data-testid="linkedInLink"
+            title="LinkedIn Link"
+          >
+            <IoLogoLinkedin />
+            <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
+          </ContactListItemLink>
+        </ContactListItem>
+        <ContactListItem>
+          <ContactListItemLink
+            href="https://github.com/seanmcquaid"
+            target="blank"
+            id="gitHubLink"
+            data-testid="gitHubLink"
+            title="GitHub Link"
+          >
+            <IoLogoGithub />
+            <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
+          </ContactListItemLink>
+        </ContactListItem>
+        <ContactListItem>
+          <ContactListItemLink
+            href={resume}
+            target="blank"
+            id="resumeLink"
+            data-testid="resumeLink"
+            title="Resume Link"
+          >
+            <IoIosPaper />
+            <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
+          </ContactListItemLink>
+        </ContactListItem>
+        <ContactListItem>
+          <ContactListItemLink
+            href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!"
+            data-testid="emailLink"
+            id="emailLink"
+            title="Email Link"
+          >
+            <IoMdMail />
+            <ContactListItemLinkLabel>Email</ContactListItemLinkLabel>
+          </ContactListItemLink>
+        </ContactListItem>
+      </ContactList>
+    </Main>
+  </ContactPageContainer>
+);
 
 const ContactPageContainer = styled.div`
-  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
   @media (max-width: 975px) {
     flex-direction: column;
-    margin: auto;
+    justify-content: flex-start;
   }
+`;
+
+const Header = styled.header`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 34rem;
+  padding: 1rem;
+  @media (max-width: 975px) {
+    align-items: center;
+  }
+`;
+
+const Main = styled.main`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ContactList = styled.ul`
@@ -118,8 +119,8 @@ const ContactList = styled.ul`
 
 const ContactListItem = styled.li`
   padding: 0.75rem;
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
 `;
 
 const fadeInAnimation = keyframes`
@@ -135,6 +136,9 @@ const ContactListItemLinkLabel = styled.span`
   font-size: 1rem;
   margin: 0.25rem;
   visibility: hidden;
+  @media (max-width: 975px) {
+    visibility: visible;
+  }
 `;
 
 const ContactListItemLink = styled.a`
@@ -145,58 +149,14 @@ const ContactListItemLink = styled.a`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  &:hover ${ContactListItemLinkLabel} {
-    visibility: visible;
-    transition: 0.25s;
-    animation: ${fadeInAnimation} ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-`;
-
-const LeftContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  height: 100%;
-  max-height: 300px;
-  max-width: 550px;
-  margin: 0 1rem;
-  animation: ${fadeInAnimation} ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  @media (max-width: 975px) {
-    justify-content: center;
-    align-items: center;
-    margin: 1rem 0;
-  }
-  @media (max-width: 520px) {
-    max-height: 100%;
-    max-width: 100%;
-  }
-`;
-
-const RightContainer = styled.div`
-  display: flex;
-  width: 100%;
-  height: 100%;
-  max-width: 300px;
-  max-height: 300px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 0 1rem;
-  animation: ${fadeInAnimation} ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  @media (max-width: 975px) {
-    margin: 1rem 0;
-  }
-  @media (max-width: 520px) {
-    max-height: 100%;
-    max-width: 100%;
+  @media (min-width: 975px) {
+    &:hover ${ContactListItemLinkLabel} {
+      visibility: visible;
+      transition: 0.25s;
+      animation: ${fadeInAnimation} ease 1s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
   }
 `;
 

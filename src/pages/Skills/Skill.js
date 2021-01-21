@@ -45,9 +45,6 @@ const IconContainer = styled.li`
       animation-fill-mode: forwards;
     }
   }
-  @media (max-width: 520px) {
-    width: 25%;
-  }
 `;
 
 Skill.propTypes = {
