@@ -16,7 +16,6 @@ const Container = styled.div`
   width: 100%;
   justify-content: center;
   align-items: center;
-  overflow: auto;
   @media (max-height: 620px) {
     margin-top: 7rem;
     height: auto;
