@@ -7,17 +7,25 @@ import {
   ExternalLinkButton,
 } from 'components/components';
 import headshot from 'images/headshot.jp2';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 
 const Home = () => (
   <HomePageContainer id="homePage" data-testid="homePage">
-    <LeftContainer>
+    <Header>
       <HeaderText id="homePageHeader" data-testid="skillsPageHeader">
         Hello, I am Sean!
       </HeaderText>
       <SubHeaderText id="homePageSubHeader" data-testid="homePageSubHeader">
         Software Engineer, Front End Web Developer, Jazz Musician{' '}
       </SubHeaderText>
+    </Header>
+    <Main>
+      <Headshot
+        src={headshot}
+        alt="headshotImage"
+        id="headshotImage"
+        data-testid="headshotImage"
+      />
       <ButtonsContainer>
         <LinkButton route="/contact" title="Contact Me" />
         <ExternalLinkButton
@@ -27,15 +35,7 @@ const Home = () => (
           My Blog
         </ExternalLinkButton>
       </ButtonsContainer>
-    </LeftContainer>
-    <RightContainer>
-      <Headshot
-        src={headshot}
-        alt="headshotImage"
-        id="headshotImage"
-        data-testid="headshotImage"
-      />
-    </RightContainer>
+    </Main>
   </HomePageContainer>
 );
 
@@ -44,70 +44,38 @@ const HomePageContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100%;
+  width: 100%;
   @media (max-width: 975px) {
-    flex-direction: column-reverse;
+    flex-direction: column;
+    justify-content: flex-start;
   }
 `;
 
-const fadeInAnimation = keyframes`
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-    } 
-`;
-
-const LeftContainer = styled.div`
+const Header = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 100%;
-  height: 100%;
-  max-width: 500px;
-  max-height: 250px;
-  margin: 0 1rem;
-  animation: ${fadeInAnimation} ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  padding: 1rem;
   @media (max-width: 975px) {
-    justify-content: center;
     align-items: center;
-    margin: 0;
-  }
-  @media (max-width: 520px) {
   }
 `;
 
-const RightContainer = styled.div`
+const Main = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
-  padding: 1rem;
-  max-width: 300px;
-  animation: ${fadeInAnimation} ease 1s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  @media (max-width: 975px) {
-    margin: 0;
-    max-width: 220px;
-    max-height: 290px;
-  }
+  padding: 1rem 0;
 `;
 
 const ButtonsContainer = styled.div`
   display: flex;
-  width: 100%;
-  @media (max-width: 975px) {
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-  }
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default Home;
