@@ -11,10 +11,10 @@ const Layout = ({ children }) => (
 
 const Container = styled.div`
   display: flex;
-  background-color: #4c8577;
   justify-content: center;
   align-items: center;
   height: 100%;
+  width: 100%;
   @media (max-width: 975px) {
     margin-top: 5rem;
   }
