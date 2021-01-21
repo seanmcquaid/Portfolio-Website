@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@axe-core/react": "^4.1.0",
     "@babel/runtime": "^7.10.2",
     "@emotion/core": "^10.0.28",
     "@testing-library/jest-dom": "^4.2.4",
