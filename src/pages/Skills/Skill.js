@@ -10,7 +10,7 @@ const Skill = ({ IconComponent, name }) => (
   </IconContainer>
 );
 
-const IconName = styled.p`
+const IconName = styled.label`
   margin: 0.25rem;
   font-size: 1rem;
   visibility: hidden;
@@ -35,7 +35,7 @@ const IconContainer = styled.div`
   align-items: center;
   font-size: 2rem;
   width: 15%;
-  margin: 1rem;
+  margin: 0.75rem;
   @media (min-width: 975px) {
     &:hover ${IconName} {
       visibility: visible;

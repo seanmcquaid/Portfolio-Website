@@ -1,10 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import {
-  HeaderText,
-  ParagraphText,
-  LoadingSpinner,
-} from 'components/components';
-import styled, { keyframes } from 'styled-components';
+import React from 'react';
+import { HeaderText, ParagraphText } from 'components/components';
+import styled from 'styled-components';
 import skillsList from './skillsList';
 import Skill from './Skill';
 
