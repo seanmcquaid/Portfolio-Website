@@ -9,11 +9,7 @@ body {
   width: 100%;
 }
 
-html {
-  height: 100%;
-  width: 100%;
-}
-
+html,
 #root {
   height: 100%;
   width: 100%;
