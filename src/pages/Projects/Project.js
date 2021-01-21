@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ParagraphText, ExternalLinkButton } from 'components/components';
+import { ParagraphText, ExternalLinkButton } from 'components';
 import PropTypes from 'prop-types';
 
 const Project = ({ title, image, description, repoLink, projectId }) => (

@@ -5,7 +5,7 @@ import {
   LinkButton,
   Headshot,
   ExternalLinkButton,
-} from 'components/components';
+} from 'components';
 import headshot from 'images/headshot.jp2';
 import styled from 'styled-components';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ParagraphText, HeaderText, Headshot } from 'components/components';
+import { ParagraphText, HeaderText, Headshot } from 'components';
 import trumpetHeadshot from 'images/trumpetHeadshot.jp2';
 import styled from 'styled-components';
 

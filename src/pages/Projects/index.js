@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderText } from 'components/components';
+import { HeaderText } from 'components';
 import styled from 'styled-components';
 import projectsList from './projectsList';
 import Project from './Project';

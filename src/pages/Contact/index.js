@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderText, ParagraphText } from 'components/components';
+import { HeaderText, ParagraphText } from 'components';
 import styled, { keyframes } from 'styled-components';
 import {
   IoLogoLinkedin,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderText, ParagraphText } from 'components/components';
+import { HeaderText, ParagraphText } from 'components';
 import styled from 'styled-components';
 import skillsList from './skillsList';
 import Skill from './Skill';
