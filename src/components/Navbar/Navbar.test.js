@@ -6,16 +6,6 @@ import Navbar from './Navbar';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('<Navbar/>', () => {
-  it('Matches snapshot', () => {
-    const history = createMemoryHistory();
-    const navbar = render(
-      <Router history={history}>
-        <Navbar />
-      </Router>
-    );
-    expect(navbar).toMatchSnapshot();
-  });
-
   it('Hamburger menu toggle works', () => {
     const history = createMemoryHistory();
     const { getByTestId } = render(
