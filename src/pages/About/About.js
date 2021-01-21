@@ -76,9 +76,12 @@ const Header = styled.header`
 
 const Main = styled.main`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media (max-width: 975px) {
+    flex-direction: column;
+  }
 `;
 
 const Article = styled.article`
@@ -86,7 +89,7 @@ const Article = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 50rem;
+  max-width: 34rem;
 `;
 
 export default About;
