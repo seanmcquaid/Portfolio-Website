@@ -23,6 +23,9 @@ const ErrorPageContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  @media (max-width: 975px) {
+    justify-content: flex-start;
+  }
 `;
 
 const HomePageLink = styled(Link)`
