@@ -5,7 +5,7 @@ import { FaAccessibleIcon } from 'react-icons/fa';
 
 const Skill = ({ IconComponent, name }) => (
   <IconContainer id={`${name}Icon`} data-testid={`${name}Icon`}>
-    <IconComponent />
+    <IconComponent alt={name} />
     <IconName>{name}</IconName>
   </IconContainer>
 );
@@ -35,7 +35,7 @@ const IconContainer = styled.div`
   align-items: center;
   font-size: 2rem;
   width: 15%;
-  margin: 0.75rem;
+  margin: 1rem;
   @media (min-width: 975px) {
     &:hover ${IconName} {
       visibility: visible;

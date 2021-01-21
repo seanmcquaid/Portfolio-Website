@@ -1,7 +1,6 @@
 import Layout from './Layout/Layout';
 import Navbar from './Navbar/Navbar';
 import Project from './Project/Project';
-import Skill from './Skill/Skill';
 import HeaderText from './HeaderText/HeaderText';
 import SubHeaderText from './SubHeaderText/SubHeaderText';
 import LinkButton from './LinkButton/LinkButton';
@@ -14,7 +13,6 @@ export {
   Layout,
   Navbar,
   Project,
-  Skill,
   HeaderText,
   SubHeaderText,
   LinkButton,

@@ -90,6 +90,7 @@ const Article = styled.article`
   justify-content: center;
   align-items: center;
   max-width: 34rem;
+  flex: 1;
 `;
 
 export default About;
