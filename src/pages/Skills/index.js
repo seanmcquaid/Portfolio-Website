@@ -19,12 +19,12 @@ const Skills = () => (
       </ParagraphText>
     </Header>
     <Main>
-      <IconsContainer id="skillsList" data-testid="skillsList">
+      <SkillsList id="skillsList" data-testid="skillsList">
         {skillsList.map((skill, i) => {
           const { name, IconComponent } = skill;
           return <Skill key={i} IconComponent={IconComponent} name={name} />;
         })}
-      </IconsContainer>
+      </SkillsList>
     </Main>
   </SkillsPageContainer>
 );
@@ -60,12 +60,15 @@ const Main = styled.main`
   align-items: center;
 `;
 
-const IconsContainer = styled.div`
+const SkillsList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-width: 26rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 `;
 
 export default Skills;

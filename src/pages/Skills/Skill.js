@@ -28,7 +28,7 @@ const fadeInAnimation = keyframes`
     } 
 `;
 
-const IconContainer = styled.div`
+const IconContainer = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
