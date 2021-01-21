@@ -129,7 +129,7 @@ const DesktopNav = () => (
   </DesktopNavContainer>
 );
 
-const DesktopNavContainer = styled.ul`
+const DesktopNavContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;

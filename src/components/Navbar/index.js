@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { IoMdMusicalNotes } from 'react-icons/io';
@@ -9,13 +9,13 @@ import MobileNav from './MobileNav';
 const Navbar = () => {
   const [isMobileMenuDisplayed, setIsMobileMenuDisplayed] = useState(false);
 
-  const hamburgerMenuOnClick = () => {
-    setIsMobileMenuDisplayed(!isMobileMenuDisplayed);
-  };
+  const hamburgerMenuOnClick = useCallback(() => {
+    setIsMobileMenuDisplayed((prevState) => !prevState);
+  }, []);
 
-  const mobileMenuItemOnClick = () => {
+  const mobileMenuItemOnClick = useCallback(() => {
     setIsMobileMenuDisplayed(false);
-  };
+  }, []);
 
   return (
     <NavbarContainer data-testid="navbar" id="navbar">
@@ -26,10 +26,7 @@ const Navbar = () => {
         id="homeButton"
         title="Home Page Link"
       >
-        <NavLinkIconContainer>
-          <IoMdMusicalNotes />
-        </NavLinkIconContainer>
-        <NavLinkLabel>Home</NavLinkLabel>
+        <IoMdMusicalNotes />
       </LinkContainer>
       <DesktopNav />
       <HamburgerIcon
@@ -46,7 +43,7 @@ const Navbar = () => {
   );
 };
 
-const NavbarContainer = styled.div`
+const NavbarContainer = styled.nav`
   background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
@@ -58,31 +55,17 @@ const NavbarContainer = styled.div`
   width: 100px;
   min-width: 100px;
   height: 100%;
-  text-align: center;
   @media (max-width: 975px) {
     position: fixed;
     flex-direction: row;
     height: 80px;
-    min-height: 80px;
     width: 100%;
-  }
-  @media (max-height: 620px) {
-    position: fixed;
-    flex-direction: row;
-    height: 80px;
-    min-height: 80px;
-    width: 100%;
-  }
-  @media (max-width: 520px) {
-    align-items: center;
   }
 `;
 
 const LinkContainer = styled(Link)`
-  text-align: center;
   padding: 1rem;
   display: flex;
-  margin-top: 0.5rem;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -91,32 +74,13 @@ const LinkContainer = styled(Link)`
   text-decoration: none;
 `;
 
-const NavLinkLabel = styled.span`
-  font-size: 1rem;
-  visibility: hidden;
-  @media (max-width: 520px) {
-    display: none;
-  }
-`;
-
-const NavLinkIconContainer = styled.div`
-  display: block;
-  font-size: 1.5rem;
-  width: 100%;
-  height: 100%;
-  &:hover + ${NavLinkLabel} {
-    visibility: visible;
-  }
-`;
-
 const HamburgerIcon = styled(GiHamburgerMenu)`
   font-size: 1.5rem;
   padding: 1rem;
-  display: block;
   &:hover {
     cursor: pointer;
   }
-  @media (min-width: 521px) {
+  @media (min-width: 975px) {
     display: none;
   }
 `;

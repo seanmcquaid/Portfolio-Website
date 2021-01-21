@@ -2,7 +2,7 @@ import React from 'react';
 import { render, fireEvent, act } from '@testing-library/react';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
-import Navbar from './Navbar';
+import Navbar from '.';
 import '@testing-library/jest-dom/extend-expect';
 
 describe('<Navbar/>', () => {
