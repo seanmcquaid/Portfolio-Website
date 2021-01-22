@@ -1,9 +1,9 @@
 import propTypes from 'prop-types';
-import React, { memo } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 
-const MobileNav = memo(({ mobileMenuItemOnClick, isMobileMenuDisplayed }) => (
+const MobileNav = ({ mobileMenuItemOnClick, isMobileMenuDisplayed }) => (
   <MobileMenu data-testid="mobileNavMenu" id="mobileNavMenu">
     <MobileNavLinksList isMobileMenuDisplayed={isMobileMenuDisplayed}>
       <MobileNavListItem>
@@ -52,7 +52,7 @@ const MobileNav = memo(({ mobileMenuItemOnClick, isMobileMenuDisplayed }) => (
       </MobileNavListItem>
     </MobileNavLinksList>
   </MobileMenu>
-));
+);
 
 const MobileMenu = styled.div`
   display: flex;

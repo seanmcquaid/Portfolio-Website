@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { IoMdMusicalNotes } from 'react-icons/io';
@@ -9,13 +9,13 @@ import MobileNav from './MobileNav';
 const Navbar = () => {
   const [isMobileMenuDisplayed, setIsMobileMenuDisplayed] = useState(false);
 
-  const hamburgerMenuOnClick = useCallback(() => {
+  const hamburgerMenuOnClick = () => {
     setIsMobileMenuDisplayed((prevState) => !prevState);
-  }, []);
+  };
 
-  const mobileMenuItemOnClick = useCallback(() => {
+  const mobileMenuItemOnClick = () => {
     setIsMobileMenuDisplayed(false);
-  }, []);
+  };
 
   return (
     <NavbarContainer data-testid="navbar" id="navbar">
