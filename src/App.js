@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import Layout from './Layout';
-import { Home, About, Contact, Skills, Projects, Error } from 'pages';
+
+const Home = React.lazy(() => import('./pages/Home'));
+const About = React.lazy(() => import('./pages/About'));
+const Contact = React.lazy(() => import('./pages/Contact'));
+const Skills = React.lazy(() => import('./pages/Skills'));
+const Projects = React.lazy(() => import('./pages/Projects'));
 
 const App = () => (
   <Router basename="/">
     <Layout>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/skills" component={Skills} />
-        <Route exact path="/projects" component={Projects} />
-        <Route component={Error} />
-      </Switch>
+      <Suspense fallback={null}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/about" component={About} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/skills" component={Skills} />
+          <Route exact path="/projects" component={Projects} />
+          <Route component={Error} />
+        </Switch>
+      </Suspense>
     </Layout>
   </Router>
 );
