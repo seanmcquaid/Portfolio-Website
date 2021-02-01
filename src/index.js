@@ -4,6 +4,8 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './index.css';
 
-reactAxe(React, ReactDOM, 1000, {});
+if (process.env.REACT_APP_ENVIRONMENT === 'dev') {
+  reactAxe(React, ReactDOM, 1000, {});
+}
 
 ReactDOM.render(<App />, document.getElementById('root'));

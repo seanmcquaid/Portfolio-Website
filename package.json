@@ -5,11 +5,6 @@
   "private": true,
   "dependencies": {
     "@axe-core/react": "^4.1.0",
-    "@babel/runtime": "^7.10.2",
-    "@emotion/core": "^10.0.28",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/user-event": "^7.2.1",
-    "express": "^4.17.1",
     "gh-pages": "^2.2.0",
     "path": "^0.12.7",
     "prop-types": "^15.7.2",
@@ -18,7 +13,6 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^3.4.3",
-    "react-spinners": "^0.8.3",
     "styled-components": "^5.1.1"
   },
   "scripts": {
@@ -43,15 +37,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@testing-library/react": "^10.2.1",
-    "@types/jest": "^25.2.3",
-    "history": "^4.10.1",
-    "jest": "24.9.0",
-    "jest-environment-jsdom-sixteen": "^1.0.3",
-    "jest-styled-components": "^7.0.2",
-    "mq-polyfill": "^1.1.8",
-    "react-test-renderer": "^16.13.1"
   }
 }

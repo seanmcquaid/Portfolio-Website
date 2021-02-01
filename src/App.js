@@ -7,6 +7,7 @@ const About = React.lazy(() => import('./pages/About'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const Skills = React.lazy(() => import('./pages/Skills'));
 const Projects = React.lazy(() => import('./pages/Projects'));
+const Error = React.lazy(() => import('./pages/Error'));
 
 const App = () => (
   <Router basename="/">
