@@ -1,7 +1,7 @@
 import React from 'react';
 import { ParagraphText, HeaderText, Headshot } from 'components';
 import trumpetHeadshot from 'images/trumpetHeadshot.jp2';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const About = () => {
   return (
@@ -54,6 +54,15 @@ const About = () => {
   );
 };
 
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
 const AboutPageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -61,6 +70,10 @@ const AboutPageContainer = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
+  transition: 0.5s;
+  animation: ${fadeInAnimation} ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   @media (max-width: 975px) {
     justify-content: flex-start;
   }

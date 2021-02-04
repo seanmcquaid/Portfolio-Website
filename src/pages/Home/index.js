@@ -7,7 +7,7 @@ import {
   ExternalLinkButton,
 } from 'components';
 import headshot from 'images/headshot.jp2';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 const Home = () => (
   <HomePageContainer id="homePage" data-testid="homePage">
@@ -39,6 +39,15 @@ const Home = () => (
   </HomePageContainer>
 );
 
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
 const HomePageContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -46,6 +55,10 @@ const HomePageContainer = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
+  transition: 0.5s;
+  animation: ${fadeInAnimation} ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   @media (max-width: 975px) {
     flex-direction: column;
     justify-content: flex-start;

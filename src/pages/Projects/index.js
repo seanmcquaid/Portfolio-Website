@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderText } from 'components';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import projectsList from './projectsList';
 import Project from './Project';
 
@@ -26,6 +26,15 @@ const Projects = () => (
   </ProjectsPageContainer>
 );
 
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
 const ProjectsPageContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -33,6 +42,10 @@ const ProjectsPageContainer = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
+  transition: 0.5s;
+  animation: ${fadeInAnimation} ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   @media (max-width: 975px) {
     justify-content: flex-start;
   }

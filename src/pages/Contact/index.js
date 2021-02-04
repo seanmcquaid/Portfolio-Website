@@ -75,6 +75,15 @@ const Contact = () => (
   </ContactPageContainer>
 );
 
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
 const ContactPageContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -82,6 +91,10 @@ const ContactPageContainer = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
+  transition: 0.5s;
+  animation: ${fadeInAnimation} ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   @media (max-width: 975px) {
     flex-direction: column;
     justify-content: flex-start;
@@ -121,15 +134,6 @@ const ContactListItem = styled.li`
   padding: 0.75rem;
   width: 2.5rem;
   height: 2.5rem;
-`;
-
-const fadeInAnimation = keyframes`
-    0% { 
-        opacity: 0; 
-    } 
-    100% { 
-        opacity: 1; 
-    } 
 `;
 
 const ContactListItemLinkLabel = styled.span`

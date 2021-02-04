@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeaderText, ParagraphText } from 'components';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import skillsList from './skillsList';
 import Skill from './Skill';
 
@@ -29,6 +29,15 @@ const Skills = () => (
   </SkillsPageContainer>
 );
 
+const fadeInAnimation = keyframes`
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+    } 
+`;
+
 const SkillsPageContainer = styled.div`
   display: flex;
   flex-direction: row;
@@ -36,6 +45,10 @@ const SkillsPageContainer = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
+  transition: 0.5s;
+  animation: ${fadeInAnimation} ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
   @media (max-width: 975px) {
     justify-content: flex-start;
     flex-direction: column;
