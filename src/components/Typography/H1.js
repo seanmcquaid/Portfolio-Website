@@ -5,6 +5,5 @@ export default styled.h1`
   margin: 1rem 1rem 0 1rem;
   font-family: Rubik;
   font-size: 2.5rem;
-  color: white;
   line-height: 2rem;
 `;
