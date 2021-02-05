@@ -104,6 +104,7 @@ const Article = styled.article`
   align-items: center;
   max-width: 34rem;
   flex: 1;
+  padding: 1rem;
 `;
 
 export default About;
