@@ -61,12 +61,13 @@ const MobileMenu = styled.div`
   align-items: center;
   width: 100%;
   font-size: 1.5rem;
-  position: fixed;
   top: 0;
   left: 0;
-  margin-top: 3.25rem;
   @media (min-width: 975px) {
     display: none;
+  }
+  @media (max-height: 620px) {
+    display: flex;
   }
 
   @media not all and (min-resolution: 0.001dpcm) {
@@ -93,10 +94,9 @@ const MobileNavLinksList = styled.ul`
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-top: 6.25rem;
+  margin-top: 7.25rem;
   position: fixed;
   width: 100%;
-  min-width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   animation: ${fadeInAnimation} ease 0.5s;
   animation-iteration-count: 1;

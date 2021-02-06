@@ -13,8 +13,12 @@ const Container = styled.div`
   display: flex;
   height: 100%;
   width: 100%;
-  @media (max-width: 975px) {
-    margin-top: 5rem;
+  flex-direction: column;
+  @media (min-width: 975px) {
+    flex-direction: row;
+  }
+  @media (max-height: 620px) {
+    flex-direction: column;
   }
 `;
 

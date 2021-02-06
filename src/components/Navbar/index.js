@@ -29,15 +29,15 @@ const Navbar = () => {
         <IoMdMusicalNotes />
       </LinkContainer>
       <DesktopNav />
+      <MobileNav
+        isMobileMenuDisplayed={isMobileMenuDisplayed}
+        mobileMenuItemOnClick={mobileMenuItemOnClick}
+      />
       <HamburgerIcon
         onClick={hamburgerMenuOnClick}
         data-testid="mobileMenuToggleButton"
         id="mobileMenuToggleButton"
         title="Mobile Nav Toggle"
-      />
-      <MobileNav
-        isMobileMenuDisplayed={isMobileMenuDisplayed}
-        mobileMenuItemOnClick={mobileMenuItemOnClick}
       />
     </NavbarContainer>
   );
@@ -53,12 +53,14 @@ const NavbarContainer = styled.nav`
   left: 0;
   z-index: 1;
   width: 100px;
-  min-width: 100px;
   height: 100%;
+  min-height: 80px;
   @media (max-width: 975px) {
-    position: fixed;
     flex-direction: row;
-    height: 80px;
+    width: 100%;
+  }
+  @media (max-height: 620px) {
+    flex-direction: row;
     width: 100%;
   }
 `;
@@ -82,6 +84,9 @@ const HamburgerIcon = styled(GiHamburgerMenu)`
   }
   @media (min-width: 975px) {
     display: none;
+  }
+  @media (max-height: 620px) {
+    display: block;
   }
 `;
 

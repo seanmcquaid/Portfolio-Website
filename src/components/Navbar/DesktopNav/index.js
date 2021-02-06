@@ -1,9 +1,5 @@
 import React from 'react';
 import {
-  IoLogoGithub,
-  IoLogoLinkedin,
-  IoMdMail,
-  IoIosPaper,
   IoMdPerson,
   IoMdSettings,
   IoMdFiling,
@@ -11,7 +7,6 @@ import {
 } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import resume from 'images/Sean McQuaid - Resume.pdf';
 
 const DesktopNav = () => (
   <DesktopNavContainer data-testid="desktopNavMenu" id="desktopNavMenu">
@@ -69,79 +64,22 @@ const DesktopNav = () => (
         </NavLink>
       </NavLinksListItem>
     </NavLinksList>
-    <ContactList data-testid="desktopContactMenu" id="desktopContactMenu">
-      <ContactListItem>
-        <ContactListItemLink
-          href="https://www.linkedin.com/in/sean-mcquaid-292b3588/"
-          target="blank"
-          data-testid="desktopLinkedInLink"
-          id="desktopLinkedInLink"
-          title="LinkedIn Link"
-        >
-          <ContactListIconContainer>
-            <IoLogoLinkedin />
-          </ContactListIconContainer>
-          <ContactListItemLinkLabel>LinkedIn</ContactListItemLinkLabel>
-        </ContactListItemLink>
-      </ContactListItem>
-      <ContactListItem>
-        <ContactListItemLink
-          href="https://github.com/seanmcquaid"
-          target="blank"
-          data-testid="desktopGitHubLink"
-          id="desktopGitHubLink"
-          title="GitHub Link"
-        >
-          <ContactListIconContainer>
-            <IoLogoGithub />
-          </ContactListIconContainer>
-          <ContactListItemLinkLabel>GitHub</ContactListItemLinkLabel>
-        </ContactListItemLink>
-      </ContactListItem>
-      <ContactListItem>
-        <ContactListItemLink
-          href={resume}
-          target="blank"
-          data-testid="desktopResumeLink"
-          id="desktopResumeLink"
-          title="Resume Link"
-        >
-          <ContactListIconContainer>
-            <IoIosPaper />
-          </ContactListIconContainer>
-          <ContactListItemLinkLabel>Resume</ContactListItemLinkLabel>
-        </ContactListItemLink>
-      </ContactListItem>
-      <ContactListItem>
-        <ContactListItemLink
-          href="mailto: sean.m.mcquaid@gmail.com?subject=Hello!"
-          data-testid="desktopEmailLink"
-          id="desktopEmailLink"
-          title="Email Link"
-        >
-          <ContactListIconContainer>
-            <IoMdMail />
-          </ContactListIconContainer>
-          <ContactListItemLinkLabel>Email</ContactListItemLinkLabel>
-        </ContactListItemLink>
-      </ContactListItem>
-    </ContactList>
   </DesktopNavContainer>
 );
 
 const DesktopNavContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin: 0;
   padding: 0;
   list-style: none;
-  height: 80%;
-  @media (max-width: 975px) {
-    flex-direction: row;
-  }
+  height: 100%;
   @media (max-width: 520px) {
+    display: none;
+  }
+  @media (max-height: 620px) {
     display: none;
   }
 `;
@@ -156,9 +94,6 @@ const NavLinksList = styled.ul`
   justify-content: center;
   align-items: center;
   @media (max-width: 975px) {
-    display: none;
-  }
-  @media (max-height: 620px) {
     display: none;
   }
 `;
@@ -179,9 +114,6 @@ const NavLink = styled(Link)`
   @media (max-width: 975px) {
     width: 30px;
   }
-  @media (max-height: 620px) {
-    width: 30px;
-  }
 `;
 
 const NavLinkLabel = styled.span`
@@ -200,45 +132,6 @@ const NavLinkIconContainer = styled.div`
   &:hover + ${NavLinkLabel} {
     visibility: visible;
   }
-`;
-
-const ContactList = styled.ul`
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 975px) {
-    display: none;
-  }
-  @media (max-height: 620px) {
-    display: none;
-  }
-`;
-
-const ContactListItemLinkLabel = styled.span`
-  font-size: 1rem;
-  visibility: hidden;
-`;
-
-const ContactListItem = styled.li`
-  margin: 0.25rem;
-`;
-
-const ContactListIconContainer = styled.div`
-  font-size: 1.5rem;
-  &:hover + ${ContactListItemLinkLabel} {
-    visibility: visible;
-  }
-`;
-
-const ContactListItemLink = styled.a`
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: #ffffffb6;
 `;
 
 export default DesktopNav;

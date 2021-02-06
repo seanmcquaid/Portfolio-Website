@@ -102,7 +102,7 @@ const Article = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 34rem;
+  max-width: 36rem;
   flex: 1;
   padding: 1rem;
 `;
