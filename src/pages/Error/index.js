@@ -35,7 +35,6 @@ const ErrorPageContainer = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100%;
   transition: 0.5s;
   animation: ${fadeInAnimation} ease 1s;
   animation-iteration-count: 1;

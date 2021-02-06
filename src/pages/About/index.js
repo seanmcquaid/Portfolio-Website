@@ -68,7 +68,6 @@ const AboutPageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
   transition: 0.5s;
   animation: ${fadeInAnimation} ease 1s;

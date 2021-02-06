@@ -53,7 +53,6 @@ const HomePageContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
   transition: 0.5s;
   animation: ${fadeInAnimation} ease 1s;
