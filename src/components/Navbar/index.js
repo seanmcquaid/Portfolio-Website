@@ -54,14 +54,15 @@ const NavbarContainer = styled.nav`
   z-index: 1;
   width: 100px;
   height: 100%;
-  min-height: 80px;
   @media (max-width: 975px) {
     flex-direction: row;
     width: 100%;
+    height: 80px;
   }
   @media (max-height: 620px) {
     flex-direction: row;
     width: 100%;
+    height: 80px;
   }
 `;
 
