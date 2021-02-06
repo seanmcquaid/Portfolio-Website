@@ -94,7 +94,7 @@ const MobileNavLinksList = styled.ul`
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-top: 7.25rem;
+  margin-top: 7.5rem;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);

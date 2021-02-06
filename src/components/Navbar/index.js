@@ -58,11 +58,13 @@ const NavbarContainer = styled.nav`
     flex-direction: row;
     width: 100%;
     height: 80px;
+    position: fixed;
   }
   @media (max-height: 620px) {
     flex-direction: row;
     width: 100%;
     height: 80px;
+    position: fixed;
   }
 `;
 

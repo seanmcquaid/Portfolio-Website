@@ -19,6 +19,11 @@ const Container = styled.div`
   }
   @media (max-height: 620px) {
     flex-direction: column;
+    margin-top: 6rem;
+  }
+  @media (max-width: 975px) {
+    flex-direction: column;
+    margin-top: 6rem;
   }
 `;
 
