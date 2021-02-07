@@ -102,8 +102,6 @@ const Article = styled.article`
   justify-content: center;
   align-items: center;
   max-width: 36rem;
-  flex: 1;
-  padding: 1rem;
 `;
 
 export default About;
