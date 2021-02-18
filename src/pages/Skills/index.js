@@ -11,11 +11,12 @@ const Skills = () => (
         Skills
       </HeaderText>
       <ParagraphText>
-        I currently work with Java/Springboot at work, however, my speciality is
-        in Full-Stack JavaScript development. I specifically have a passion for
-        creating visually appealing applications that solve a specific business
-        problem. I currently spend most of my time outside of work attempting to
-        come up with creative solutions in React and React Native.
+        I currently work with Java at work, however, my speciality is in
+        Full-Stack JavaScript development. I specifically have a passion for
+        creating visually appealing, accessible web applications that solve a
+        specific business problem. I currently spend most of my time outside of
+        work attempting to come up with creative solutions with any flavor of
+        JavaScript. I have a passion for Front End Web Development!
       </ParagraphText>
     </Header>
     <Main>
