@@ -15,7 +15,7 @@ const LinkButton = ({ title, route }) => (
 
 const LinkButtonContainer = styled(Link)`
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   text-decoration: none;
   color: #00000096;
   border: 2px solid #00000096;

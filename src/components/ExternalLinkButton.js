@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export default styled.a`
   padding: 1rem;
-  margin: 1rem;
+  margin: 0.5rem;
   text-decoration: none;
   color: #00000096;
   border: 2px solid #00000096;

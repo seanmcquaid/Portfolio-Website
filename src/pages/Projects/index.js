@@ -19,6 +19,7 @@ const Projects = () => (
             description={project.description}
             repoLink={project.repoLink}
             projectId={i}
+            demoLink={project.demoLink}
           />
         ))}
       </ProjectsList>
