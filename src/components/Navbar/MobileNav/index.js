@@ -69,7 +69,6 @@ const MobileMenu = styled.div`
   @media (max-height: 620px) {
     display: flex;
   }
-
   @media not all and (min-resolution: 0.001dpcm) {
     @media {
       margin-top: auto;
@@ -94,13 +93,18 @@ const MobileNavLinksList = styled.ul`
   align-items: center;
   margin: 0;
   padding: 0;
-  margin-top: 7.5rem;
+  margin-top: 8rem;
   position: fixed;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   animation: ${fadeInAnimation} ease 0.5s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  @media not all and (min-resolution: 0.001dpcm) {
+    @media {
+      margin-top: 1.5rem;
+    }
+  }
 `;
 
 const MobileNavListItem = styled.li``;
@@ -108,7 +112,7 @@ const MobileNavListItem = styled.li``;
 const MobileNavLink = styled(Link)`
   padding: 0.5rem;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #ffffffb6;
   height: 30px;
   display: flex;
