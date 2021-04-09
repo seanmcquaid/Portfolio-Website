@@ -23,7 +23,7 @@ html,
 }
 `;
 
-if (process.env.REACT_APP_ENVIRONMENT === 'dev') {
+if (process.env.NODE_ENV === 'development') {
   reactAxe(React, ReactDOM, 1000, {});
 }
 
