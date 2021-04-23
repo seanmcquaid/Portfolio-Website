@@ -3,23 +3,23 @@
 ## Project Setup
 
 ```
-npm install
+yarn install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-npm start
+yarn start
 ```
 
 ### Compiles and minifies for production
 
 ```
-npm build
+yarn build
 ```
 
 ### Run your unit tests
 
 ```
-npm test
+yarn test
 ```
