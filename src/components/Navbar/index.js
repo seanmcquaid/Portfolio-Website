@@ -52,7 +52,6 @@ const NavbarContainer = styled.nav`
   top: 0;
   left: 0;
   z-index: 1;
-  width: 100px;
   height: 100%;
   @media (max-width: 975px) {
     flex-direction: row;
