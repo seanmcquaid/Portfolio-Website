@@ -16,9 +16,9 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install Packages
-        run: npm install
+        run: yarn install
       - name: Run Unit Tests
-        run: npm test
+        run: yarn test
         env:
           CI: true
       - name: Deploy to GH Pages
@@ -26,4 +26,4 @@ jobs:
           git config --global user.email "sean.m.mcquaid@gmail.com"
           git config --global user.name "seanmcquaid"
           git remote set-url origin "https://seanmcquaid:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
-          npm run deploy
+          yarn run deploy
