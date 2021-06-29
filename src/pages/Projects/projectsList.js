@@ -1,7 +1,7 @@
 import webFakeBook from 'images/webFakeBook.jp2';
 import edhPodGenerator from 'images/edhPodGenerator.jp2';
 
-export default [
+const projectsList = [
   {
     title: 'Web Fake Book',
     image: webFakeBook,
@@ -18,3 +18,5 @@ export default [
     repoLink: 'https://github.com/seanmcquaid/EDH-Pod-Generator-Client',
   },
 ];
+
+export default projectsList;
