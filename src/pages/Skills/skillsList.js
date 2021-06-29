@@ -17,7 +17,7 @@ import {
 import { FaVuejs } from 'react-icons/fa';
 import { SiSvelte, SiTypescript } from 'react-icons/si';
 
-export default [
+const skillsList = [
   {
     name: 'JavaScript',
     IconComponent: DiJavascript,
@@ -87,3 +87,5 @@ export default [
     IconComponent: DiGo,
   },
 ];
+
+export default skillsList;
