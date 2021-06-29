@@ -22,10 +22,9 @@ const Skills = () => (
     </Header>
     <Main>
       <SkillsList id="skillsList" data-testid="skillsList">
-        {skillsList.map((skill, i) => {
-          const { name, IconComponent } = skill;
-          return <Skill key={i} IconComponent={IconComponent} name={name} />;
-        })}
+        {skillsList.map(({ name, IconComponent }, i) => (
+          <Skill key={i} IconComponent={IconComponent} name={name} />
+        ))}
       </SkillsList>
     </Main>
   </SkillsPageContainer>

@@ -12,6 +12,7 @@ import {
   DiAws,
   DiJava,
   DiAngularSimple,
+  DiGo,
 } from 'react-icons/di';
 import { FaVuejs } from 'react-icons/fa';
 import { SiSvelte, SiTypescript } from 'react-icons/si';
@@ -80,5 +81,9 @@ export default [
   {
     name: 'Svelte',
     IconComponent: SiSvelte,
+  },
+  {
+    name: 'Golang',
+    IconComponent: DiGo,
   },
 ];

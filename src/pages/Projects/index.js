@@ -7,21 +7,23 @@ import Project from './Project';
 const Projects = () => (
   <ProjectsPageContainer id="projectsPage" data-testid="projectsPage">
     <Header id="projectsPageHeader" data-testid="projectsPageHeader">
-      <HeaderText>Projects</HeaderText>
+      <HeaderText>Featured Projects</HeaderText>
     </Header>
     <Main>
       <ProjectsList id="projectsList" data-testid="projectsList">
-        {projectsList.map((project, i) => (
-          <Project
-            key={i}
-            title={project.title}
-            image={project.image}
-            description={project.description}
-            repoLink={project.repoLink}
-            projectId={i}
-            demoLink={project.demoLink}
-          />
-        ))}
+        {projectsList.map(
+          ({ title, image, description, repoLink, demoLink }, i) => (
+            <Project
+              key={i}
+              title={title}
+              image={image}
+              description={description}
+              repoLink={repoLink}
+              projectId={i}
+              demoLink={demoLink}
+            />
+          )
+        )}
       </ProjectsList>
     </Main>
   </ProjectsPageContainer>
