@@ -1,21 +1,21 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
-import { HeaderText, SubHeaderText } from 'components';
+import { H1, H2 } from 'components';
 import { Link } from 'react-router-dom';
 
 const Error = () => (
   <ErrorPageContainer>
     <Header>
-      <HeaderText>Error</HeaderText>
+      <H1>Error</H1>
     </Header>
     <Main>
-      <SubHeaderText>
+      <H2>
         There was a problem going to the page you typed in. Please go to the{' '}
         <HomePageLink to="/" title="Home Page Link">
           Home Page
         </HomePageLink>{' '}
         and check out my portfolio!
-      </SubHeaderText>
+      </H2>
     </Main>
   </ErrorPageContainer>
 );

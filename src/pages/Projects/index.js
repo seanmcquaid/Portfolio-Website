@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderText } from 'components';
+import { H1 } from 'components';
 import styled, { keyframes } from 'styled-components';
 import projectsList from './projectsList';
 import Project from './Project';
@@ -7,21 +7,23 @@ import Project from './Project';
 const Projects = () => (
   <ProjectsPageContainer id="projectsPage" data-testid="projectsPage">
     <Header id="projectsPageHeader" data-testid="projectsPageHeader">
-      <HeaderText>Projects</HeaderText>
+      <H1>Featured Projects</H1>
     </Header>
     <Main>
       <ProjectsList id="projectsList" data-testid="projectsList">
-        {projectsList.map((project, i) => (
-          <Project
-            key={i}
-            title={project.title}
-            image={project.image}
-            description={project.description}
-            repoLink={project.repoLink}
-            projectId={i}
-            demoLink={project.demoLink}
-          />
-        ))}
+        {projectsList.map(
+          ({ title, image, description, repoLink, demoLink }, i) => (
+            <Project
+              key={i}
+              title={title}
+              image={image}
+              description={description}
+              repoLink={repoLink}
+              projectId={i}
+              demoLink={demoLink}
+            />
+          )
+        )}
       </ProjectsList>
     </Main>
   </ProjectsPageContainer>

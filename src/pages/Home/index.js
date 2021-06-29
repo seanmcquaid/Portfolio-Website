@@ -1,23 +1,17 @@
 import React from 'react';
-import {
-  HeaderText,
-  SubHeaderText,
-  LinkButton,
-  Headshot,
-  ExternalLinkButton,
-} from 'components';
+import { H1, H2, LinkButton, Headshot, ExternalLinkButton } from 'components';
 import headshot from 'images/headshot.jp2';
 import styled, { keyframes } from 'styled-components';
 
 const Home = () => (
   <HomePageContainer id="homePage" data-testid="homePage">
     <Header>
-      <HeaderText id="homePageHeader" data-testid="skillsPageHeader">
+      <H1 id="homePageHeader" data-testid="skillsPageHeader">
         Hello, I am Sean!
-      </HeaderText>
-      <SubHeaderText id="homePageSubHeader" data-testid="homePageSubHeader">
+      </H1>
+      <H2 id="homePageSubHeader" data-testid="homePageSubHeader">
         Software Engineer, Front End Web Developer, Jazz Musician{' '}
-      </SubHeaderText>
+      </H2>
     </Header>
     <Main>
       <Headshot

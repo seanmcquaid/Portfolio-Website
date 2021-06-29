@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.img`
+const Headshot = styled.img`
   width: 100%;
   max-width: 300px;
   border-radius: 5px;
@@ -10,3 +10,5 @@ export default styled.img`
     max-width: 220px;
   }
 `;
+
+export default Headshot;

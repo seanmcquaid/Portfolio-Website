@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderText, ParagraphText } from 'components';
+import { H1, P } from 'components';
 import styled, { keyframes } from 'styled-components';
 import {
   IoLogoLinkedin,
@@ -12,14 +12,14 @@ import resume from 'images/Sean McQuaid - Resume.pdf';
 const Contact = () => (
   <ContactPageContainer id="contactPage" data-testid="contactPage">
     <Header>
-      <HeaderText id="contactPageHeader" data-testid="contactPageHeader">
+      <H1 id="contactPageHeader" data-testid="contactPageHeader">
         Contact Me
-      </HeaderText>
-      <ParagraphText id="contactInfoText" data-testid="contactInfoText">
+      </H1>
+      <P id="contactInfoText" data-testid="contactInfoText">
         If you would like to contact me, I would love to hear from you! Feel
         free to contact me through my email, check out my LinkedIn or GitHub, or
         even look at my Resume!
-      </ParagraphText>
+      </P>
     </Header>
     <Main>
       <ContactList>
