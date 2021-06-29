@@ -1,17 +1,9 @@
 import Navbar from './Navbar';
-import HeaderText from './Typography/H1';
-import SubHeaderText from './Typography/H2';
+import H1 from './Typography/H1';
+import H2 from './Typography/H2';
 import LinkButton from './LinkButton';
-import ParagraphText from './Typography/P';
+import P from './Typography/P';
 import Headshot from './Headshot';
 import ExternalLinkButton from './ExternalLinkButton';
 
-export {
-  Navbar,
-  HeaderText,
-  SubHeaderText,
-  LinkButton,
-  ParagraphText,
-  Headshot,
-  ExternalLinkButton,
-};
+export { Navbar, H1, H2, LinkButton, P, Headshot, ExternalLinkButton };

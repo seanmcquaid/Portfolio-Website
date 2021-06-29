@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderText } from 'components';
+import { H1 } from 'components';
 import styled, { keyframes } from 'styled-components';
 import projectsList from './projectsList';
 import Project from './Project';
@@ -7,7 +7,7 @@ import Project from './Project';
 const Projects = () => (
   <ProjectsPageContainer id="projectsPage" data-testid="projectsPage">
     <Header id="projectsPageHeader" data-testid="projectsPageHeader">
-      <HeaderText>Featured Projects</HeaderText>
+      <H1>Featured Projects</H1>
     </Header>
     <Main>
       <ProjectsList id="projectsList" data-testid="projectsList">

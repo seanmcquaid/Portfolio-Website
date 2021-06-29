@@ -1,14 +1,14 @@
 import React from 'react';
-import { ParagraphText, HeaderText, Headshot } from 'components';
+import { P, H1, Headshot } from 'components';
 import trumpetHeadshot from 'images/trumpetHeadshot.jp2';
 import styled, { keyframes } from 'styled-components';
 
 const About = () => (
   <AboutPageContainer id="aboutPage" data-testid="aboutPage">
     <Header>
-      <HeaderText id="aboutPageHeader" data-testid="aboutPageHeader">
+      <H1 id="aboutPageHeader" data-testid="aboutPageHeader">
         About Me
-      </HeaderText>
+      </H1>
     </Header>
     <Main>
       <Headshot
@@ -18,15 +18,15 @@ const About = () => (
         data-testid="bioHeadshot"
       />
       <Article>
-        <ParagraphText id="bioParagraphOne" data-testid="bioParagraphOne">
+        <P id="bioParagraphOne" data-testid="bioParagraphOne">
           Originally from New York, I moved to Atlanta roughly three years ago.
           My professional background is in music and now, Software Engineering.
           I have been playing the trumpet for over 20 years and have a
           Bachelor’s and Master’s degree in Music. After I moved to Atlanta, I
           quickly realized that I wanted a day job that would allow me to
           utilize my creative problem solving skills from music.
-        </ParagraphText>
-        <ParagraphText id="bioParagraphTwo" data-testid="bioParagraphTwo">
+        </P>
+        <P id="bioParagraphTwo" data-testid="bioParagraphTwo">
           I accidentally discovered programming one night while scrolling on
           Facebook and seeing that a musician friend of mine from high school
           recently landed a job at Google. Upon investigating more and seeing
@@ -37,8 +37,8 @@ const About = () => (
           coding bootcamp based in Atlanta. Shortly after graduating, I was
           lucky enough to land my current role at Chick-fil-A where I have
           worked on various parts of the CFAOne App team.
-        </ParagraphText>
-        <ParagraphText id="bioParagraphThree" data-testid="bioParagraphThree">
+        </P>
+        <P id="bioParagraphThree" data-testid="bioParagraphThree">
           My ultimate career goal is to be a Software Architect and make
           enterprise wide technical decisions that will help everyone in the
           company. However, I would like to have the opportunity to learn
@@ -46,7 +46,7 @@ const About = () => (
           engineer. I truly believe that having a wider perspective will
           inevitably lead to me making better decisions for the organization
           that I have the privelege serve.
-        </ParagraphText>
+        </P>
       </Article>
     </Main>
   </AboutPageContainer>

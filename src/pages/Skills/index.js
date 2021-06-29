@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderText, ParagraphText } from 'components';
+import { H1, P } from 'components';
 import styled, { keyframes } from 'styled-components';
 import skillsList from './skillsList';
 import Skill from './Skill';
@@ -7,10 +7,10 @@ import Skill from './Skill';
 const Skills = () => (
   <SkillsPageContainer id="skillsPage" data-testid="skillsPage">
     <Header>
-      <HeaderText id="skillsPageHeader" data-testid="skillsPageHeader">
+      <H1 id="skillsPageHeader" data-testid="skillsPageHeader">
         Skills
-      </HeaderText>
-      <ParagraphText>
+      </H1>
+      <P>
         I currently work with Java and SpringBoot at work, however, my
         speciality is in Full-Stack JavaScript development. I specifically have
         a passion for creating visually appealing, accessible web applications
@@ -18,7 +18,7 @@ const Skills = () => (
         time outside of work attempting to come up with creative solutions with
         any flavor of JavaScript. I specifically have a passion for Front End
         Web Development!
-      </ParagraphText>
+      </P>
     </Header>
     <Main>
       <SkillsList id="skillsList" data-testid="skillsList">

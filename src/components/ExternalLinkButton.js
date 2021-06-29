@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.a`
+const ExternalLinkButton = styled.a`
   padding: 1rem;
   margin: 0.5rem;
   text-decoration: none;
@@ -18,3 +18,5 @@ export default styled.a`
     color: #4c8577;
   }
 `;
+
+export default ExternalLinkButton;

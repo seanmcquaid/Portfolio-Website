@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { ParagraphText, ExternalLinkButton } from 'components';
+import { P, ExternalLinkButton } from 'components';
 import PropTypes from 'prop-types';
 
 const Project = ({
@@ -27,12 +27,12 @@ const Project = ({
       id={'projectImage' + projectId}
       data-testid={'projectImage' + projectId}
     />
-    <ParagraphText
+    <P
       id={'projectDescription' + projectId}
       data-testid={'projectDescription' + projectId}
     >
       {description}
-    </ParagraphText>
+    </P>
     <ButtonsContainer>
       <ExternalLinkButton
         href={repoLink}
