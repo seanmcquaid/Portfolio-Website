@@ -35,17 +35,20 @@ const About = () => (
           wrote my first lines of HTML/CSS and I have loved it ever since! After
           six months of self studying, I decided to enroll in DigitalCrafts, a
           coding bootcamp based in Atlanta. Shortly after graduating, I was
-          lucky enough to land my current role at Chick-fil-A where I have
-          worked on various parts of the CFAOne App team.
+          lucky enough to land my first Software Engineering role at Chick-fil-A
+          where I worked on various parts of the CFAOne App. I am currently
+          serving as a React developer on our Personal Web Ordering project
+          which will be used as our online ordering platform for both domestic
+          and international restaurants!
         </P>
         <P id="bioParagraphThree" data-testid="bioParagraphThree">
-          My ultimate career goal is to be a Software Architect and make
-          enterprise wide technical decisions that will help everyone in the
-          company. However, I would like to have the opportunity to learn
-          different areas of software development so I can be a well informed
-          engineer. I truly believe that having a wider perspective will
-          inevitably lead to me making better decisions for the organization
-          that I have the privelege serve.
+          It's very important to me that I continue to grow my skills and learn
+          different specializations within Software Engineering so I can be a
+          well informed engineer. My ultimate career goal is to be a Software
+          Architect and make enterprise wide technical decisions that will help
+          everyone in the company. I truly believe that having a wider
+          perspective will inevitably lead to me making better decisions for the
+          organization that I have the privelege to serve.
         </P>
       </Article>
     </Main>
