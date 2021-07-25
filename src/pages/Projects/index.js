@@ -58,7 +58,6 @@ const Header = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
 `;
 
 const Main = styled.main`

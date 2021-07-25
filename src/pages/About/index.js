@@ -38,7 +38,7 @@ const About = () => (
           lucky enough to land my first Software Engineering role at Chick-fil-A
           where I worked on various parts of the CFAOne App. I am currently
           serving as a React developer on our Personal Web Ordering project
-          which will be used as our online ordering platform for both domestic
+          which is being used as our online ordering platform for both domestic
           and international restaurants!
         </P>
         <P id="bioParagraphThree" data-testid="bioParagraphThree">
@@ -84,7 +84,7 @@ const Header = styled.header`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 0.5rem;
 `;
 
 const Main = styled.main`

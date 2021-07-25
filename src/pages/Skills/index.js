@@ -61,7 +61,6 @@ const Header = styled.header`
   justify-content: center;
   align-items: flex-start;
   max-width: 34rem;
-  padding: 1rem;
   @media (max-width: 975px) {
     align-items: center;
   }
