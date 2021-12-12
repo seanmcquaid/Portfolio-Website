@@ -61,6 +61,7 @@ const ProjectContainer = styled.li`
   align-items: center;
   max-width: 26rem;
   height: 28rem;
+  padding: 0.75rem;
   @media (max-width: 975px) {
     margin: 1rem 0;
     border: none;

@@ -8,7 +8,6 @@ const projectsList = [
     description:
       'Built a Web solution to a problem for college music students, having free access to chord changes for jazz standards with the MERN stack and TypeScript.',
     repoLink: 'https://github.com/seanmcquaid/Web-Fake-Book-Client',
-    demoLink: 'https://web-fake-book-client.herokuapp.com/',
   },
   {
     title: 'EDH Pod Generator',
