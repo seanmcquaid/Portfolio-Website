@@ -1,4 +1,3 @@
-import reactAxe from '@axe-core/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createGlobalStyle } from 'styled-components';
@@ -23,10 +22,6 @@ const GlobalStyle = createGlobalStyle`
     width: 100%;
   }
 `;
-
-if (process.env.NODE_ENV === 'development') {
-  reactAxe(React, ReactDOM, 1000, {});
-}
 
 ReactDOM.render(
   <React.Suspense fallback={null}>
