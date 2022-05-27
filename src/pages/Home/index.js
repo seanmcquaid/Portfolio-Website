@@ -1,6 +1,6 @@
 import React from 'react';
 import { H1, H2, LinkButton, Headshot, ExternalLinkButton } from 'components';
-import headshot from 'images/headshot.jp2';
+import headshot from 'images/headshot.jpeg';
 import styled, { keyframes } from 'styled-components';
 
 const Home = () => (

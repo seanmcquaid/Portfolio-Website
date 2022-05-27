@@ -1,6 +1,6 @@
 import React from 'react';
 import { P, H1, Headshot } from 'components';
-import trumpetHeadshot from 'images/trumpetHeadshot.jp2';
+import trumpetHeadshot from 'images/trumpetHeadshot.jpeg';
 import styled, { keyframes } from 'styled-components';
 
 const About = () => (

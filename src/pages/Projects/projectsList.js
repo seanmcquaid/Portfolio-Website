@@ -1,5 +1,5 @@
-import webFakeBook from 'images/webFakeBook.jp2';
-import edhPodGenerator from 'images/edhPodGenerator.jp2';
+import webFakeBook from 'images/webFakeBook.jpeg';
+import edhPodGenerator from 'images/edhPodGenerator.jpeg';
 
 const projectsList = [
   {
