@@ -1,8 +1,9 @@
 import reactAxe from '@axe-core/react';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import { createGlobalStyle } from 'styled-components';
+
+const App = React.lazy(() => import('./App'));
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -28,9 +29,9 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 ReactDOM.render(
-  <>
+  <React.Suspense fallback={null}>
     <GlobalStyle />
     <App />
-  </>,
+  </React.Suspense>,
   document.getElementById('root')
 );
